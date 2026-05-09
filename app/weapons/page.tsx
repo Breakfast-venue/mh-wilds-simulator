@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from "@/components/ui/select";
+import { WEAPON_KIND_JP } from "@/lib/i18n";
+
 
 const WEAPON_TYPES = [
   "全武器種", "大剣", "片手剣", "双剣", "太刀", "ハンマー", "狩猟笛",
@@ -23,7 +25,7 @@ export default function WeaponsPage() {
   const dedupedAll = useMemo(() => {
     const seen = new Set<string>();
     return masters.weapons.filter((w) => {
-      const k = `${w.typeCode}-${w.id}`;
+      const k = `${w.kind}-${w.id}`;
       if (seen.has(k)) return false;
       seen.add(k);
       return true;
@@ -33,7 +35,7 @@ export default function WeaponsPage() {
   const weapons =
     type === "全武器種"
       ? dedupedAll
-      : dedupedAll.filter((w) => w.type === type);
+      : dedupedAll.filter((w) => w.kind === type);
 
   return (
     <main className="container mx-auto p-8">
@@ -64,18 +66,16 @@ export default function WeaponsPage() {
         </TableHeader>
         <TableBody>
           {weapons.map((w) => (
-            <TableRow key={`${w.typeCode}-${w.id}`}>
-              <TableCell><Badge variant="outline">{w.type}</Badge></TableCell>
+            <TableRow key={`${w.kind}-${w.id}`}>
+              <TableCell><Badge variant="outline">{WEAPON_KIND_JP[w.kind]}</Badge></TableCell>
               <TableCell className="font-medium">{w.name}</TableCell>
-              <TableCell>{w.atk}</TableCell>
+              <TableCell>{w.damage}</TableCell>
               <TableCell>{w.affinity >= 0 ? `+${w.affinity}%` : `${w.affinity}%`}</TableCell>
               <TableCell className="text-xs font-mono">[{w.slots.join("][")}]</TableCell>
               <TableCell>
-                {w.skills.map((s) => (
-                  <Badge key={s.skillId} variant="secondary" className="mr-1 mb-1">
-                    {s.name} +{s.level}
-                  </Badge>
-                ))}
+               {w.skills.map((s, i) => (
+                <span key={`${w.id}-${s.skillId}-${i}`}>{s.skillName} +{s.level}</span>
+              ))}
               </TableCell>
             </TableRow>
           ))}

@@ -5,8 +5,13 @@
  * - 候補プール絞り込み + 枝刈り + 装飾品貪欲詰め込み（combine.ts）
  * - 結果は防御力降順で最大50件
  */
-import type { Armor, Weapon } from "@/lib/types";
-import type { EquipmentSet, SearchInput, SkillRequirement } from "./types";
+import type { Armor, ArmorPart, Weapon } from "@/lib/types";
+import type {
+  EquipmentSet,
+  SearchInput,
+  SkillRequirement,
+  TotalSkill,
+} from "./types";
 import {
   addResistances,
   addSkillsToMap,
@@ -20,20 +25,21 @@ import {
 } from "./combine";
 import { masters as defaultMasters } from "@/lib/data/loadMasters";
 
-const PARTS = ["頭", "胴", "腕", "腰", "脚"] as const;
+const PARTS = ["head", "chest", "arms", "waist", "legs"] as const satisfies readonly ArmorPart[];
 type Part = (typeof PARTS)[number];
 
-const MAX_RESULTS = 50;
+const MAX_RESULTS = 10;
 
 type Masters = typeof defaultMasters;
-type SkillMap = Map<string, { skillId: string; name: string; level: number }>;
+type SkillMap = Map<number, TotalSkill>;
 type ArmorPool = Record<Part, Armor[]>;
 
 // === 候補プール絞り込み ===
-function isCandidateArmor(armor: Armor, reqIds: Set<string>): boolean {
+function isCandidateArmor(armor: Armor, reqIds: Set<number>): boolean {
   const hasReqSkill = armor.skills.some((s) => reqIds.has(s.skillId));
-  const hasSlot = armor.slots.some((s) => s > 0);
-  return hasReqSkill || hasSlot;
+  const slotBudget = armor.slots.reduce((s, lv) => s + lv, 0);  // 合計スロットLv
+  const hasMeaningfulSlot = slotBudget >= 2;
+  return hasReqSkill || hasMeaningfulSlot;
 }
 
 function buildArmorPool(
@@ -41,7 +47,9 @@ function buildArmorPool(
   requirements: SkillRequirement[],
 ): ArmorPool {
   const reqIds = new Set(requirements.map((r) => r.skillId));
-  const pool: ArmorPool = { 頭: [], 胴: [], 腕: [], 腰: [], 脚: [] };
+  const pool: ArmorPool = {
+    head: [], chest: [], arms: [], waist: [], legs: [],
+  };
   for (const a of armors) {
     if (a.part in pool && isCandidateArmor(a, reqIds)) {
       pool[a.part].push(a);
@@ -53,10 +61,10 @@ function buildArmorPool(
 // === 部位ごとの最大スキルLv（枝刈り用 O(1) 参照テーブル）===
 function precomputeMaxSkillPerPart(
   pool: ArmorPool,
-): Record<Part, Map<string, number>> {
-  const out = {} as Record<Part, Map<string, number>>;
+): Record<Part, Map<number, number>> {
+  const out = {} as Record<Part, Map<number, number>>;
   for (const part of PARTS) {
-    const m = new Map<string, number>();
+    const m = new Map<number, number>();
     for (const a of pool[part]) {
       for (const s of a.skills) {
         m.set(s.skillId, Math.max(m.get(s.skillId) ?? 0, s.level));
@@ -86,15 +94,28 @@ export function searchEquipmentSets(
   input: SearchInput,
   masters: Masters = defaultMasters,
 ): EquipmentSet[] {
+  console.time("[search] total");
+  console.log(`[search] weapons=${masters.weapons.length} armors=${masters.armors.length}`);
+
   const { desiredSkills, weaponType, resistanceMin } = input;
   if (desiredSkills.length === 0) return [];
 
-  // 武器候補（指定なしなら undefined 1件で代用）
-  const weaponCandidates: (Weapon | undefined)[] = weaponType
-    ? masters.weapons.filter((w) => w.type === weaponType)
-    : [undefined];
+  // ⭐ 高ランクのみに絞る（low rank は MVP 範囲外）
+  const highArmors = masters.armors.filter((a) => a.rank === "high");
+  console.log(`[search] high-rank armors: ${highArmors.length}`);
 
-  const pool = buildArmorPool(masters.armors, desiredSkills);
+  const weaponCandidates: (Weapon | undefined)[] = weaponType
+    ? masters.weapons.filter((w) => w.kind === weaponType)
+    : [undefined];
+  console.log(`[search] weapon candidates: ${weaponCandidates.length}`);
+
+  const pool = buildArmorPool(highArmors, desiredSkills);  // ← highArmors を渡す
+  console.log("[search] armor pool sizes:", {
+    head: pool.head.length, chest: pool.chest.length,
+    arms: pool.arms.length, waist: pool.waist.length, legs: pool.legs.length,
+  });
+
+
   const maxSkill = precomputeMaxSkillPerPart(pool);
   const maxSlot = precomputeMaxSlotCountPerPart(pool);
 
@@ -137,7 +158,6 @@ export function searchEquipmentSets(
       // --- 葉ノード: 装飾品詰め込み + 採用判定 ---
       if (idx === PARTS.length) {
         if (!meetsResistanceMin(accRes, resistanceMin)) return;
-
         const baseArr = Array.from(accSkills.values()).map((s) => ({ ...s }));
         const fit = fitDecorations({
           requirements: desiredSkills,
@@ -153,14 +173,15 @@ export function searchEquipmentSets(
           if ((final.get(req.skillId) ?? 0) < req.level) return;
         }
 
+        // chosen は head/chest/arms/waist/legs の英語キーで保持されている前提
         results.push(
           buildEquipmentSet({
             weapon,
-            head: chosen.頭!,
-            body: chosen.胴!,
-            arms: chosen.腕!,
-            waist: chosen.腰!,
-            legs: chosen.脚!,
+            head: chosen.head!,
+            body: chosen.chest!,
+            arms: chosen.arms!,
+            waist: chosen.waist!,
+            legs: chosen.legs!,
             decorations: fit.fitted,
             requirements: desiredSkills,
           }),
@@ -195,5 +216,7 @@ export function searchEquipmentSets(
 
   // 防御順ソート + 上位 MAX_RESULTS 件
   results.sort((a, b) => b.totalDefense - a.totalDefense);
+  console.timeEnd("[search] total");
+  console.log(`[search] results: ${results.length}`);
   return results.slice(0, MAX_RESULTS);
 }

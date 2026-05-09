@@ -1,0 +1,2788 @@
+[
+  {
+    "id": 1,
+    "charmId": 1,
+    "name": "防風の護石Ⅰ",
+    "description": "装備することで風圧耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 35,
+        "name": "風圧耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "charmId": 1,
+    "name": "防風の護石Ⅱ",
+    "description": "装備することで風圧耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 35,
+        "name": "風圧耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "charmId": 1,
+    "name": "防風の護石Ⅲ",
+    "description": "装備することで風圧耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 35,
+        "name": "風圧耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "charmId": 2,
+    "name": "整備の護石Ⅰ",
+    "description": "装備することで整備スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 90,
+        "name": "整備",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "charmId": 2,
+    "name": "整備の護石Ⅱ",
+    "description": "装備することで整備スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 90,
+        "name": "整備",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "charmId": 2,
+    "name": "整備の護石Ⅲ",
+    "description": "装備することで整備スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 90,
+        "name": "整備",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "charmId": 3,
+    "name": "耐火の護石Ⅰ",
+    "description": "装備することで火耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 125,
+        "name": "火耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "charmId": 3,
+    "name": "耐火の護石Ⅱ",
+    "description": "装備することで火耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 125,
+        "name": "火耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "charmId": 3,
+    "name": "耐火の護石Ⅲ",
+    "description": "装備することで火耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 125,
+        "name": "火耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "charmId": 4,
+    "name": "無食の護石Ⅰ",
+    "description": "装備することで腹減り耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 151,
+        "name": "腹減り耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "charmId": 4,
+    "name": "無食の護石Ⅱ",
+    "description": "装備することで腹減り耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 151,
+        "name": "腹減り耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "charmId": 4,
+    "name": "無食の護石Ⅲ",
+    "description": "装備することで腹減り耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 151,
+        "name": "腹減り耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "charmId": 5,
+    "name": "底力の護石Ⅰ",
+    "description": "装備することで火事場力スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 87,
+        "name": "火事場力",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "charmId": 5,
+    "name": "底力の護石Ⅱ",
+    "description": "装備することで火事場力スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 87,
+        "name": "火事場力",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "charmId": 5,
+    "name": "底力の護石Ⅲ",
+    "description": "装備することで火事場力スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 87,
+        "name": "火事場力",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "charmId": 6,
+    "name": "小食の護石Ⅰ",
+    "description": "装備することで満足感スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 111,
+        "name": "満足感",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "charmId": 6,
+    "name": "小食の護石Ⅱ",
+    "description": "装備することで満足感スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 111,
+        "name": "満足感",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "charmId": 6,
+    "name": "小食の護石Ⅲ",
+    "description": "装備することで満足感スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 111,
+        "name": "満足感",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "charmId": 7,
+    "name": "跳躍の護石Ⅰ",
+    "description": "装備することで回避距離ＵＰ スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 102,
+        "name": "回避距離ＵＰ",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "charmId": 7,
+    "name": "跳躍の護石Ⅱ",
+    "description": "装備することで回避距離ＵＰ スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 102,
+        "name": "回避距離ＵＰ",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "charmId": 7,
+    "name": "跳躍の護石Ⅲ",
+    "description": "装備することで回避距離ＵＰ スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 102,
+        "name": "回避距離ＵＰ",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "charmId": 8,
+    "name": "無傷の護石Ⅰ",
+    "description": "装備することでフルチャージ スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 154,
+        "name": "フルチャージ",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "charmId": 8,
+    "name": "無傷の護石Ⅱ",
+    "description": "装備することでフルチャージ スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 154,
+        "name": "フルチャージ",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "charmId": 9,
+    "name": "耐眠の護石Ⅰ",
+    "description": "装備することで睡眠耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 64,
+        "name": "睡眠耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "charmId": 9,
+    "name": "耐眠の護石Ⅱ",
+    "description": "装備することで睡眠耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 64,
+        "name": "睡眠耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "charmId": 9,
+    "name": "耐眠の護石Ⅲ",
+    "description": "装備することで睡眠耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 64,
+        "name": "睡眠耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "charmId": 10,
+    "name": "早食の護石Ⅰ",
+    "description": "装備することで早食いスキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 100,
+        "name": "早食い",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "charmId": 10,
+    "name": "早食の護石Ⅱ",
+    "description": "装備することで早食いスキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 100,
+        "name": "早食い",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "charmId": 10,
+    "name": "早食の護石Ⅲ",
+    "description": "装備することで早食いスキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 100,
+        "name": "早食い",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "charmId": 11,
+    "name": "挑戦の護石Ⅰ",
+    "description": "装備することで挑戦者スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 144,
+        "name": "挑戦者",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "charmId": 11,
+    "name": "挑戦の護石Ⅱ",
+    "description": "装備することで挑戦者スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 144,
+        "name": "挑戦者",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "charmId": 12,
+    "name": "回避の護石Ⅰ",
+    "description": "装備することで回避性能スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 77,
+        "name": "回避性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "charmId": 12,
+    "name": "回避の護石Ⅱ",
+    "description": "装備することで回避性能スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 77,
+        "name": "回避性能",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "charmId": 12,
+    "name": "回避の護石Ⅲ",
+    "description": "装備することで回避性能スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 77,
+        "name": "回避性能",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "charmId": 12,
+    "name": "回避の護石Ⅳ",
+    "description": "装備することで回避性能スキルが 発動するお守り。",
+    "level": 4,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 77,
+        "name": "回避性能",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "charmId": 13,
+    "name": "耐爆の護石Ⅰ",
+    "description": "装備することで爆破やられ耐性 スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 110,
+        "name": "爆破やられ耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "charmId": 13,
+    "name": "耐爆の護石Ⅱ",
+    "description": "装備することで爆破やられ耐性 スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 110,
+        "name": "爆破やられ耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "charmId": 13,
+    "name": "耐爆の護石Ⅲ",
+    "description": "装備することで爆破やられ耐性 スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 110,
+        "name": "爆破やられ耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "charmId": 14,
+    "name": "渾身の護石Ⅰ",
+    "description": "装備することで渾身スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 99,
+        "name": "渾身",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "charmId": 14,
+    "name": "渾身の護石Ⅱ",
+    "description": "装備することで渾身スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 99,
+        "name": "渾身",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "charmId": 15,
+    "name": "耐絶の護石Ⅰ",
+    "description": "装備することで気絶耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 105,
+        "name": "気絶耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "charmId": 15,
+    "name": "耐絶の護石Ⅱ",
+    "description": "装備することで気絶耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 105,
+        "name": "気絶耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "charmId": 15,
+    "name": "耐絶の護石Ⅲ",
+    "description": "装備することで気絶耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 105,
+        "name": "気絶耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "charmId": 16,
+    "name": "希望の護石",
+    "description": "装備することで研鑽スキルと 体力回復量ＵＰスキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 30,
+        "name": "体力回復量ＵＰ",
+        "level": 1
+      },
+      {
+        "id": 138,
+        "name": "研鑽",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "charmId": 17,
+    "name": "耐麻の護石Ⅰ",
+    "description": "装備することで麻痺耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 92,
+        "name": "麻痺耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "charmId": 17,
+    "name": "耐麻の護石Ⅱ",
+    "description": "装備することで麻痺耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 92,
+        "name": "麻痺耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "charmId": 17,
+    "name": "耐麻の護石Ⅲ",
+    "description": "装備することで麻痺耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 92,
+        "name": "麻痺耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "charmId": 18,
+    "name": "環境の護石Ⅰ",
+    "description": "装備することで環境利用の知識 スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 48,
+        "name": "環境利用の知識",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "charmId": 18,
+    "name": "環境の護石Ⅱ",
+    "description": "装備することで環境利用の知識 スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 48,
+        "name": "環境利用の知識",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "charmId": 18,
+    "name": "環境の護石Ⅲ",
+    "description": "装備することで環境利用の知識 スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 48,
+        "name": "環境利用の知識",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "charmId": 19,
+    "name": "耳栓の護石Ⅰ",
+    "description": "装備することで耳栓スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 80,
+        "name": "耳栓",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "charmId": 19,
+    "name": "耳栓の護石Ⅱ",
+    "description": "装備することで耳栓スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 80,
+        "name": "耳栓",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "charmId": 20,
+    "name": "耐雷の護石Ⅰ",
+    "description": "装備することで雷耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 156,
+        "name": "雷耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "charmId": 20,
+    "name": "耐雷の護石Ⅱ",
+    "description": "装備することで雷耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 156,
+        "name": "雷耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "charmId": 20,
+    "name": "耐雷の護石Ⅲ",
+    "description": "装備することで雷耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 156,
+        "name": "雷耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "charmId": 21,
+    "name": "早気の護石Ⅰ",
+    "description": "装備することでスタミナ急速回復 スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 58,
+        "name": "スタミナ急速回復",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "charmId": 21,
+    "name": "早気の護石Ⅱ",
+    "description": "装備することでスタミナ急速回復 スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 58,
+        "name": "スタミナ急速回復",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "charmId": 21,
+    "name": "早気の護石Ⅲ",
+    "description": "装備することでスタミナ急速回復 スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 58,
+        "name": "スタミナ急速回復",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "charmId": 22,
+    "name": "全開の護石Ⅰ",
+    "description": "装備することで力の解放スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 142,
+        "name": "力の解放",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "charmId": 22,
+    "name": "全開の護石Ⅱ",
+    "description": "装備することで力の解放スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 142,
+        "name": "力の解放",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "charmId": 22,
+    "name": "全開の護石Ⅲ",
+    "description": "装備することで力の解放スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 142,
+        "name": "力の解放",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "charmId": 23,
+    "name": "防御の護石Ⅰ",
+    "description": "装備することで防御スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 118,
+        "name": "防御",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "charmId": 23,
+    "name": "防御の護石Ⅱ",
+    "description": "装備することで防御スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 118,
+        "name": "防御",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "charmId": 23,
+    "name": "防御の護石Ⅲ",
+    "description": "装備することで防御スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 118,
+        "name": "防御",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "charmId": 23,
+    "name": "防御の護石Ⅳ",
+    "description": "装備することで防御スキルが 発動するお守り。",
+    "level": 4,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 118,
+        "name": "防御",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "charmId": 23,
+    "name": "防御の護石Ⅴ",
+    "description": "装備することで防御スキルが 発動するお守り。",
+    "level": 5,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 118,
+        "name": "防御",
+        "level": 5
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "charmId": 24,
+    "name": "耐毒の護石Ⅰ",
+    "description": "装備することで毒耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 128,
+        "name": "毒耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "charmId": 24,
+    "name": "耐毒の護石Ⅱ",
+    "description": "装備することで毒耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 128,
+        "name": "毒耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "charmId": 24,
+    "name": "耐毒の護石Ⅲ",
+    "description": "装備することで毒耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 128,
+        "name": "毒耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "charmId": 25,
+    "name": "逆襲の護石Ⅰ",
+    "description": "装備することで逆襲スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 81,
+        "name": "逆襲",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "charmId": 25,
+    "name": "逆襲の護石Ⅱ",
+    "description": "装備することで逆襲スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 81,
+        "name": "逆襲",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "charmId": 25,
+    "name": "逆襲の護石Ⅲ",
+    "description": "装備することで逆襲スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 81,
+        "name": "逆襲",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "charmId": 26,
+    "name": "納刀の護石Ⅰ",
+    "description": "装備することで納刀術スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 32,
+        "name": "納刀術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "charmId": 26,
+    "name": "納刀の護石Ⅱ",
+    "description": "装備することで納刀術スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 32,
+        "name": "納刀術",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "charmId": 26,
+    "name": "納刀の護石Ⅲ",
+    "description": "装備することで納刀術スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 32,
+        "name": "納刀術",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "charmId": 27,
+    "name": "耐水の護石Ⅰ",
+    "description": "装備することで水耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 84,
+        "name": "水耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "charmId": 27,
+    "name": "耐水の護石Ⅱ",
+    "description": "装備することで水耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 84,
+        "name": "水耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "charmId": 27,
+    "name": "耐水の護石Ⅲ",
+    "description": "装備することで水耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 84,
+        "name": "水耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "charmId": 28,
+    "name": "友愛の護石Ⅰ",
+    "description": "装備することで広域化スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 113,
+        "name": "広域化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "charmId": 28,
+    "name": "友愛の護石Ⅱ",
+    "description": "装備することで広域化スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 113,
+        "name": "広域化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "charmId": 28,
+    "name": "友愛の護石Ⅲ",
+    "description": "装備することで広域化スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 113,
+        "name": "広域化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "charmId": 28,
+    "name": "友愛の護石Ⅳ",
+    "description": "装備することで広域化スキルが 発動するお守り。",
+    "level": 4,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 113,
+        "name": "広域化",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "charmId": 29,
+    "name": "耐属の護石Ⅰ",
+    "description": "装備することで属性やられ耐性 スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 49,
+        "name": "属性やられ耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "charmId": 29,
+    "name": "耐属の護石Ⅱ",
+    "description": "装備することで属性やられ耐性 スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 49,
+        "name": "属性やられ耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "charmId": 30,
+    "name": "持続の護石Ⅰ",
+    "description": "装備することでアイテム使用強化 スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 15,
+        "name": "アイテム使用強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "charmId": 30,
+    "name": "持続の護石Ⅱ",
+    "description": "装備することでアイテム使用強化 スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 15,
+        "name": "アイテム使用強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "charmId": 30,
+    "name": "持続の護石Ⅲ",
+    "description": "装備することでアイテム使用強化 スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 15,
+        "name": "アイテム使用強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "charmId": 31,
+    "name": "耐氷の護石Ⅰ",
+    "description": "装備することで氷耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 101,
+        "name": "氷耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "charmId": 31,
+    "name": "耐氷の護石Ⅱ",
+    "description": "装備することで氷耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 101,
+        "name": "氷耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "charmId": 31,
+    "name": "耐氷の護石Ⅲ",
+    "description": "装備することで氷耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 101,
+        "name": "氷耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "charmId": 32,
+    "name": "重撃の護石Ⅰ",
+    "description": "装備することで破壊王スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 129,
+        "name": "破壊王",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "charmId": 32,
+    "name": "重撃の護石Ⅱ",
+    "description": "装備することで破壊王スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 129,
+        "name": "破壊王",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "charmId": 33,
+    "name": "抗狂の護石Ⅰ",
+    "description": "装備することで無我の境地スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 18,
+        "name": "無我の境地",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "charmId": 33,
+    "name": "抗狂の護石Ⅱ",
+    "description": "装備することで無我の境地スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 18,
+        "name": "無我の境地",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "charmId": 33,
+    "name": "抗狂の護石Ⅲ",
+    "description": "装備することで無我の境地スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 18,
+        "name": "無我の境地",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "charmId": 34,
+    "name": "威嚇の護石Ⅰ",
+    "description": "装備することで威嚇スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 130,
+        "name": "威嚇",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "charmId": 34,
+    "name": "威嚇の護石Ⅱ",
+    "description": "装備することで威嚇スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 130,
+        "name": "威嚇",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "charmId": 34,
+    "name": "威嚇の護石Ⅲ",
+    "description": "装備することで威嚇スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 130,
+        "name": "威嚇",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "charmId": 35,
+    "name": "耐衝の護石Ⅰ",
+    "description": "装備することでひるみ軽減スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 108,
+        "name": "ひるみ軽減",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "charmId": 35,
+    "name": "耐衝の護石Ⅱ",
+    "description": "装備することでひるみ軽減スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 108,
+        "name": "ひるみ軽減",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "charmId": 35,
+    "name": "耐衝の護石Ⅲ",
+    "description": "装備することでひるみ軽減スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 108,
+        "name": "ひるみ軽減",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "charmId": 36,
+    "name": "茸好の護石Ⅰ",
+    "description": "装備することでキノコ大好き スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 52,
+        "name": "キノコ大好き",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "charmId": 36,
+    "name": "茸好の護石Ⅱ",
+    "description": "装備することでキノコ大好き スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 52,
+        "name": "キノコ大好き",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "charmId": 36,
+    "name": "茸好の護石Ⅲ",
+    "description": "装備することでキノコ大好き スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 52,
+        "name": "キノコ大好き",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "charmId": 37,
+    "name": "反攻の護石Ⅰ",
+    "description": "装備することで巧撃スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 120,
+        "name": "巧撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "charmId": 37,
+    "name": "反攻の護石Ⅱ",
+    "description": "装備することで巧撃スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 120,
+        "name": "巧撃",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "charmId": 38,
+    "name": "強走の護石Ⅰ",
+    "description": "装備することでランナースキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 43,
+        "name": "ランナー",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "charmId": 38,
+    "name": "強走の護石Ⅱ",
+    "description": "装備することでランナースキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 43,
+        "name": "ランナー",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "charmId": 38,
+    "name": "強走の護石Ⅲ",
+    "description": "装備することでランナースキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 43,
+        "name": "ランナー",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "charmId": 39,
+    "name": "耐震の護石Ⅰ",
+    "description": "装備することで耐震スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 46,
+        "name": "耐震",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "charmId": 39,
+    "name": "耐震の護石Ⅱ",
+    "description": "装備することで耐震スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 46,
+        "name": "耐震",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "charmId": 39,
+    "name": "耐震の護石Ⅲ",
+    "description": "装備することで耐震スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 46,
+        "name": "耐震",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "charmId": 40,
+    "name": "鎖刃の護石Ⅰ",
+    "description": "装備することで鎖刃刺撃スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 38,
+        "name": "鎖刃刺撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "charmId": 40,
+    "name": "鎖刃の護石Ⅱ",
+    "description": "装備することで鎖刃刺撃スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 38,
+        "name": "鎖刃刺撃",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "charmId": 41,
+    "name": "転福の護石Ⅰ",
+    "description": "装備することで災禍転福スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 13,
+        "name": "災禍転福",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "charmId": 41,
+    "name": "転福の護石Ⅱ",
+    "description": "装備することで災禍転福スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 13,
+        "name": "災禍転福",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "charmId": 42,
+    "name": "爆師の護石Ⅰ",
+    "description": "装備することでボマースキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 37,
+        "name": "ボマー",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "charmId": 42,
+    "name": "爆師の護石Ⅱ",
+    "description": "装備することでボマースキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 37,
+        "name": "ボマー",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "charmId": 42,
+    "name": "爆師の護石Ⅲ",
+    "description": "装備することでボマースキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 37,
+        "name": "ボマー",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "charmId": 43,
+    "name": "耐裂の護石Ⅰ",
+    "description": "装備することで裂傷耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 146,
+        "name": "裂傷耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "charmId": 43,
+    "name": "耐裂の護石Ⅱ",
+    "description": "装備することで裂傷耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 146,
+        "name": "裂傷耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "charmId": 43,
+    "name": "耐裂の護石Ⅲ",
+    "description": "装備することで裂傷耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 146,
+        "name": "裂傷耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "charmId": 44,
+    "name": "属変の護石Ⅰ",
+    "description": "装備することで属性変換スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 152,
+        "name": "属性変換",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "charmId": 44,
+    "name": "属変の護石Ⅱ",
+    "description": "装備することで属性変換スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 152,
+        "name": "属性変換",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "charmId": 45,
+    "name": "加護の護石Ⅰ",
+    "description": "装備することで精霊の加護スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 122,
+        "name": "精霊の加護",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "charmId": 45,
+    "name": "加護の護石Ⅱ",
+    "description": "装備することで精霊の加護スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 122,
+        "name": "精霊の加護",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "charmId": 45,
+    "name": "加護の護石Ⅲ",
+    "description": "装備することで精霊の加護スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 122,
+        "name": "精霊の加護",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "charmId": 46,
+    "name": "耐防の護石Ⅰ",
+    "description": "装備することで防御力ＤＯＷＮ耐性 スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 135,
+        "name": "防御力ＤＯＷＮ耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "charmId": 46,
+    "name": "耐防の護石Ⅱ",
+    "description": "装備することで防御力ＤＯＷＮ耐性 スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 135,
+        "name": "防御力ＤＯＷＮ耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "charmId": 46,
+    "name": "耐防の護石Ⅲ",
+    "description": "装備することで防御力ＤＯＷＮ耐性 スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 135,
+        "name": "防御力ＤＯＷＮ耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "charmId": 47,
+    "name": "急襲の護石Ⅰ",
+    "description": "装備することで急襲スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 67,
+        "name": "急襲",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "charmId": 47,
+    "name": "急襲の護石Ⅱ",
+    "description": "装備することで急襲スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 67,
+        "name": "急襲",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "charmId": 48,
+    "name": "属吸の護石Ⅰ",
+    "description": "装備することで属性吸収スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 133,
+        "name": "属性吸収",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "charmId": 49,
+    "name": "耐拘の護石Ⅰ",
+    "description": "装備することで拘束耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 147,
+        "name": "拘束耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "charmId": 49,
+    "name": "耐拘の護石Ⅱ",
+    "description": "装備することで拘束耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 147,
+        "name": "拘束耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "charmId": 49,
+    "name": "耐拘の護石Ⅲ",
+    "description": "装備することで拘束耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 147,
+        "name": "拘束耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "charmId": 50,
+    "name": "早復の護石Ⅰ",
+    "description": "装備することで回復速度スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 31,
+        "name": "回復速度",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "charmId": 50,
+    "name": "早復の護石Ⅱ",
+    "description": "装備することで回復速度スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 31,
+        "name": "回復速度",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "charmId": 50,
+    "name": "早復の護石Ⅲ",
+    "description": "装備することで回復速度スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 31,
+        "name": "回復速度",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "charmId": 51,
+    "name": "治癒の護石Ⅰ",
+    "description": "装備することで体力回復量ＵＰ スキルが発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 30,
+        "name": "体力回復量ＵＰ",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "charmId": 51,
+    "name": "治癒の護石Ⅱ",
+    "description": "装備することで体力回復量ＵＰ スキルが発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 30,
+        "name": "体力回復量ＵＰ",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "charmId": 51,
+    "name": "治癒の護石Ⅲ",
+    "description": "装備することで体力回復量ＵＰ スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 30,
+        "name": "体力回復量ＵＰ",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "charmId": 52,
+    "name": "体術の護石Ⅰ",
+    "description": "装備することで体術スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 14,
+        "name": "体術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "charmId": 52,
+    "name": "体術の護石Ⅱ",
+    "description": "装備することで体術スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 14,
+        "name": "体術",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "charmId": 52,
+    "name": "体術の護石Ⅲ",
+    "description": "装備することで体術スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 14,
+        "name": "体術",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "charmId": 52,
+    "name": "体術の護石Ⅳ",
+    "description": "装備することで体術スキルが 発動するお守り。",
+    "level": 4,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 14,
+        "name": "体術",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "charmId": 52,
+    "name": "体術の護石Ⅴ",
+    "description": "装備することで体術スキルが 発動するお守り。",
+    "level": 5,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 14,
+        "name": "体術",
+        "level": 5
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "charmId": 53,
+    "name": "逆上の護石Ⅰ",
+    "description": "装備することで逆恨みスキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 123,
+        "name": "逆恨み",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "charmId": 53,
+    "name": "逆上の護石Ⅱ",
+    "description": "装備することで逆恨みスキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 123,
+        "name": "逆恨み",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "charmId": 54,
+    "name": "地学の護石Ⅰ",
+    "description": "装備することで地質学スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 98,
+        "name": "地質学",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "charmId": 54,
+    "name": "地学の護石Ⅱ",
+    "description": "装備することで地質学スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 98,
+        "name": "地質学",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "charmId": 54,
+    "name": "地学の護石Ⅲ",
+    "description": "装備することで地質学スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 98,
+        "name": "地質学",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "charmId": 55,
+    "name": "植学の護石Ⅰ",
+    "description": "装備することで植生学スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 2,
+    "skills": [
+      {
+        "id": 112,
+        "name": "植生学",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "charmId": 55,
+    "name": "植学の護石Ⅱ",
+    "description": "装備することで植生学スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 112,
+        "name": "植生学",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "charmId": 55,
+    "name": "植学の護石Ⅲ",
+    "description": "装備することで植生学スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 112,
+        "name": "植生学",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "charmId": 55,
+    "name": "植学の護石Ⅳ",
+    "description": "装備することで植生学スキルが 発動するお守り。",
+    "level": 4,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 112,
+        "name": "植生学",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "charmId": 56,
+    "name": "耐龍の護石Ⅰ",
+    "description": "装備することで龍耐性スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 1,
+        "name": "龍耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "charmId": 56,
+    "name": "耐龍の護石Ⅱ",
+    "description": "装備することで龍耐性スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 1,
+        "name": "龍耐性",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "charmId": 56,
+    "name": "耐龍の護石Ⅲ",
+    "description": "装備することで龍耐性スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 1,
+        "name": "龍耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "charmId": 57,
+    "name": "痛撃の護石Ⅰ",
+    "description": "装備することで弱点特効スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 57,
+        "name": "弱点特効",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "charmId": 57,
+    "name": "痛撃の護石Ⅱ",
+    "description": "装備することで弱点特効スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 57,
+        "name": "弱点特効",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "charmId": 58,
+    "name": "攻勢の護石Ⅰ",
+    "description": "装備することで攻勢スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 75,
+        "name": "攻勢",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "charmId": 58,
+    "name": "攻勢の護石Ⅱ",
+    "description": "装備することで攻勢スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 75,
+        "name": "攻勢",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "charmId": 59,
+    "name": "連撃の護石Ⅰ",
+    "description": "装備することで連撃スキルが 発動するお守り。",
+    "level": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 95,
+        "name": "連撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "charmId": 59,
+    "name": "連撃の護石Ⅱ",
+    "description": "装備することで連撃スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 95,
+        "name": "連撃",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "charmId": 60,
+    "name": "にぎりめしの護石",
+    "description": "装備することでにぎりめしスキルが 発動するお守り。 （闘技大会クエスト専用）",
+    "level": 1,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 158,
+        "name": "にぎりめし",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "charmId": 14,
+    "name": "渾身の護石Ⅲ",
+    "description": "装備することで渾身スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 99,
+        "name": "渾身",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "charmId": 2,
+    "name": "整備の護石Ⅳ",
+    "description": "装備することで整備スキルが 発動するお守り。",
+    "level": 4,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 90,
+        "name": "整備",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "charmId": 5,
+    "name": "底力の護石Ⅳ",
+    "description": "装備することで火事場力スキルが 発動するお守り。",
+    "level": 4,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 87,
+        "name": "火事場力",
+        "level": 4
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "charmId": 8,
+    "name": "無傷の護石Ⅲ",
+    "description": "装備することでフルチャージ スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 154,
+        "name": "フルチャージ",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "charmId": 28,
+    "name": "友愛の護石Ⅴ",
+    "description": "装備することで広域化スキルが 発動するお守り。",
+    "level": 5,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 113,
+        "name": "広域化",
+        "level": 5
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "charmId": 37,
+    "name": "反攻の護石Ⅲ",
+    "description": "装備することで巧撃スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 120,
+        "name": "巧撃",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "charmId": 48,
+    "name": "属吸の護石Ⅱ",
+    "description": "装備することで属性吸収スキルが 発動するお守り。",
+    "level": 2,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 133,
+        "name": "属性吸収",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "charmId": 61,
+    "name": "未解の護石",
+    "description": "いつ作成されたかも判明していない とされる護石。持ち主の隠された 能力を引き出すという。",
+    "level": 1,
+    "rarity": 5,
+    "skills": []
+  },
+  {
+    "id": 175,
+    "charmId": 62,
+    "name": "秘歴の護石",
+    "description": "未だ明かされぬ歴史の真実を秘めて いるとされる護石。持つ者はいずれ 世界の深淵に触れるという。",
+    "level": 1,
+    "rarity": 7,
+    "skills": []
+  },
+  {
+    "id": 176,
+    "charmId": 63,
+    "name": "栄世の護石",
+    "description": "嘗て栄えた文明の深智が刻まれた とされる護石。手にした者には、 伝説の一端が垣間見えるという。",
+    "level": 1,
+    "rarity": 8,
+    "skills": []
+  },
+  {
+    "id": 177,
+    "charmId": 64,
+    "name": "史伝の護石",
+    "description": "過去の書物の一隅に記録されていた 希少な護石。その輝きの奥には 更なる歴史が眠っているという。",
+    "level": 1,
+    "rarity": 6,
+    "skills": []
+  },
+  {
+    "id": 178,
+    "charmId": 47,
+    "name": "急襲の護石Ⅲ",
+    "description": "装備することで急襲スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 67,
+        "name": "急襲",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "charmId": 53,
+    "name": "逆上の護石Ⅲ",
+    "description": "装備することで逆恨みスキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 123,
+        "name": "逆恨み",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "charmId": 58,
+    "name": "攻勢の護石Ⅲ",
+    "description": "装備することで攻勢スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 75,
+        "name": "攻勢",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "charmId": 59,
+    "name": "連撃の護石Ⅲ",
+    "description": "装備することで連撃スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 95,
+        "name": "連撃",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "charmId": 11,
+    "name": "挑戦の護石Ⅲ",
+    "description": "装備することで挑戦者スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 144,
+        "name": "挑戦者",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "charmId": 29,
+    "name": "耐属の護石Ⅲ",
+    "description": "装備することで属性やられ耐性 スキルが発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 49,
+        "name": "属性やられ耐性",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "charmId": 32,
+    "name": "重撃の護石Ⅲ",
+    "description": "装備することで破壊王スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 129,
+        "name": "破壊王",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "charmId": 41,
+    "name": "転福の護石Ⅲ",
+    "description": "装備することで災禍転福スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 13,
+        "name": "災禍転福",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "charmId": 40,
+    "name": "鎖刃の護石Ⅲ",
+    "description": "装備することで鎖刃刺撃スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 38,
+        "name": "鎖刃刺撃",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "charmId": 57,
+    "name": "痛撃の護石Ⅲ",
+    "description": "装備することで弱点特効スキルが 発動するお守り。",
+    "level": 3,
+    "rarity": 8,
+    "skills": [
+      {
+        "id": 57,
+        "name": "弱点特効",
+        "level": 3
+      }
+    ]
+  }
+]

@@ -24,9 +24,9 @@ export default function DecorationsPage() {
           {decorations.map((d) => (
             <TableRow key={d.id}>
               <TableCell className="font-medium">{d.name}</TableCell>
-              <TableCell>{d.skill}</TableCell>
-              <TableCell><Badge variant="secondary">Lv{d.skillLv}</Badge></TableCell>
-              <TableCell><Badge variant="outline">[{d.slotLv}]</Badge></TableCell>
+              <TableCell>{d.skills.map(s => s.skillName).join(" / ")}</TableCell>
+              <TableCell><Badge variant="secondary">Lv{d.skills[0]?.level ?? 0}</Badge></TableCell>
+              <TableCell><Badge variant="outline">[{d.slot}]</Badge></TableCell>
               <TableCell className="text-sm">{d.description}</TableCell>
             </TableRow>
           ))}

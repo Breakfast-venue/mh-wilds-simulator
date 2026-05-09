@@ -1,0 +1,6643 @@
+[
+  {
+    "id": 1,
+    "gameId": -2144349312,
+    "name": "毒珠【１】",
+    "description": "装備に装着すると、 毒属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 12,
+        "name": "毒属性強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "gameId": -2136274304,
+    "name": "匠珠Ⅱ【２】",
+    "description": "装備に装着すると、 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "gameId": -2135118208,
+    "name": "刺撃珠【３】",
+    "description": "装備に装着すると、 鎖刃刺撃スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 38,
+        "name": "鎖刃刺撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "gameId": -2098600064,
+    "name": "特会・匠珠【３】",
+    "description": "装備に装着すると、 会心撃【特殊】スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 68,
+        "name": "会心撃【特殊】",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "gameId": -2092760832,
+    "name": "睡眠珠【１】",
+    "description": "装備に装着すると、 睡眠属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 78,
+        "name": "睡眠属性強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "gameId": -2046315136,
+    "name": "射法珠Ⅱ【２】",
+    "description": "装備に装着すると、 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "gameId": -2040726144,
+    "name": "雷光・射法珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "gameId": -1958732416,
+    "name": "耐水珠【１】",
+    "description": "装備に装着すると、 水耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 84,
+        "name": "水耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "gameId": -1957828352,
+    "name": "睡眠珠Ⅱ【２】",
+    "description": "装備に装着すると、 睡眠属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 78,
+        "name": "睡眠属性強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "gameId": -1918136064,
+    "name": "奪気珠Ⅲ【３】",
+    "description": "装備に装着すると、 スタミナ奪取スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 141,
+        "name": "スタミナ奪取",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "gameId": -1911376000,
+    "name": "重撃珠【２】",
+    "description": "装備に装着すると、 破壊王スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 129,
+        "name": "破壊王",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "gameId": -1907467776,
+    "name": "積弾珠Ⅲ【３】",
+    "description": "装備に装着すると、 フォースショットスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "gameId": -1898312320,
+    "name": "耐拘珠【１】",
+    "description": "装備に装着すると、 拘束耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 147,
+        "name": "拘束耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "gameId": -1890995072,
+    "name": "溜幅珠【１】",
+    "description": "装備に装着すると、 チャージマスタースキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 24,
+        "name": "チャージマスター",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "gameId": -1843593600,
+    "name": "攻撃珠Ⅱ【２】",
+    "description": "装備に装着すると、 攻撃スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "gameId": -1838842752,
+    "name": "積弾・鉄壁珠【３】",
+    "description": "装備に装着すると、 フォースショットスキルとガード 性能スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "gameId": -1826260608,
+    "name": "火炎・射法珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "gameId": -1814261888,
+    "name": "雷光珠【１】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "gameId": -1808385664,
+    "name": "耐裂珠【１】",
+    "description": "装備に装着すると、 裂傷耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 146,
+        "name": "裂傷耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "gameId": -1801961088,
+    "name": "耐火珠【１】",
+    "description": "装備に装着すると、 火耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 125,
+        "name": "火耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "gameId": -1780766976,
+    "name": "研磨・匠珠【３】",
+    "description": "装備に装着すると、 砥石使用高速化スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      },
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "gameId": -1779241856,
+    "name": "強毒珠【２】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルが発動する 装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "gameId": -1775008128,
+    "name": "無食珠【１】",
+    "description": "装備に装着すると、 腹減り耐性スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 151,
+        "name": "腹減り耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "gameId": -1770074240,
+    "name": "昂揚珠【１】",
+    "description": "装備に装着すると、 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "gameId": -1769520768,
+    "name": "雷光・匠珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "gameId": -1749412352,
+    "name": "標本珠【１】",
+    "description": "装備に装着すると、 昆虫標本の達人スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 114,
+        "name": "昆虫標本の達人",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "gameId": -1730551168,
+    "name": "速射珠【３】",
+    "description": "装備に装着すると、 速射強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 23,
+        "name": "速射強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "gameId": -1726768640,
+    "name": "沼渡珠【１】",
+    "description": "装備に装着すると、 水場・油泥適応スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 63,
+        "name": "水場・油泥適応",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "gameId": -1723727616,
+    "name": "増弾珠Ⅱ【２】",
+    "description": "装備に装着すると、 砲弾装填スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 109,
+        "name": "砲弾装填",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "gameId": -1720284416,
+    "name": "業物珠Ⅲ【３】",
+    "description": "装備に装着すると、 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "gameId": -1714653184,
+    "name": "睡眠珠Ⅲ【３】",
+    "description": "装備に装着すると、 睡眠属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 78,
+        "name": "睡眠属性強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "gameId": -1709840128,
+    "name": "破龍珠Ⅲ【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "gameId": -1708108928,
+    "name": "鼓笛・攻撃珠【３】",
+    "description": "装備に装着すると、 笛吹き名人スキルと攻撃スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 29,
+        "name": "笛吹き名人",
+        "level": 2
+      },
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "gameId": -1706210176,
+    "name": "特会珠Ⅲ【３】",
+    "description": "装備に装着すると、 会心撃【特殊】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 68,
+        "name": "会心撃【特殊】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "gameId": -1693028992,
+    "name": "雷光珠Ⅱ【２】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "gameId": -1672815872,
+    "name": "火炎・守勢珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと攻めの守勢 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "gameId": -1669066368,
+    "name": "毒珠Ⅱ【２】",
+    "description": "装備に装着すると、 毒属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 12,
+        "name": "毒属性強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "gameId": -1664513664,
+    "name": "奪気珠Ⅱ【２】",
+    "description": "装備に装着すると、 スタミナ奪取スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 141,
+        "name": "スタミナ奪取",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "gameId": -1645940096,
+    "name": "攻勢珠【３】",
+    "description": "装備に装着すると、 攻勢スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 75,
+        "name": "攻勢",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "gameId": -1631437696,
+    "name": "研磨・鉄壁珠【３】",
+    "description": "装備に装着すると、 砥石使用高速化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "gameId": -1626218240,
+    "name": "耐防珠【１】",
+    "description": "装備に装着すると、 防御力ＤＯＷＮ耐性スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 135,
+        "name": "防御力ＤＯＷＮ耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "gameId": -1622630272,
+    "name": "破龍・ＫＯ珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "gameId": -1609962496,
+    "name": "研磨・抜刀珠【３】",
+    "description": "装備に装着すると、 砥石使用高速化スキルと抜刀術 【技】スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 1
+      },
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "gameId": -1604621952,
+    "name": "初弾珠Ⅱ【２】",
+    "description": "装備に装着すると、 ファーストショットスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "gameId": -1581788032,
+    "name": "溜打・攻撃珠【３】",
+    "description": "装備に装着すると、 溜打強化スキルと攻撃スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 1
+      },
+      {
+        "id": 83,
+        "name": "溜打強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "gameId": -1569165952,
+    "name": "速変珠Ⅲ【３】",
+    "description": "装備に装着すると、 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "gameId": -1550869760,
+    "name": "渾身珠【２】",
+    "description": "装備に装着すると、 渾身スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 99,
+        "name": "渾身",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "gameId": -1549794304,
+    "name": "守勢珠【１】",
+    "description": "装備に装着すると、 攻めの守勢スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "gameId": -1545069696,
+    "name": "剛刃珠Ⅱ【２】",
+    "description": "装備に装着すると、 剛刃研磨スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 134,
+        "name": "剛刃研磨",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "gameId": -1518352896,
+    "name": "雷光珠Ⅲ【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "gameId": -1489248128,
+    "name": "守勢・鉄壁珠【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "gameId": -1485261696,
+    "name": "跳躍珠【２】",
+    "description": "装備に装着すると、 回避距離ＵＰスキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 102,
+        "name": "回避距離ＵＰ",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "gameId": -1465477120,
+    "name": "雷光・ＫＯ珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "gameId": -1463543552,
+    "name": "心眼珠【１】",
+    "description": "装備に装着すると、 心眼スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 136,
+        "name": "心眼",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "gameId": -1452017024,
+    "name": "業物・鉄壁珠【３】",
+    "description": "装備に装着すると、 業物スキルとガード性能スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "gameId": -1449268352,
+    "name": "早復珠【１】",
+    "description": "装備に装着すると、 回復速度スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 31,
+        "name": "回復速度",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "gameId": -1434375936,
+    "name": "耐眠珠【１】",
+    "description": "装備に装着すると、 睡眠耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 64,
+        "name": "睡眠耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "gameId": -1416808832,
+    "name": "耐龍珠【１】",
+    "description": "装備に装着すると、 龍耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 1,
+        "name": "龍耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "gameId": -1401571456,
+    "name": "抗狂珠【１】",
+    "description": "装備に装着すると、 無我の境地スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 18,
+        "name": "無我の境地",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "gameId": -1397276160,
+    "name": "特射珠Ⅱ【２】",
+    "description": "装備に装着すると、 特殊射撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 69,
+        "name": "特殊射撃強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "gameId": -1394596736,
+    "name": "流水珠【１】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "gameId": -1392648576,
+    "name": "防音珠【２】",
+    "description": "装備に装着すると、 耳栓スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 80,
+        "name": "耳栓",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "gameId": -1381641984,
+    "name": "体術珠【１】",
+    "description": "装備に装着すると、 体術スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 14,
+        "name": "体術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "gameId": -1374390656,
+    "name": "初弾珠Ⅲ【３】",
+    "description": "装備に装着すると、 ファーストショットスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "gameId": -1345708800,
+    "name": "火炎・鉄壁珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "gameId": -1340047744,
+    "name": "達芸珠【３】",
+    "description": "装備に装着すると、 達人芸スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 124,
+        "name": "達人芸",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "gameId": -1319399040,
+    "name": "抜打・ＫＯ珠【３】",
+    "description": "装備に装着すると、 抜刀術【力】スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 8,
+        "name": "抜刀術【力】",
+        "level": 3
+      },
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "gameId": -1318893952,
+    "name": "環境珠【１】",
+    "description": "装備に装着すると、 環境利用の知識スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 48,
+        "name": "環境利用の知識",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "gameId": -1267187456,
+    "name": "耐雷珠【１】",
+    "description": "装備に装着すると、 雷耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 156,
+        "name": "雷耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "gameId": -1220470528,
+    "name": "抜刀珠Ⅲ【３】",
+    "description": "装備に装着すると、 抜刀術【技】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "gameId": -1218528128,
+    "name": "守勢珠Ⅲ【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "gameId": -1205597696,
+    "name": "速変・匠珠【３】",
+    "description": "装備に装着すると、 高速変形スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "gameId": -1188973056,
+    "name": "流水珠Ⅱ【２】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "gameId": -1178454912,
+    "name": "飛燕珠【２】",
+    "description": "装備に装着すると、 飛燕スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 86,
+        "name": "飛燕",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "gameId": -1166585472,
+    "name": "射法珠【１】",
+    "description": "装備に装着すると、 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "gameId": -1163377152,
+    "name": "鈍器珠Ⅲ【３】",
+    "description": "装備に装着すると、 鈍器使いスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 85,
+        "name": "鈍器使い",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "gameId": -1161972480,
+    "name": "毒瓶珠【２】",
+    "description": "装備に装着すると、 毒ビン追加スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 116,
+        "name": "毒ビン追加",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "gameId": -1159995904,
+    "name": "眠瓶珠【３】",
+    "description": "装備に装着すると、 睡眠ビン追加スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 79,
+        "name": "睡眠ビン追加",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "gameId": -1152759424,
+    "name": "属会・匠珠【３】",
+    "description": "装備に装着すると、 会心撃【属性】スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "gameId": -1139186816,
+    "name": "強跳珠【１】",
+    "description": "装備に装着すると、 ジャンプ鉄人スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 76,
+        "name": "ジャンプ鉄人",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "gameId": -1133012096,
+    "name": "毒珠Ⅲ【３】",
+    "description": "装備に装着すると、 毒属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 12,
+        "name": "毒属性強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "gameId": -1113106688,
+    "name": "適応珠【１】",
+    "description": "装備に装着すると、 環境適応スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 88,
+        "name": "環境適応",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "gameId": -1108771200,
+    "name": "特会・鉄壁珠【３】",
+    "description": "装備に装着すると、 会心撃【特殊】スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 68,
+        "name": "会心撃【特殊】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "gameId": -1082640896,
+    "name": "増弾・達人珠【３】",
+    "description": "装備に装着すると、 砲弾装填スキルと見切りスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 1
+      },
+      {
+        "id": 109,
+        "name": "砲弾装填",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "gameId": -1081371008,
+    "name": "達人珠Ⅲ【３】",
+    "description": "装備に装着すると、 見切りスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "gameId": -1072040640,
+    "name": "耐氷珠【１】",
+    "description": "装備に装着すると、 氷耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 101,
+        "name": "氷耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "gameId": -1055912640,
+    "name": "抜打・匠珠【３】",
+    "description": "装備に装着すると、 抜刀術【力】スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 8,
+        "name": "抜刀術【力】",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "gameId": -1050453888,
+    "name": "属会・ＫＯ珠【３】",
+    "description": "装備に装着すると、 会心撃【属性】スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "gameId": -1034943744,
+    "name": "抜打珠【１】",
+    "description": "装備に装着すると、 抜刀術【力】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 8,
+        "name": "抜刀術【力】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "gameId": -1016655360,
+    "name": "耐麻珠【１】",
+    "description": "装備に装着すると、 麻痺耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 92,
+        "name": "麻痺耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "gameId": -1016332736,
+    "name": "爆破珠【１】",
+    "description": "装備に装着すると、 爆破属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 40,
+        "name": "爆破属性強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "gameId": -1003144960,
+    "name": "痺瓶珠【３】",
+    "description": "装備に装着すると、 麻痺ビン追加スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 44,
+        "name": "麻痺ビン追加",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "gameId": -949824384,
+    "name": "ＫＯ珠【１】",
+    "description": "装備に装着すると、 ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "gameId": -937758144,
+    "name": "火炎・昂揚珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "gameId": -933830080,
+    "name": "抜打・鉄壁珠【３】",
+    "description": "装備に装着すると、 抜刀術【力】スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 8,
+        "name": "抜刀術【力】",
+        "level": 3
+      },
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "gameId": -919326784,
+    "name": "飛燕・抜刀珠【３】",
+    "description": "装備に装着すると、 飛燕スキルと抜刀術【技】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 86,
+        "name": "飛燕",
+        "level": 1
+      },
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "gameId": -857552768,
+    "name": "爆破珠Ⅱ【２】",
+    "description": "装備に装着すると、 爆破属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 40,
+        "name": "爆破属性強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "gameId": -848728960,
+    "name": "超心珠Ⅱ【２】",
+    "description": "装備に装着すると、 超会心スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 22,
+        "name": "超会心",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "gameId": -790612736,
+    "name": "雷光・鉄壁珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "gameId": -777488128,
+    "name": "火炎・匠珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "gameId": -773823488,
+    "name": "溜幅・ＫＯ珠【３】",
+    "description": "装備に装着すると、 チャージマスタースキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 24,
+        "name": "チャージマスター",
+        "level": 3
+      },
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "gameId": -753381888,
+    "name": "守勢珠Ⅱ【２】",
+    "description": "装備に装着すると、 攻めの守勢スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "gameId": -749488896,
+    "name": "属会珠【１】",
+    "description": "装備に装着すると、 会心撃【属性】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "gameId": -725659840,
+    "name": "防風珠【１】",
+    "description": "装備に装着すると、 風圧耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 35,
+        "name": "風圧耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "gameId": -714680256,
+    "name": "麻痺珠【１】",
+    "description": "装備に装着すると、 麻痺属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 9,
+        "name": "麻痺属性強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "gameId": -712981504,
+    "name": "集中珠Ⅲ【３】",
+    "description": "装備に装着すると、 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "gameId": -706109632,
+    "name": "強毒・ＫＯ珠【３】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      },
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "gameId": -699699904,
+    "name": "飛燕・攻撃珠【３】",
+    "description": "装備に装着すると、 飛燕スキルと攻撃スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 1
+      },
+      {
+        "id": 86,
+        "name": "飛燕",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "gameId": -693750528,
+    "name": "爆瓶珠【２】",
+    "description": "装備に装着すると、 爆破ビン追加スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 5,
+        "name": "爆破ビン追加",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "gameId": -682377152,
+    "name": "研磨・達人珠【３】",
+    "description": "装備に装着すると、 砥石使用高速化スキルと 見切りスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 1
+      },
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "gameId": -677836288,
+    "name": "増弾・抜刀珠【３】",
+    "description": "装備に装着すると、 砲弾装填スキルと抜刀術【技】 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 1
+      },
+      {
+        "id": 109,
+        "name": "砲弾装填",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "gameId": -673317952,
+    "name": "早気珠【２】",
+    "description": "装備に装着すると、 スタミナ急速回復スキルが発動する 装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 58,
+        "name": "スタミナ急速回復",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "gameId": -645579072,
+    "name": "火炎・集中珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "gameId": -645377408,
+    "name": "溜打・ＫＯ珠【３】",
+    "description": "装備に装着すると、 溜打強化スキルとＫＯ術スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 83,
+        "name": "溜打強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "gameId": -621608832,
+    "name": "集中・匠珠【３】",
+    "description": "装備に装着すると、 集中スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "gameId": -595931264,
+    "name": "鼓笛・ＫＯ珠【３】",
+    "description": "装備に装着すると、 笛吹き名人スキルとＫＯ術スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 29,
+        "name": "笛吹き名人",
+        "level": 2
+      },
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "gameId": -590616064,
+    "name": "研鑽珠【１】",
+    "description": "装備に装着すると、 研鑽スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 138,
+        "name": "研鑽",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "gameId": -557270784,
+    "name": "積弾珠Ⅱ【２】",
+    "description": "装備に装着すると、 フォースショットスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "gameId": -546783040,
+    "name": "強壁・匠珠【３】",
+    "description": "装備に装着すると、 ガード強化スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "gameId": -534202944,
+    "name": "加護珠【１】",
+    "description": "装備に装着すると、 精霊の加護スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 122,
+        "name": "精霊の加護",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "gameId": -522458240,
+    "name": "麻痺珠Ⅲ【３】",
+    "description": "装備に装着すると、 麻痺属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 9,
+        "name": "麻痺属性強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "gameId": -510575936,
+    "name": "流水・ＫＯ珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "gameId": -508830240,
+    "name": "鼓笛珠【２】",
+    "description": "装備に装着すると、 笛吹き名人スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 29,
+        "name": "笛吹き名人",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "gameId": -493483136,
+    "name": "業物珠【１】",
+    "description": "装備に装着すると、 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "gameId": -487601632,
+    "name": "速変・鉄壁珠【３】",
+    "description": "装備に装着すると、 高速変形スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "gameId": -477564992,
+    "name": "破龍・鉄壁珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "gameId": -463114720,
+    "name": "守勢・匠珠【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "gameId": -451614112,
+    "name": "達人珠【１】",
+    "description": "装備に装着すると、 見切りスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "gameId": -447558304,
+    "name": "連撃珠【３】",
+    "description": "装備に装着すると、 連撃スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 95,
+        "name": "連撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "gameId": -430198272,
+    "name": "増弾・匠珠【３】",
+    "description": "装備に装着すると、 砲弾装填スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 109,
+        "name": "砲弾装填",
+        "level": 2
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "gameId": -417484064,
+    "name": "耐衝珠【１】",
+    "description": "装備に装着すると、 ひるみ軽減スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 108,
+        "name": "ひるみ軽減",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "gameId": -394478144,
+    "name": "飛込珠【１】",
+    "description": "装備に装着すると、 飛び込みスキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 28,
+        "name": "飛び込み",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "gameId": -389889248,
+    "name": "強毒・鉄壁珠【３】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      },
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "gameId": -384925600,
+    "name": "耐毒珠【１】",
+    "description": "装備に装着すると、 毒耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 128,
+        "name": "毒耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "gameId": -325572000,
+    "name": "爆師珠【１】",
+    "description": "装備に装着すると、 ボマースキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 37,
+        "name": "ボマー",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "gameId": -316552800,
+    "name": "地学珠【１】",
+    "description": "装備に装着すると、 地質学スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 98,
+        "name": "地質学",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "gameId": -301443072,
+    "name": "昂揚珠Ⅱ【２】",
+    "description": "装備に装着すると、 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "gameId": -292390464,
+    "name": "火炎・ＫＯ珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "gameId": -245086656,
+    "name": "抜刀珠【１】",
+    "description": "装備に装着すると、 抜刀術【技】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "gameId": -243518144,
+    "name": "溜幅珠Ⅱ【２】",
+    "description": "装備に装着すると、 チャージマスタースキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 24,
+        "name": "チャージマスター",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "gameId": -198925264,
+    "name": "速納珠【１】",
+    "description": "装備に装着すると、 納刀術スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 32,
+        "name": "納刀術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "gameId": -198819232,
+    "name": "強壁珠Ⅱ【２】",
+    "description": "装備に装着すると、 ガード強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "gameId": -177096704,
+    "name": "節食珠【１】",
+    "description": "装備に装着すると、 満足感スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 111,
+        "name": "満足感",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "gameId": -150840288,
+    "name": "破龍珠Ⅱ【２】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "gameId": -145991360,
+    "name": "業物珠Ⅱ【２】",
+    "description": "装備に装着すると、 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "gameId": -143560672,
+    "name": "鼓笛・達人珠【３】",
+    "description": "装備に装着すると、 笛吹き名人スキルと見切りスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 1
+      },
+      {
+        "id": 29,
+        "name": "笛吹き名人",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "gameId": -140702464,
+    "name": "強毒・抜刀珠【３】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルと抜刀術 【技】スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      },
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "gameId": -102120712,
+    "name": "研磨・ＫＯ珠【３】",
+    "description": "装備に装着すると、 砥石使用高速化スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "gameId": -98207152,
+    "name": "鉄壁珠【１】",
+    "description": "装備に装着すると、 ガード性能スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "gameId": -92885912,
+    "name": "火炎・強壁珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルとガード強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 1
+      },
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "gameId": -87428912,
+    "name": "砲術珠Ⅱ【２】",
+    "description": "装備に装着すると、 砲術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 47,
+        "name": "砲術",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "gameId": -35111916,
+    "name": "茸好珠【２】",
+    "description": "装備に装着すると、 キノコ大好きスキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 52,
+        "name": "キノコ大好き",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "gameId": -19370102,
+    "name": "初弾・射法珠【３】",
+    "description": "装備に装着すると、ファースト ショットスキルと弾導強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "gameId": -15284539,
+    "name": "火炎珠Ⅱ【２】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "gameId": -12878304,
+    "name": "火炎珠【１】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "gameId": 276,
+    "name": "強壁・流水珠【３】",
+    "description": "装備に装着すると、 ガード強化スキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "gameId": 783,
+    "name": "雷光・初弾珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルとファースト ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "gameId": 1508,
+    "name": "破龍・守勢珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと攻めの守勢 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "gameId": 1570,
+    "name": "破龍・集中珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "gameId": 1591,
+    "name": "属会・火炎珠【３】",
+    "description": "装備に装着すると、会心撃【属性】 スキルと火属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "gameId": 1625,
+    "name": "氷結・業物珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "gameId": 1919,
+    "name": "集中・氷結珠【３】",
+    "description": "装備に装着すると、 集中スキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "gameId": 2186,
+    "name": "業物・氷結珠【３】",
+    "description": "装備に装着すると、 業物スキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "gameId": 2420,
+    "name": "破龍・初弾珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルとファースト ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "gameId": 3416,
+    "name": "集中・流水珠【３】",
+    "description": "装備に装着すると、 集中スキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "gameId": 3690,
+    "name": "速変・破龍珠【３】",
+    "description": "装備に装着すると、 高速変形スキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "gameId": 4514,
+    "name": "積弾・火炎珠【３】",
+    "description": "装備に装着すると、フォース ショットスキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "gameId": 4715,
+    "name": "業物・流水珠【３】",
+    "description": "装備に装着すると、 業物スキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "gameId": 4781,
+    "name": "火炎・初弾珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルとファースト ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "gameId": 5173,
+    "name": "雷光・集中珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "gameId": 5731,
+    "name": "昂揚・火炎珠【３】",
+    "description": "装備に装着すると、 強化持続スキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "gameId": 5876,
+    "name": "属会・流水珠【３】",
+    "description": "装備に装着すると、会心撃【属性】 スキルと水属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "gameId": 6393,
+    "name": "雷光・業物珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "gameId": 6455,
+    "name": "昂揚・氷結珠【３】",
+    "description": "装備に装着すると、 強化持続スキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 3
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "gameId": 6866,
+    "name": "属会・雷光珠【３】",
+    "description": "装備に装着すると、会心撃【属性】 スキルと雷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "gameId": 7249,
+    "name": "破龍・属会珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと会心撃 【属性】スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 177,
+    "gameId": 7817,
+    "name": "氷結・積弾珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルとフォース ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "gameId": 8302,
+    "name": "破龍・強壁珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルとガード強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 1
+      },
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "gameId": 8988,
+    "name": "速変・火炎珠【３】",
+    "description": "装備に装着すると、 高速変形スキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "gameId": 9096,
+    "name": "強壁・氷結珠【３】",
+    "description": "装備に装着すると、 ガード強化スキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "gameId": 11183,
+    "name": "雷光・速変珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "gameId": 12151,
+    "name": "属会・氷結珠【３】",
+    "description": "装備に装着すると、会心撃【属性】 スキルと氷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "gameId": 12241,
+    "name": "強壁・雷光珠【３】",
+    "description": "装備に装着すると、 ガード強化スキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "gameId": 12727,
+    "name": "流水・業物珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "gameId": 13386,
+    "name": "流水・強壁珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルとガード強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "gameId": 13550,
+    "name": "氷結・集中珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "gameId": 14731,
+    "name": "流水・属会珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと会心撃 【属性】スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "gameId": 14794,
+    "name": "初弾・雷光珠【３】",
+    "description": "装備に装着すると、ファースト ショットスキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 189,
+    "gameId": 14855,
+    "name": "破龍・昂揚珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "gameId": 14956,
+    "name": "業物・火炎珠【３】",
+    "description": "装備に装着すると、 業物スキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "gameId": 15379,
+    "name": "初弾・流水珠【３】",
+    "description": "装備に装着すると、ファースト ショットスキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "gameId": 16193,
+    "name": "守勢・火炎珠【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "gameId": 16930,
+    "name": "集中・雷光珠【３】",
+    "description": "装備に装着すると、 集中スキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "gameId": 17415,
+    "name": "氷結・昂揚珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "gameId": 17610,
+    "name": "集中・破龍珠【３】",
+    "description": "装備に装着すると、 集中スキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "gameId": 17913,
+    "name": "雷光・強壁珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルとガード強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "gameId": 17949,
+    "name": "積弾・流水珠【３】",
+    "description": "装備に装着すると、フォース ショットスキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "gameId": 18359,
+    "name": "積弾・氷結珠【３】",
+    "description": "装備に装着すると、フォース ショットスキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "gameId": 18958,
+    "name": "速変・氷結珠【３】",
+    "description": "装備に装着すると、 高速変形スキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "gameId": 19383,
+    "name": "雷光・属会珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと会心撃 【属性】スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "gameId": 20183,
+    "name": "破龍・速変珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 1
+      },
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "gameId": 20287,
+    "name": "強壁・破龍珠【３】",
+    "description": "装備に装着すると、 ガード強化スキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      },
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "gameId": 20306,
+    "name": "氷結・守勢珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと攻めの守勢 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "gameId": 20412,
+    "name": "火炎・属会珠【３】",
+    "description": "装備に装着すると、火属性攻撃強化 スキルと会心撃【属性】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "gameId": 21045,
+    "name": "氷結・属会珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと会心撃 【属性】スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "gameId": 21328,
+    "name": "守勢・破龍珠【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "gameId": 21515,
+    "name": "破龍・積弾珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルとフォース ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "gameId": 21891,
+    "name": "雷光・守勢珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと攻めの守勢 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "gameId": 22048,
+    "name": "流水・昂揚珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "gameId": 22310,
+    "name": "流水・守勢珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと攻めの守勢 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "gameId": 22604,
+    "name": "積弾・雷光珠【３】",
+    "description": "装備に装着すると、フォース ショットスキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "gameId": 22673,
+    "name": "守勢・流水珠【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "gameId": 22681,
+    "name": "昂揚・流水珠【３】",
+    "description": "装備に装着すると、 強化持続スキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "gameId": 23236,
+    "name": "雷光・積弾珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルとフォース ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "gameId": 23494,
+    "name": "破龍・業物珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "gameId": 23522,
+    "name": "集中・火炎珠【３】",
+    "description": "装備に装着すると、 集中スキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "gameId": 23556,
+    "name": "守勢・雷光珠【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "gameId": 23622,
+    "name": "速変・雷光珠【３】",
+    "description": "装備に装着すると、 高速変形スキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "gameId": 23677,
+    "name": "氷結・速変珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "gameId": 24211,
+    "name": "守勢・氷結珠【３】",
+    "description": "装備に装着すると、 攻めの守勢スキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 66,
+        "name": "攻めの守勢",
+        "level": 3
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "gameId": 24561,
+    "name": "初弾・氷結珠【３】",
+    "description": "装備に装着すると、ファースト ショットスキルと氷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "gameId": 24768,
+    "name": "流水・積弾珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルとフォース ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "gameId": 24865,
+    "name": "業物・破龍珠【３】",
+    "description": "装備に装着すると、 業物スキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "gameId": 24927,
+    "name": "初弾・火炎珠【３】",
+    "description": "装備に装着すると、ファースト ショットスキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "gameId": 25926,
+    "name": "火炎・積弾珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルとフォース ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "gameId": 25952,
+    "name": "昂揚・雷光珠【３】",
+    "description": "装備に装着すると、 強化持続スキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 3
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "gameId": 26003,
+    "name": "強壁・火炎珠【３】",
+    "description": "装備に装着すると、 ガード強化スキルと火属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      },
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "gameId": 26077,
+    "name": "昂揚・破龍珠【３】",
+    "description": "装備に装着すると、 強化持続スキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "gameId": 27036,
+    "name": "速変・流水珠【３】",
+    "description": "装備に装着すると、 高速変形スキルと水属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "gameId": 27791,
+    "name": "積弾・破龍珠【３】",
+    "description": "装備に装着すると、フォース ショットスキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "gameId": 28076,
+    "name": "初弾・破龍珠【３】",
+    "description": "装備に装着すると、ファースト ショットスキルと龍属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "gameId": 30137,
+    "name": "属会・破龍珠【３】",
+    "description": "装備に装着すると、会心撃【属性】 スキルと龍属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      },
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "gameId": 30161,
+    "name": "氷結・初弾珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルとファースト ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "gameId": 30405,
+    "name": "業物・雷光珠【３】",
+    "description": "装備に装着すると、 業物スキルと雷属性攻撃強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "gameId": 30490,
+    "name": "流水・速変珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "gameId": 31893,
+    "name": "氷結・強壁珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルとガード強化 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "gameId": 32288,
+    "name": "雷光・昂揚珠【３】",
+    "description": "装備に装着すると、 雷属性攻撃強化スキルと 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 1
+      },
+      {
+        "id": 127,
+        "name": "雷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "gameId": 32433,
+    "name": "流水・集中珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "gameId": 32676,
+    "name": "流水・初弾珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルとファースト ショットスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "gameId": 5028590,
+    "name": "研磨珠Ⅱ【２】",
+    "description": "装備に装着すると、 砥石使用高速化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "gameId": 5672852,
+    "name": "防御珠【１】",
+    "description": "装備に装着すると、 防御スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 118,
+        "name": "防御",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "gameId": 7844454,
+    "name": "研磨珠【１】",
+    "description": "装備に装着すると、 砥石使用高速化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "gameId": 17525612,
+    "name": "強毒・射法珠【３】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      },
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "gameId": 19401228,
+    "name": "抜打珠Ⅲ【３】",
+    "description": "装備に装着すると、 抜刀術【力】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 8,
+        "name": "抜刀術【力】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "gameId": 23951036,
+    "name": "業物・ＫＯ珠【３】",
+    "description": "装備に装着すると、 業物スキルとＫＯ術スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "gameId": 34988560,
+    "name": "散弾珠【３】",
+    "description": "装備に装着すると、 散弾・剛射強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 2,
+        "name": "散弾・剛射強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "gameId": 44196940,
+    "name": "ＫＯ珠Ⅱ【２】",
+    "description": "装備に装着すると、 ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "gameId": 64300272,
+    "name": "集中・ＫＯ珠【３】",
+    "description": "装備に装着すると、 集中スキルとＫＯ術スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "gameId": 67372504,
+    "name": "剛刃珠【１】",
+    "description": "装備に装着すると、 剛刃研磨スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 134,
+        "name": "剛刃研磨",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "gameId": 72596768,
+    "name": "狩人珠【１】",
+    "description": "装備に装着すると、 ハンター生活スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 143,
+        "name": "ハンター生活",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 251,
+    "gameId": 97814240,
+    "name": "砲術珠【１】",
+    "description": "装備に装着すると、 砲術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 47,
+        "name": "砲術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "gameId": 103198480,
+    "name": "積弾・射法珠【３】",
+    "description": "装備に装着すると、フォース ショットスキルと弾導強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "gameId": 115284000,
+    "name": "溜幅・匠珠【３】",
+    "description": "装備に装着すると、 チャージマスタースキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 24,
+        "name": "チャージマスター",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "gameId": 124240896,
+    "name": "特会珠【１】",
+    "description": "装備に装着すると、 会心撃【特殊】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 68,
+        "name": "会心撃【特殊】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 255,
+    "gameId": 130724024,
+    "name": "攻撃珠【１】",
+    "description": "装備に装着すると、 攻撃スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "gameId": 146040608,
+    "name": "匠珠Ⅲ【３】",
+    "description": "装備に装着すると、 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 257,
+    "gameId": 163043584,
+    "name": "初弾・鉄壁珠【３】",
+    "description": "装備に装着すると、 ファーストショットスキルとガード 性能スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "gameId": 183160800,
+    "name": "速変珠Ⅱ【２】",
+    "description": "装備に装着すると、 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "gameId": 186552368,
+    "name": "氷結珠【１】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "gameId": 213184688,
+    "name": "無傷珠【２】",
+    "description": "装備に装着すると、 フルチャージスキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 154,
+        "name": "フルチャージ",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 261,
+    "gameId": 219173888,
+    "name": "破龍・射法珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "gameId": 248848256,
+    "name": "達人珠Ⅱ【２】",
+    "description": "装備に装着すると、 見切りスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "gameId": 280205024,
+    "name": "攻撃珠Ⅲ【３】",
+    "description": "装備に装着すると、 攻撃スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "gameId": 298345088,
+    "name": "増弾珠【１】",
+    "description": "装備に装着すると、 砲弾装填スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 109,
+        "name": "砲弾装填",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 265,
+    "gameId": 336866720,
+    "name": "強毒・達人珠【３】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルと 見切りスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 1
+      },
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "gameId": 386498304,
+    "name": "氷結珠Ⅲ【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "gameId": 391149760,
+    "name": "強毒・匠珠【３】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "gameId": 435353600,
+    "name": "匠珠【１】",
+    "description": "装備に装着すると、 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "gameId": 446613472,
+    "name": "昂揚珠Ⅲ【３】",
+    "description": "装備に装着すると、 強化持続スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 270,
+    "gameId": 454747104,
+    "name": "治癒珠【１】",
+    "description": "装備に装着すると、 体力回復量ＵＰスキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 30,
+        "name": "体力回復量ＵＰ",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 271,
+    "gameId": 457280288,
+    "name": "溜幅珠Ⅲ【３】",
+    "description": "装備に装着すると、 チャージマスタースキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 24,
+        "name": "チャージマスター",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "gameId": 460437856,
+    "name": "飛燕・達人珠【３】",
+    "description": "装備に装着すると、 飛燕スキルと見切りスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 1
+      },
+      {
+        "id": 86,
+        "name": "飛燕",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "gameId": 499818016,
+    "name": "鼓笛・抜刀珠【３】",
+    "description": "装備に装着すると、 笛吹き名人スキルと抜刀術【技】 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 29,
+        "name": "笛吹き名人",
+        "level": 2
+      },
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "gameId": 519959680,
+    "name": "逆上珠【２】",
+    "description": "装備に装着すると、 逆恨みスキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 123,
+        "name": "逆恨み",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "gameId": 520733824,
+    "name": "特会・射法珠【３】",
+    "description": "装備に装着すると、 会心撃【特殊】スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 68,
+        "name": "会心撃【特殊】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "gameId": 583988672,
+    "name": "心眼珠Ⅲ【３】",
+    "description": "装備に装着すると、 心眼スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 136,
+        "name": "心眼",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "gameId": 594204352,
+    "name": "ＫＯ珠Ⅲ【３】",
+    "description": "装備に装着すると、 ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "gameId": 618579264,
+    "name": "増弾・鉄壁珠【３】",
+    "description": "装備に装着すると、 砲弾装填スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 109,
+        "name": "砲弾装填",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "gameId": 639622592,
+    "name": "麻痺珠Ⅱ【２】",
+    "description": "装備に装着すると、 麻痺属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 9,
+        "name": "麻痺属性強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "gameId": 645053056,
+    "name": "早食珠【１】",
+    "description": "装備に装着すると、 早食いスキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 100,
+        "name": "早食い",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "gameId": 654954304,
+    "name": "流水・鉄壁珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "gameId": 656487488,
+    "name": "急襲珠【２】",
+    "description": "装備に装着すると、 急襲スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 67,
+        "name": "急襲",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 283,
+    "gameId": 668852032,
+    "name": "転福珠【２】",
+    "description": "装備に装着すると、 災禍転福スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 13,
+        "name": "災禍転福",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "gameId": 694060672,
+    "name": "耐絶珠【１】",
+    "description": "装備に装着すると、 気絶耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 105,
+        "name": "気絶耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 285,
+    "gameId": 701807872,
+    "name": "耐爆珠【１】",
+    "description": "装備に装着すると、 爆破やられ耐性スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 110,
+        "name": "爆破やられ耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "gameId": 714935168,
+    "name": "奪気珠【１】",
+    "description": "装備に装着すると、 スタミナ奪取スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 141,
+        "name": "スタミナ奪取",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "gameId": 759889920,
+    "name": "心眼珠Ⅱ【２】",
+    "description": "装備に装着すると、 心眼スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 136,
+        "name": "心眼",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 288,
+    "gameId": 767051200,
+    "name": "痛撃珠【３】",
+    "description": "装備に装着すると、 弱点特効スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 57,
+        "name": "弱点特効",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "gameId": 771935488,
+    "name": "砲術珠Ⅲ【３】",
+    "description": "装備に装着すると、 砲術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 47,
+        "name": "砲術",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "gameId": 795180288,
+    "name": "溜打珠【２】",
+    "description": "装備に装着すると、 溜打強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 83,
+        "name": "溜打強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 291,
+    "gameId": 797303936,
+    "name": "集中珠Ⅱ【２】",
+    "description": "装備に装着すると、 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 292,
+    "gameId": 839957184,
+    "name": "溜打・匠珠【３】",
+    "description": "装備に装着すると、 溜打強化スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 83,
+        "name": "溜打強化",
+        "level": 1
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 293,
+    "gameId": 865685248,
+    "name": "緩衝珠【１】",
+    "description": "装備に装着すると、 緩衝スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 45,
+        "name": "緩衝",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "gameId": 886913856,
+    "name": "火炎珠Ⅲ【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 295,
+    "gameId": 895028672,
+    "name": "氷結珠Ⅱ【２】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 296,
+    "gameId": 897466048,
+    "name": "破龍・匠珠【３】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 297,
+    "gameId": 910101056,
+    "name": "属会・鉄壁珠【３】",
+    "description": "装備に装着すると、 会心撃【属性】スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 298,
+    "gameId": 912898176,
+    "name": "火炎・速変珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 1
+      },
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 299,
+    "gameId": 914233472,
+    "name": "流水・匠珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "gameId": 934416192,
+    "name": "溜打・達人珠【３】",
+    "description": "装備に装着すると、 溜打強化スキルと見切りスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 3,
+        "name": "見切り",
+        "level": 1
+      },
+      {
+        "id": 83,
+        "name": "溜打強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "gameId": 944809600,
+    "name": "属会・射法珠【３】",
+    "description": "装備に装着すると、 会心撃【属性】スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "gameId": 948977536,
+    "name": "全開珠【３】",
+    "description": "装備に装着すると、 力の解放スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 142,
+        "name": "力の解放",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "gameId": 949857152,
+    "name": "耐臭珠【１】",
+    "description": "装備に装着すると、 悪臭耐性スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 55,
+        "name": "悪臭耐性",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "gameId": 954350400,
+    "name": "整備珠【２】",
+    "description": "装備に装着すると、 整備スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 90,
+        "name": "整備",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "gameId": 986212736,
+    "name": "超心珠Ⅲ【３】",
+    "description": "装備に装着すると、 超会心スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 22,
+        "name": "超会心",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "gameId": 1024615424,
+    "name": "氷結・射法珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 307,
+    "gameId": 1031937152,
+    "name": "火炎・業物珠【３】",
+    "description": "装備に装着すると、 火属性攻撃強化スキルと 業物スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 50,
+        "name": "火属性攻撃強化",
+        "level": 3
+      },
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 308,
+    "gameId": 1067880832,
+    "name": "疲瓶珠【２】",
+    "description": "装備に装着すると、 減気ビン追加スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 65,
+        "name": "減気ビン追加",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 309,
+    "gameId": 1088947584,
+    "name": "強壁珠Ⅲ【３】",
+    "description": "装備に装着すると、 ガード強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "gameId": 1096472320,
+    "name": "研磨・攻撃珠【３】",
+    "description": "装備に装着すると、 砥石使用高速化スキルと 攻撃スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 1
+      },
+      {
+        "id": 126,
+        "name": "砥石使用高速化",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 311,
+    "gameId": 1115345024,
+    "name": "鈍器珠Ⅱ【２】",
+    "description": "装備に装着すると、 鈍器使いスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 85,
+        "name": "鈍器使い",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 312,
+    "gameId": 1150766464,
+    "name": "超心珠【１】",
+    "description": "装備に装着すると、 超会心スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 22,
+        "name": "超会心",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 313,
+    "gameId": 1162934272,
+    "name": "剛刃珠Ⅲ【３】",
+    "description": "装備に装着すると、 剛刃研磨スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 134,
+        "name": "剛刃研磨",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 314,
+    "gameId": 1174071168,
+    "name": "集中・射法珠【３】",
+    "description": "装備に装着すると、 集中スキルと弾導強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "gameId": 1179637760,
+    "name": "抜打珠Ⅱ【２】",
+    "description": "装備に装着すると、 抜刀術【力】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 8,
+        "name": "抜刀術【力】",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "gameId": 1190642816,
+    "name": "積弾珠【１】",
+    "description": "装備に装着すると、 フォースショットスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 137,
+        "name": "フォースショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 317,
+    "gameId": 1194220032,
+    "name": "鈍器珠【１】",
+    "description": "装備に装着すると、 鈍器使いスキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 85,
+        "name": "鈍器使い",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "gameId": 1202986624,
+    "name": "強弾珠【３】",
+    "description": "装備に装着すると、 通常弾・通常矢強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 6,
+        "name": "通常弾・通常矢強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "gameId": 1213481984,
+    "name": "速変珠【１】",
+    "description": "装備に装着すると、 高速変形スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "gameId": 1216872320,
+    "name": "属会珠Ⅱ【２】",
+    "description": "装備に装着すると、 会心撃【属性】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "gameId": 1230875008,
+    "name": "閃光珠【１】",
+    "description": "装備に装着すると、 閃光強化スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 61,
+        "name": "閃光強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "gameId": 1287680640,
+    "name": "飛燕・匠珠【３】",
+    "description": "装備に装着すると、 飛燕スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 86,
+        "name": "飛燕",
+        "level": 1
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 323,
+    "gameId": 1305797760,
+    "name": "逆襲珠【２】",
+    "description": "装備に装着すると、 逆襲スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 81,
+        "name": "逆襲",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 324,
+    "gameId": 1343145856,
+    "name": "射法珠Ⅲ【３】",
+    "description": "装備に装着すると、 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 325,
+    "gameId": 1377760768,
+    "name": "特射珠【１】",
+    "description": "装備に装着すると、 特殊射撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 69,
+        "name": "特殊射撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 326,
+    "gameId": 1389113984,
+    "name": "氷結・ＫＯ珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 327,
+    "gameId": 1397927296,
+    "name": "特会・ＫＯ珠【３】",
+    "description": "装備に装着すると、 会心撃【特殊】スキルと ＫＯ術スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      },
+      {
+        "id": 68,
+        "name": "会心撃【特殊】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 328,
+    "gameId": 1414248576,
+    "name": "底力珠【２】",
+    "description": "装備に装着すると、 火事場力スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 87,
+        "name": "火事場力",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 329,
+    "gameId": 1427190272,
+    "name": "特会珠Ⅱ【２】",
+    "description": "装備に装着すると、 会心撃【特殊】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 68,
+        "name": "会心撃【特殊】",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 330,
+    "gameId": 1443679488,
+    "name": "強壁・鉄壁珠【３】",
+    "description": "装備に装着すると、 ガード強化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 3
+      },
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 331,
+    "gameId": 1444555776,
+    "name": "強壁珠【１】",
+    "description": "装備に装着すると、 ガード強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 16,
+        "name": "ガード強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 332,
+    "gameId": 1478235520,
+    "name": "回避珠【２】",
+    "description": "装備に装着すると、 回避性能スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 77,
+        "name": "回避性能",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 333,
+    "gameId": 1494637824,
+    "name": "氷結・匠珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルと 匠スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 334,
+    "gameId": 1536980096,
+    "name": "流水珠Ⅲ【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 335,
+    "gameId": 1596720768,
+    "name": "氷結・鉄壁珠【３】",
+    "description": "装備に装着すると、 氷属性攻撃強化スキルとガード性能 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 1
+      },
+      {
+        "id": 121,
+        "name": "氷属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 336,
+    "gameId": 1597431680,
+    "name": "抜刀珠Ⅱ【２】",
+    "description": "装備に装着すると、 抜刀術【技】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "gameId": 1598502400,
+    "name": "反攻珠【３】",
+    "description": "装備に装着すると、 巧撃スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 120,
+        "name": "巧撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "gameId": 1619248640,
+    "name": "速変・ＫＯ珠【３】",
+    "description": "装備に装着すると、 高速変形スキルとＫＯ術スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 7,
+        "name": "高速変形",
+        "level": 3
+      },
+      {
+        "id": 36,
+        "name": "ＫＯ術",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "gameId": 1636575872,
+    "name": "業物・匠珠【３】",
+    "description": "装備に装着すると、 業物スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 117,
+        "name": "業物",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "gameId": 1701043584,
+    "name": "貫通珠【３】",
+    "description": "装備に装着すると、 貫通弾・竜の矢強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 94,
+        "name": "貫通弾・竜の矢強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "gameId": 1731714432,
+    "name": "友愛珠【１】",
+    "description": "装備に装着すると、 広域化スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 113,
+        "name": "広域化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "gameId": 1738329216,
+    "name": "強走珠【１】",
+    "description": "装備に装着すると、 ランナースキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 43,
+        "name": "ランナー",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "gameId": 1789092864,
+    "name": "属会珠Ⅲ【３】",
+    "description": "装備に装着すると、 会心撃【属性】スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 82,
+        "name": "会心撃【属性】",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "gameId": 1832912384,
+    "name": "爆破珠Ⅲ【３】",
+    "description": "装備に装着すると、 爆破属性強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 40,
+        "name": "爆破属性強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 345,
+    "gameId": 1833462144,
+    "name": "流水・射法珠【３】",
+    "description": "装備に装着すると、 水属性攻撃強化スキルと 弾導強化スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 53,
+        "name": "弾導強化",
+        "level": 1
+      },
+      {
+        "id": 91,
+        "name": "水属性攻撃強化",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "gameId": 1887590400,
+    "name": "昂揚・匠珠【３】",
+    "description": "装備に装着すると、 強化持続スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 7,
+    "skills": [
+      {
+        "id": 104,
+        "name": "強化持続",
+        "level": 3
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "gameId": 1906356096,
+    "name": "集中珠【１】",
+    "description": "装備に装着すると、 集中スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 60,
+        "name": "集中",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "gameId": 1910118400,
+    "name": "溜打・抜刀珠【３】",
+    "description": "装備に装着すると、 溜打強化スキルと抜刀術【技】 スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 83,
+        "name": "溜打強化",
+        "level": 1
+      },
+      {
+        "id": 103,
+        "name": "抜刀術【技】",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "gameId": 1933586560,
+    "name": "登壁珠【１】",
+    "description": "装備に装着すると、 クライマースキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 42,
+        "name": "クライマー",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "gameId": 1967618304,
+    "name": "鉄壁珠Ⅱ【２】",
+    "description": "装備に装着すると、 ガード性能スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 2,
+    "rarity": 4,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "gameId": 1979979520,
+    "name": "植学珠【１】",
+    "description": "装備に装着すると、 植生学スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 112,
+        "name": "植生学",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 352,
+    "gameId": 2003488640,
+    "name": "挑戦珠【３】",
+    "description": "装備に装着すると、 挑戦者スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 144,
+        "name": "挑戦者",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 353,
+    "gameId": 2004238976,
+    "name": "増弾・攻撃珠【３】",
+    "description": "装備に装着すると、 砲弾装填スキルと攻撃スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 1
+      },
+      {
+        "id": 109,
+        "name": "砲弾装填",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "gameId": 2005516288,
+    "name": "鉄壁珠Ⅲ【３】",
+    "description": "装備に装着すると、 ガード性能スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 59,
+        "name": "ガード性能",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "gameId": 2071836160,
+    "name": "鼓笛・匠珠【３】",
+    "description": "装備に装着すると、 笛吹き名人スキルと匠スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 5,
+    "skills": [
+      {
+        "id": 29,
+        "name": "笛吹き名人",
+        "level": 2
+      },
+      {
+        "id": 119,
+        "name": "匠",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "gameId": 2074953216,
+    "name": "持続珠【１】",
+    "description": "装備に装着すると、 アイテム使用強化スキルが 発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 15,
+        "name": "アイテム使用強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "gameId": 2088515968,
+    "name": "破龍珠【１】",
+    "description": "装備に装着すると、 龍属性攻撃強化スキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 41,
+        "name": "龍属性攻撃強化",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "gameId": 2092268800,
+    "name": "初弾珠【１】",
+    "description": "装備に装着すると、 ファーストショットスキルが 発動する装飾品。",
+    "kind": "weapon",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 140,
+        "name": "ファーストショット",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 359,
+    "gameId": 2099419520,
+    "name": "耐震珠【１】",
+    "description": "装備に装着すると、 耐震スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 46,
+        "name": "耐震",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 360,
+    "gameId": 2117714048,
+    "name": "強毒・攻撃珠【３】",
+    "description": "装備に装着すると、 毒ダメージ強化スキルと 攻撃スキルが発動する装飾品。",
+    "kind": "weapon",
+    "slot": 3,
+    "rarity": 6,
+    "skills": [
+      {
+        "id": 21,
+        "name": "毒ダメージ強化",
+        "level": 1
+      },
+      {
+        "id": 72,
+        "name": "攻撃",
+        "level": 1
+      }
+    ]
+  },
+  {
+    "id": 361,
+    "gameId": 2145184512,
+    "name": "威嚇珠【１】",
+    "description": "装備に装着すると、 威嚇スキルが発動する装飾品。",
+    "kind": "armor",
+    "slot": 1,
+    "rarity": 3,
+    "skills": [
+      {
+        "id": 130,
+        "name": "威嚇",
+        "level": 1
+      }
+    ]
+  }
+]

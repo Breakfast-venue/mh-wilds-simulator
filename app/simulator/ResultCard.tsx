@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { Decoration } from "@/lib/types";
 import type { EquipmentSet } from "@/lib/simulator/types";
+import { WEAPON_KIND_JP } from "@/lib/i18n";
+
 
 const PARTS: { key: "head" | "body" | "arms" | "waist" | "legs"; label: string }[] = [
   { key: "head",  label: "頭" },
@@ -63,9 +65,9 @@ export function ResultCard({
               武器
             </div>
             <div className="text-sm flex items-center gap-2">
-              <Badge variant="outline">{set.weapon.type}</Badge>
+              <Badge variant="outline">{WEAPON_KIND_JP[set.weapon.kind]}</Badge>
               <span className="font-medium">{set.weapon.name}</span>
-              <span className="text-muted-foreground">攻撃 {set.weapon.atk}</span>
+              <span className="text-muted-foreground">攻撃 {set.weapon.damage}</span>
               <span className="text-xs font-mono text-muted-foreground">
                 [{set.weapon.slots.join("][")}]
               </span>
@@ -104,7 +106,7 @@ export function ResultCard({
               {set.charm.name}{" "}
               {set.charm.skills.map((s) => (
                 <Badge key={s.skillId} variant="secondary" className="ml-1">
-                  {s.name} +{s.level}
+                {s.skillName} +{s.level}
                 </Badge>
               ))}
             </div>
@@ -136,7 +138,7 @@ export function ResultCard({
           <div className="flex flex-wrap gap-1">
             {set.totalSkills.map((s) => (
               <Badge key={s.skillId} variant="secondary">
-                {s.name} +{s.level}
+              {s.skillName} +{s.level}
               </Badge>
             ))}
           </div>

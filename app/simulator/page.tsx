@@ -15,6 +15,8 @@ import type {
   EquipmentSet, ResistanceMin, SkillRequirement,
 } from "@/lib/simulator/types";
 import { ResultCard } from "./ResultCard";
+import type { WeaponKind } from "@/lib/types";
+
 
 const WEAPON_TYPES = [
   "指定なし", "大剣", "片手剣", "双剣", "太刀", "ハンマー", "狩猟笛",
@@ -33,9 +35,9 @@ const RES_KEYS: { key: keyof ResistanceMin; label: string }[] = [
 export default function SimulatorPage() {
   // === 検索条件の状態 ===
   const [skillReqs, setSkillReqs] = useState<SkillRequirement[]>([]);
-  const [pickedSkillId, setPickedSkillId] = useState<string>("");
+  const [pickedSkillId, setPickedSkillId] = useState<string>("");      // 空="未選択"
   const [pickedLevel, setPickedLevel] = useState<number>(1);
-  const [weaponType, setWeaponType] = useState<string>("指定なし");
+  const [weaponType, setWeaponType] = useState<string>("");            // 空="指定なし"
   const [resMin, setResMin] = useState<ResistanceMin>({});
 
   // === 結果 ===
@@ -48,25 +50,25 @@ export default function SimulatorPage() {
   const armorSkills = useMemo(
     () =>
       masters.skills
-        .filter((s) => s.type === "防具")
+        .filter((s) => s.kind === "armor")
         .sort((a, b) => a.name.localeCompare(b.name, "ja")),
     [],
   );
 
   const handleAddSkill = () => {
-    if (!pickedSkillId) return;
-    if (skillReqs.some((r) => r.skillId === pickedSkillId)) return; // 重複ガード
-    const skill = armorSkills.find((s) => s.id === pickedSkillId);
+    const id = Number(pickedSkillId);
+    if (!id) return;
+    if (skillReqs.some((r) => r.skillId === id)) return; // 重複ガード
+    const skill = armorSkills.find((s) => s.id === id);
     if (!skill) return;
     setSkillReqs([
-      ...skillReqs,
-      { skillId: skill.id, name: skill.name, level: pickedLevel },
+    ...skillReqs,
+    { skillId: skill.id, skillName: skill.name, level: pickedLevel },
     ]);
     setPickedSkillId("");
-    setPickedLevel(1);
-  };
+    };
 
-  const handleRemoveSkill = (skillId: string) => {
+  const handleRemoveSkill = (skillId: number) => {
     setSkillReqs(skillReqs.filter((r) => r.skillId !== skillId));
   };
 
@@ -90,7 +92,7 @@ export default function SimulatorPage() {
       const hasResMin = Object.values(resMin).some((v) => v !== undefined);
       const out = searchEquipmentSets({
         desiredSkills: skillReqs,
-        weaponType: weaponType === "指定なし" ? undefined : weaponType,
+        weaponType: weaponType === "" ? undefined : (weaponType as WeaponKind),
         resistanceMin: hasResMin ? resMin : undefined,
       });
       setResults(out);
@@ -129,7 +131,7 @@ export default function SimulatorPage() {
                   onClick={() => handleRemoveSkill(r.skillId)}
                   title="クリックで削除"
                 >
-                  {r.name} +{r.level} ✕
+                {r.skillName} +{r.level} ✕
                 </Badge>
               ))
             )}
@@ -144,8 +146,8 @@ export default function SimulatorPage() {
                 </SelectTrigger>
                 <SelectContent>
                   {armorSkills.map((s) => (
-                    <SelectItem key={s.id} value={s.id}>
-                      {s.name}
+                    <SelectItem key={s.id} value={String(s.id)}>
+                    {s.name}
                     </SelectItem>
                   ))}
                 </SelectContent>

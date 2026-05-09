@@ -8,6 +8,8 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import { SKILL_KIND_JP } from "@/lib/i18n";
+
 
 export default function SkillsPage() {
   const skills = masters.skills;
@@ -30,7 +32,7 @@ export default function SkillsPage() {
             <TableRow key={s.id}>
               <TableCell className="font-medium">{s.name}</TableCell>
               <TableCell>
-                <Badge variant="outline">{s.type}</Badge>
+                <Badge variant="outline">{SKILL_KIND_JP[s.kind]}</Badge>
               </TableCell>
               <TableCell className="text-sm">{s.description}</TableCell>
             </TableRow>

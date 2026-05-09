@@ -1,6 +1,5 @@
-import type { Armor, Weapon, Decoration } from "@/lib/types";
+import type { Armor, Weapon, Decoration, Charm, SkillRank } from "@/lib/types";
 import type {
-  Charm,
   EquipmentSet,
   ResistanceMin,
   SkillRequirement,
@@ -9,18 +8,22 @@ import type {
 } from "./types";
 
 // === スキル合算 ===
-type SkillMap = Map<string, TotalSkill>;
+type SkillMap = Map<number, TotalSkill>;
 
 export function addSkillsToMap(
   map: SkillMap,
-  skills: { skillId: string; name: string; level: number }[],
+  skills: SkillRank[],
 ): void {
   for (const s of skills) {
     const cur = map.get(s.skillId);
     if (cur) {
       cur.level += s.level;
     } else {
-      map.set(s.skillId, { skillId: s.skillId, name: s.name, level: s.level });
+      map.set(s.skillId, {
+        skillId: s.skillId,
+        skillName: s.skillName,
+        level: s.level,
+      });
     }
   }
 }
@@ -83,8 +86,9 @@ function findSmallestAvailableSlot(
   return null;
 }
 
-// === 装飾品の貪欲詰め込み ===
-// 不足スキルが大きい順に処理 + 装飾品はslotLv昇順で詰める。
+// === 装飾品の貪欲詰め込み（複合珠対応） ===
+// 不足スキルが大きい順に処理 + 装飾品はslot昇順で詰める。
+// 複合珠は 1 個装着で全スキルが加算される（教訓: mhdb の Decoration.skills は length=1 or 2）。
 // 詰めきれない or スロット不足なら null（このセットは不採用）。
 export function fitDecorations(args: {
   requirements: SkillRequirement[];
@@ -93,25 +97,28 @@ export function fitDecorations(args: {
   decorations: Decoration[];
 }): { fitted: Decoration[]; finalSkills: TotalSkill[] } | null {
   const slots: SlotPool = { ...args.slots };
-
   const skillMap: SkillMap = new Map();
   for (const s of args.baseSkills) {
     skillMap.set(s.skillId, { ...s });
   }
 
-  // 装飾品.skill は "攻撃" 等の表示名なので requirements 経由で skillId に紐付ける
-  const nameToReq = new Map(args.requirements.map((r) => [r.name, r]));
-  const decoByReq = new Map<string, Decoration[]>();
+  // 検索対象 skillId の集合
+  const reqIds = new Set(args.requirements.map((r) => r.skillId));
+
+  // skillId → その skillId を付与する装飾品リスト
+  // 複合珠は両方の skillId バケットに重複登録される
+  const decoByReq = new Map<number, Decoration[]>();
   for (const d of args.decorations) {
-    const req = nameToReq.get(d.skill);
-    if (!req) continue; // 検索条件にない珠は無視
-    if (d.slotLv < 1 || d.slotLv > 3) continue;
-    const arr = decoByReq.get(req.skillId) ?? [];
-    arr.push(d);
-    decoByReq.set(req.skillId, arr);
+    if (d.slot < 1 || d.slot > 3) continue;
+    for (const s of d.skills) {
+      if (!reqIds.has(s.skillId)) continue;
+      const arr = decoByReq.get(s.skillId) ?? [];
+      arr.push(d);
+      decoByReq.set(s.skillId, arr);
+    }
   }
   for (const arr of decoByReq.values()) {
-    arr.sort((a, b) => a.slotLv - b.slotLv);
+    arr.sort((a, b) => a.slot - b.slot);
   }
 
   const fitted: Decoration[] = [];
@@ -126,21 +133,21 @@ export function fitDecorations(args: {
   for (const req of sorted) {
     let lack = req.level - (skillMap.get(req.skillId)?.level ?? 0);
     if (lack <= 0) continue;
-
     const cands = decoByReq.get(req.skillId) ?? [];
     if (cands.length === 0) return null;
-
     while (lack > 0) {
       let placed = false;
       for (const deco of cands) {
-        const targetLv = findSmallestAvailableSlot(slots, deco.slotLv);
+        const targetLv = findSmallestAvailableSlot(slots, deco.slot);
         if (targetLv === null) continue;
+        // この珠が req.skillId に提供する level
+        const sForReq = deco.skills.find((s) => s.skillId === req.skillId);
+        if (!sForReq) continue;
         slots[targetLv]--;
         fitted.push(deco);
-        addSkillsToMap(skillMap, [
-          { skillId: req.skillId, name: req.name, level: deco.skillLv },
-        ]);
-        lack -= deco.skillLv;
+        // 複合珠は両方のスキルが乗る
+        addSkillsToMap(skillMap, deco.skills);
+        lack -= sForReq.level;
         placed = true;
         break;
       }
@@ -164,20 +171,15 @@ export function buildEquipmentSet(args: {
   requirements: SkillRequirement[];
 }): EquipmentSet {
   const armors = [args.head, args.body, args.arms, args.waist, args.legs];
-  const nameToReq = new Map(args.requirements.map((r) => [r.name, r]));
 
   // スキル合算（武器 + 5部位 + 護石 + 装飾品）
   const skillMap: SkillMap = new Map();
   if (args.weapon) addSkillsToMap(skillMap, args.weapon.skills);
   for (const a of armors) addSkillsToMap(skillMap, a.skills);
   if (args.charm) addSkillsToMap(skillMap, args.charm.skills);
+  // 複合珠は 1 個で全スキルが乗る → そのまま全 d.skills を加算
   for (const d of args.decorations) {
-    const req = nameToReq.get(d.skill);
-    if (req) {
-      addSkillsToMap(skillMap, [
-        { skillId: req.skillId, name: req.name, level: d.skillLv },
-      ]);
-    }
+    addSkillsToMap(skillMap, d.skills);
   }
 
   // 耐性合算（防具のみ）

@@ -1,0 +1,5035 @@
+[
+  {
+    "id": 1,
+    "gameId": -2117203456,
+    "name": "コンガα",
+    "rank": "high",
+    "pieceIds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "gameId": -2109565568,
+    "name": "トリス",
+    "rank": "low",
+    "pieceIds": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "gameId": -2086657152,
+    "name": "ゴアα",
+    "rank": "high",
+    "pieceIds": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "setBonus": {
+      "id": 106,
+      "name": "黒蝕竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "大型モンスターと対峙した時、 狂竜症に感染する。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "大型モンスターと対峙した時、 狂竜症に感染し、攻撃力が上昇する。 克服時、さらに攻撃力が上昇する。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "gameId": -2058671360,
+    "name": "ブランゴβ",
+    "rank": "high",
+    "pieceIds": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "setBonus": {
+      "id": 107,
+      "name": "雪獅子の闘志",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "ジェスチャー「雄叫び」をした時、一定 時間、周囲の攻撃力が少し上昇。オトモ とサポートハンターには効果が大きい。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "ジェスチャー「雄叫び」をした時、一定 時間、周囲の攻撃力が上昇。オトモと サポートハンターには効果が大きい。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 97,
+      "name": "毛皮の誘惑",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "攻撃を当てた時、モンスターの注意を より強く引くようになる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "gameId": -2043813888,
+    "name": "ギルドエースα",
+    "rank": "high",
+    "pieceIds": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 6,
+    "gameId": -2040662912,
+    "name": "ランゴスタα",
+    "rank": "high",
+    "pieceIds": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "gameId": -1916391168,
+    "name": "ヒラバミ",
+    "rank": "low",
+    "pieceIds": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "gameId": -1862504960,
+    "name": "アロイα",
+    "rank": "high",
+    "pieceIds": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 9,
+    "gameId": -1853781504,
+    "name": "レウスβ",
+    "rank": "high",
+    "pieceIds": [
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "setBonus": {
+      "id": 71,
+      "name": "火竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃を当てた時、確率で 追加の火属性ダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "追加で与える火属性ダメージが 上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "gameId": -1843265280,
+    "name": "チャタα",
+    "rank": "high",
+    "pieceIds": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "gameId": -1830990336,
+    "name": "ボーンα",
+    "rank": "high",
+    "pieceIds": [
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 12,
+    "gameId": -1823673856,
+    "name": "ランゴスタ",
+    "rank": "low",
+    "pieceIds": [
+      56,
+      57,
+      58,
+      59,
+      60
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "gameId": -1727218944,
+    "name": "ドシャグマ",
+    "rank": "low",
+    "pieceIds": [
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "setBonus": {
+      "id": 70,
+      "name": "闢獣の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋１０"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋２５"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "gameId": -1699202560,
+    "name": "護火竜β",
+    "rank": "high",
+    "pieceIds": [
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "setBonus": {
+      "id": 71,
+      "name": "火竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃を当てた時、確率で 追加の火属性ダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "追加で与える火属性ダメージが 上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "gameId": -1649902080,
+    "name": "クナファα",
+    "rank": "high",
+    "pieceIds": [
+      71,
+      72,
+      73,
+      74
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "gameId": -1581546752,
+    "name": "レイアβ",
+    "rank": "high",
+    "pieceIds": [
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "gameId": -1569704320,
+    "name": "ネラチカβ",
+    "rank": "high",
+    "pieceIds": [
+      80
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 139,
+      "name": "甲虫の擬態",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "しゃがみ移動速度が上昇し、 大型モンスターに見つかりにくくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "gameId": -1564879104,
+    "name": "護竜セクレト",
+    "rank": "low",
+    "pieceIds": [
+      81
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "gameId": -1535116544,
+    "name": "スキュラβ",
+    "rank": "high",
+    "pieceIds": [
+      82,
+      83,
+      84,
+      85,
+      86
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 139,
+      "name": "甲虫の擬態",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "しゃがみ移動速度が上昇し、 大型モンスターに見つかりにくくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "gameId": -1496450816,
+    "name": "シルドα",
+    "rank": "high",
+    "pieceIds": [
+      87,
+      88
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "gameId": -1456507776,
+    "name": "コンガβ",
+    "rank": "high",
+    "pieceIds": [
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 97,
+      "name": "毛皮の誘惑",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "攻撃を当てた時、モンスターの注意を より強く引くようになる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "gameId": -1414663552,
+    "name": "ドーベルα",
+    "rank": "high",
+    "pieceIds": [
+      94,
+      95,
+      96,
+      97,
+      98
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 23,
+    "gameId": -1400394880,
+    "name": "ゲリョスα",
+    "rank": "high",
+    "pieceIds": [
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "gameId": -1376663552,
+    "name": "レイアα",
+    "rank": "high",
+    "pieceIds": [
+      104,
+      105,
+      106,
+      107,
+      108
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "gameId": -1346586880,
+    "name": "護鎖刃竜",
+    "rank": "low",
+    "pieceIds": [
+      109,
+      110,
+      111,
+      112,
+      113
+    ],
+    "setBonus": {
+      "id": 26,
+      "name": "護鎖刃竜の命脈",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "大型モンスターの傷口を破壊した時、 体力が少し回復する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "大型モンスターの傷口を破壊した時、 体力が回復する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "gameId": -1332061952,
+    "name": "ダハディラα",
+    "rank": "high",
+    "pieceIds": [
+      114,
+      115,
+      116,
+      117,
+      118
+    ],
+    "setBonus": {
+      "id": 62,
+      "name": "凍峰竜の反逆",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "糸拘束状態、凍結状態の回復時、または 拘束攻撃から解放された時、鍔迫り合い の後、一定時間、攻撃力が上昇"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "糸拘束状態、凍結状態の回復時、または 拘束攻撃から解放された時、鍔迫り合い の後、一定時間、攻撃力が大きく上昇"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 10,
+      "name": "ヌシの誇り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "旋律効果など、一定範囲内の仲間に 作用する効果を発動した際、一時攻撃力 上昇効果を追加で付与する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "gameId": -1314912640,
+    "name": "トゥナムルα",
+    "rank": "high",
+    "pieceIds": [
+      119,
+      120,
+      121,
+      122,
+      123
+    ],
+    "setBonus": {
+      "id": 153,
+      "name": "波衣竜の守護",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "特殊装具を使用した時、一定時間 防御力が上昇する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "特殊装具を使用した時、一定時間 防御力と耐性値が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 10,
+      "name": "ヌシの誇り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "旋律効果など、一定範囲内の仲間に 作用する効果を発動した際、一時攻撃力 上昇効果を追加で付与する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "gameId": -1311785984,
+    "name": "レダゼルトα",
+    "rank": "high",
+    "pieceIds": [
+      124,
+      125,
+      126,
+      127,
+      128
+    ],
+    "setBonus": {
+      "id": 93,
+      "name": "煌雷竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「力の解放」のスキル発動時間を 少し延長する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「力の解放」のスキル発動時間を 延長する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 10,
+      "name": "ヌシの誇り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "旋律効果など、一定範囲内の仲間に 作用する効果を発動した際、一時攻撃力 上昇効果を追加で付与する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "gameId": -1309878016,
+    "name": "護火竜α",
+    "rank": "high",
+    "pieceIds": [
+      129,
+      130,
+      131,
+      132,
+      133
+    ],
+    "setBonus": {
+      "id": 71,
+      "name": "火竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃を当てた時、確率で 追加の火属性ダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "追加で与える火属性ダメージが 上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "gameId": -1284130432,
+    "name": "クラノダスα",
+    "rank": "high",
+    "pieceIds": [
+      134
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "gameId": -1266843008,
+    "name": "パピメルα",
+    "rank": "high",
+    "pieceIds": [
+      135,
+      136,
+      137,
+      138,
+      139
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "gameId": -1253492608,
+    "name": "クラノダス",
+    "rank": "low",
+    "pieceIds": [
+      140
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "gameId": -1158391424,
+    "name": "護闢獣",
+    "rank": "low",
+    "pieceIds": [
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "setBonus": {
+      "id": 70,
+      "name": "闢獣の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋１０"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋２５"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "gameId": -1128792192,
+    "name": "タリオスα",
+    "rank": "high",
+    "pieceIds": [
+      146
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "gameId": -1118126720,
+    "name": "ヒラバミα",
+    "rank": "high",
+    "pieceIds": [
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "gameId": -1116023296,
+    "name": "トゥナムルβ",
+    "rank": "high",
+    "pieceIds": [
+      152,
+      153,
+      154,
+      155,
+      156
+    ],
+    "setBonus": {
+      "id": 153,
+      "name": "波衣竜の守護",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "特殊装具を使用した時、一定時間 防御力が上昇する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "特殊装具を使用した時、一定時間 防御力と耐性値が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 155,
+      "name": "ヌシの憤激",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "状態異常中、攻撃力が上昇する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "gameId": -1077030272,
+    "name": "インゴットα",
+    "rank": "high",
+    "pieceIds": [
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 38,
+    "gameId": -972610496,
+    "name": "レダゼルト",
+    "rank": "low",
+    "pieceIds": [
+      162,
+      163,
+      164,
+      165,
+      166
+    ],
+    "setBonus": {
+      "id": 93,
+      "name": "煌雷竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「力の解放」のスキル発動時間を 少し延長する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「力の解放」のスキル発動時間を 延長する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 10,
+      "name": "ヌシの誇り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "旋律効果など、一定範囲内の仲間に 作用する効果を発動した際、一時攻撃力 上昇効果を追加で付与する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "gameId": -932860800,
+    "name": "バーラα",
+    "rank": "high",
+    "pieceIds": [
+      167,
+      168,
+      169,
+      170,
+      171
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "gameId": -909939840,
+    "name": "ガライー",
+    "rank": "low",
+    "pieceIds": [
+      172
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "gameId": -830764992,
+    "name": "メルホアα",
+    "rank": "high",
+    "pieceIds": [
+      173,
+      174,
+      175,
+      176,
+      177
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "gameId": -805142080,
+    "name": "ゲリョスβ",
+    "rank": "high",
+    "pieceIds": [
+      178,
+      179,
+      180,
+      181,
+      182
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "gameId": -796412032,
+    "name": "シーウーα",
+    "rank": "high",
+    "pieceIds": [
+      183,
+      184,
+      185,
+      186,
+      187
+    ],
+    "setBonus": {
+      "id": 25,
+      "name": "暗器蛸の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "こんがり肉などのアイテムを食べた時、 一定時間、基礎攻撃力＋１５"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "こんがり肉などのアイテムを食べた時、 一定時間、基礎攻撃力＋３０"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "gameId": -746475968,
+    "name": "スージャα",
+    "rank": "high",
+    "pieceIds": [
+      188
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "gameId": -647496960,
+    "name": "トリスβ",
+    "rank": "high",
+    "pieceIds": [
+      189,
+      190,
+      191,
+      192,
+      193
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "gameId": -636732672,
+    "name": "クックα",
+    "rank": "high",
+    "pieceIds": [
+      194,
+      195,
+      196,
+      197,
+      198
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "gameId": -631500928,
+    "name": "ラバラβ",
+    "rank": "high",
+    "pieceIds": [
+      199,
+      200,
+      201,
+      202,
+      203
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 139,
+      "name": "甲虫の擬態",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "しゃがみ移動速度が上昇し、 大型モンスターに見つかりにくくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "gameId": -605699072,
+    "name": "シュバルカα",
+    "rank": "high",
+    "pieceIds": [
+      204,
+      205,
+      206,
+      207,
+      208
+    ],
+    "setBonus": {
+      "id": 33,
+      "name": "鎖刃竜の飢餓",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "継続してモンスターに攻撃を当てると、 体力が少し回復する （武器種により回復量は変動）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "継続してモンスターに攻撃を当てると、 体力が回復する （武器種により回復量は変動）"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "gameId": -520738208,
+    "name": "シーウー",
+    "rank": "low",
+    "pieceIds": [
+      209,
+      210,
+      211,
+      212,
+      213
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "gameId": -436938720,
+    "name": "グラビドβ",
+    "rank": "high",
+    "pieceIds": [
+      214,
+      215,
+      216,
+      217,
+      218
+    ],
+    "setBonus": {
+      "id": 54,
+      "name": "鎧竜の守護",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "体力が最大の時、受けるダメージを ２０％軽減する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "体力が最大の時、受けるダメージを ３５％軽減する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "gameId": -434190656,
+    "name": "ハナショウジョウα",
+    "rank": "high",
+    "pieceIds": [
+      219
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "gameId": -355167712,
+    "name": "護竜セクレトβ",
+    "rank": "high",
+    "pieceIds": [
+      220
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "gameId": -309477024,
+    "name": "護火竜",
+    "rank": "low",
+    "pieceIds": [
+      221,
+      222,
+      223,
+      224,
+      225
+    ],
+    "setBonus": {
+      "id": 71,
+      "name": "火竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃を当てた時、確率で 追加の火属性ダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "追加で与える火属性ダメージが 上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "gameId": -295012384,
+    "name": "グラビドα",
+    "rank": "high",
+    "pieceIds": [
+      226,
+      227,
+      228,
+      229,
+      230
+    ],
+    "setBonus": {
+      "id": 54,
+      "name": "鎧竜の守護",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "体力が最大の時、受けるダメージを ２０％軽減する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "体力が最大の時、受けるダメージを ３５％軽減する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "gameId": -282994240,
+    "name": "トゥナムル",
+    "rank": "low",
+    "pieceIds": [
+      231,
+      232,
+      233,
+      234,
+      235
+    ],
+    "setBonus": {
+      "id": 153,
+      "name": "波衣竜の守護",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "特殊装具を使用した時、一定時間 防御力が上昇する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "特殊装具を使用した時、一定時間 防御力と耐性値が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 10,
+      "name": "ヌシの誇り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "旋律効果など、一定範囲内の仲間に 作用する効果を発動した際、一時攻撃力 上昇効果を追加で付与する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "gameId": -238549872,
+    "name": "ガライーα",
+    "rank": "high",
+    "pieceIds": [
+      236
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "gameId": -59351948,
+    "name": "ダハディラβ",
+    "rank": "high",
+    "pieceIds": [
+      237,
+      238,
+      239,
+      240,
+      241
+    ],
+    "setBonus": {
+      "id": 62,
+      "name": "凍峰竜の反逆",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "糸拘束状態、凍結状態の回復時、または 拘束攻撃から解放された時、鍔迫り合い の後、一定時間、攻撃力が上昇"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "糸拘束状態、凍結状態の回復時、または 拘束攻撃から解放された時、鍔迫り合い の後、一定時間、攻撃力が大きく上昇"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 155,
+      "name": "ヌシの憤激",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "状態異常中、攻撃力が上昇する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "gameId": -24830612,
+    "name": "ラバラ",
+    "rank": "low",
+    "pieceIds": [
+      242,
+      243,
+      244,
+      245,
+      246
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "gameId": 2,
+    "name": "ホープ",
+    "rank": "low",
+    "pieceIds": [
+      247,
+      248,
+      249,
+      250,
+      251
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 60,
+    "gameId": 3,
+    "name": "レザー",
+    "rank": "low",
+    "pieceIds": [
+      252,
+      253,
+      254,
+      255,
+      256
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 61,
+    "gameId": 4,
+    "name": "チェーン",
+    "rank": "low",
+    "pieceIds": [
+      257,
+      258,
+      259,
+      260,
+      261
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 62,
+    "gameId": 5,
+    "name": "ボーン",
+    "rank": "low",
+    "pieceIds": [
+      262,
+      263,
+      264,
+      265,
+      266
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 63,
+    "gameId": 7,
+    "name": "アロイ",
+    "rank": "low",
+    "pieceIds": [
+      267,
+      268,
+      269,
+      270,
+      271
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 64,
+    "gameId": 8,
+    "name": "インゴット",
+    "rank": "low",
+    "pieceIds": [
+      272,
+      273,
+      274,
+      275,
+      276
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 65,
+    "gameId": 11,
+    "name": "タリオス",
+    "rank": "low",
+    "pieceIds": [
+      277
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "gameId": 12,
+    "name": "ブラチカ",
+    "rank": "low",
+    "pieceIds": [
+      278
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "gameId": 1671,
+    "name": "兵ノ甲冑",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 68,
+    "gameId": 2261,
+    "name": "献身のピアスα",
+    "rank": "high",
+    "pieceIds": [
+      279
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 73,
+      "name": "栄光の誉れ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエストのターゲット報酬が増える （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 69,
+    "gameId": 4129,
+    "name": "剣豪の隻眼",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 70,
+    "gameId": 5330,
+    "name": "ギルドクロスα",
+    "rank": "high",
+    "pieceIds": [
+      280,
+      281,
+      282,
+      283,
+      284
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 73,
+      "name": "栄光の誉れ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエストのターゲット報酬が増える （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 71,
+    "gameId": 6716,
+    "name": "封印の眼帯α",
+    "rank": "high",
+    "pieceIds": [
+      285
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 72,
+    "gameId": 7067,
+    "name": "スクエアグラスα",
+    "rank": "high",
+    "pieceIds": [
+      286
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 73,
+    "gameId": 7724,
+    "name": "芽吹きのサークレット",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 74,
+    "gameId": 10911,
+    "name": "ラウンドアイα",
+    "rank": "high",
+    "pieceIds": [
+      287
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 75,
+    "gameId": 10920,
+    "name": "竜人族の耳",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 76,
+    "gameId": 11061,
+    "name": "健啖家の耳飾りα",
+    "rank": "high",
+    "pieceIds": [
+      288
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 73,
+      "name": "栄光の誉れ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエストのターゲット報酬が増える （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 77,
+    "gameId": 12183,
+    "name": "ミツネβ",
+    "rank": "high",
+    "pieceIds": [
+      289,
+      290,
+      291,
+      292,
+      293
+    ],
+    "setBonus": {
+      "id": 56,
+      "name": "泡狐竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "泡状態【大】にならなくなる。 回避行動を複数回行うことで 泡状態【小】になる。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰと同様の効果が発動する。 泡状態の時に回避能力が強化される。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 97,
+      "name": "毛皮の誘惑",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "攻撃を当てた時、モンスターの注意を より強く引くようになる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 78,
+    "gameId": 15655,
+    "name": "桜波α",
+    "rank": "high",
+    "pieceIds": [
+      294,
+      295,
+      296,
+      297,
+      298
+    ],
+    "setBonus": {
+      "id": 34,
+      "name": "花舞の祈り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "花舞の儀の期間中、クエストの報酬に 特別なアイテムが追加される （クエストの途中からは発動しない）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "花舞の儀の期間中、クエストの報酬に 特別なアイテムが追加され、 攻撃力と防御力が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 79,
+    "gameId": 16428,
+    "name": "知略の眼鏡α",
+    "rank": "high",
+    "pieceIds": [
+      299
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 80,
+    "gameId": 16685,
+    "name": "アワウタイズクα",
+    "rank": "high",
+    "pieceIds": [
+      300
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "gameId": 17725,
+    "name": "クリークα",
+    "rank": "high",
+    "pieceIds": [
+      301,
+      302,
+      303,
+      304,
+      305
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 73,
+      "name": "栄光の誉れ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエストのターゲット報酬が増える （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 82,
+    "gameId": 18127,
+    "name": "ノブレス",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 83,
+    "gameId": 20042,
+    "name": "ブロッサムα",
+    "rank": "high",
+    "pieceIds": [
+      306,
+      307,
+      308,
+      309,
+      310
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 84,
+    "gameId": 22297,
+    "name": "無垢ナル龍β",
+    "rank": "high",
+    "pieceIds": [
+      311,
+      312,
+      313,
+      314,
+      315
+    ],
+    "setBonus": {
+      "id": 51,
+      "name": "白熾龍の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "体力に赤ゲージが無い状態でも、 最大値までゆるやかに自動回復が 継続する。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "体力に赤ゲージが無い状態でも 最大値まで自動回復が継続する。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 85,
+    "gameId": 22948,
+    "name": "ギルドナイト",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 86,
+    "gameId": 24693,
+    "name": "封印の龍骸布α",
+    "rank": "high",
+    "pieceIds": [
+      316
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 87,
+    "gameId": 30074,
+    "name": "シャドウアイα",
+    "rank": "high",
+    "pieceIds": [
+      317
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 88,
+    "gameId": 30086,
+    "name": "ミツネα",
+    "rank": "high",
+    "pieceIds": [
+      318,
+      319,
+      320,
+      321,
+      322
+    ],
+    "setBonus": {
+      "id": 56,
+      "name": "泡狐竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "泡状態【大】にならなくなる。 回避行動を複数回行うことで 泡状態【小】になる。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰと同様の効果が発動する。 泡状態の時に回避能力が強化される。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 89,
+    "gameId": 30569,
+    "name": "無垢ナル龍α",
+    "rank": "high",
+    "pieceIds": [
+      323,
+      324,
+      325,
+      326,
+      327
+    ],
+    "setBonus": {
+      "id": 51,
+      "name": "白熾龍の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "体力に赤ゲージが無い状態でも、 最大値までゆるやかに自動回復が 継続する。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "体力に赤ゲージが無い状態でも 最大値まで自動回復が継続する。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 90,
+    "gameId": 31095,
+    "name": "鬼角のウィッグ",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 91,
+    "gameId": 32083,
+    "name": "レダゼルトγ",
+    "rank": "high",
+    "pieceIds": [
+      328,
+      329,
+      330,
+      331,
+      332
+    ],
+    "setBonus": {
+      "id": 93,
+      "name": "煌雷竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「力の解放」のスキル発動時間を 少し延長する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「力の解放」のスキル発動時間を 延長する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 131,
+      "name": "ヌシの魂",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "致命的な大ダメージを一度だけ軽減 発動前は攻撃力が上がり防御力が下がる 発動後は防御力と耐性値が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 92,
+    "gameId": 32515,
+    "name": "調査隊の耳飾りα",
+    "rank": "high",
+    "pieceIds": [
+      333
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 93,
+    "gameId": 3249367,
+    "name": "ラバラα",
+    "rank": "high",
+    "pieceIds": [
+      334,
+      335,
+      336,
+      337,
+      338
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 94,
+    "gameId": 12330399,
+    "name": "バーラβ",
+    "rank": "high",
+    "pieceIds": [
+      339,
+      340,
+      341,
+      342,
+      343
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 95,
+    "gameId": 29897828,
+    "name": "護闢獣β",
+    "rank": "high",
+    "pieceIds": [
+      344,
+      345,
+      346,
+      347,
+      348
+    ],
+    "setBonus": {
+      "id": 70,
+      "name": "闢獣の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋１０"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋２５"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 96,
+    "gameId": 124521752,
+    "name": "護兇爪竜β",
+    "rank": "high",
+    "pieceIds": [
+      349,
+      350,
+      351,
+      352,
+      353
+    ],
+    "setBonus": {
+      "id": 115,
+      "name": "兇爪竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「連撃」スキルの効果発動時、 有効時間を延長し、基礎攻撃力＋８"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「連撃」スキルの効果発動時、 有効時間をさらに延長し、 基礎攻撃力＋１８"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 97,
+    "gameId": 130302384,
+    "name": "ドシャグマβ",
+    "rank": "high",
+    "pieceIds": [
+      354,
+      355,
+      356,
+      357,
+      358
+    ],
+    "setBonus": {
+      "id": 70,
+      "name": "闢獣の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋１０"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋２５"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 97,
+      "name": "毛皮の誘惑",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "攻撃を当てた時、モンスターの注意を より強く引くようになる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 98,
+    "gameId": 139617472,
+    "name": "ピラギルβ",
+    "rank": "high",
+    "pieceIds": [
+      359
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 99,
+    "gameId": 238882304,
+    "name": "護鎖刃竜α",
+    "rank": "high",
+    "pieceIds": [
+      360,
+      361,
+      362,
+      363,
+      364
+    ],
+    "setBonus": {
+      "id": 26,
+      "name": "護鎖刃竜の命脈",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "大型モンスターの傷口を破壊した時、 体力が少し回復する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "大型モンスターの傷口を破壊した時、 体力が回復する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 100,
+    "gameId": 253715744,
+    "name": "護竜セクレトα",
+    "rank": "high",
+    "pieceIds": [
+      365
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 101,
+    "gameId": 297911136,
+    "name": "チャタβ",
+    "rank": "high",
+    "pieceIds": [
+      366,
+      367,
+      368,
+      369,
+      370
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 102,
+    "gameId": 303232896,
+    "name": "ピラギルα",
+    "rank": "high",
+    "pieceIds": [
+      371
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 103,
+    "gameId": 307878816,
+    "name": "トリスα",
+    "rank": "high",
+    "pieceIds": [
+      372,
+      373,
+      374,
+      375,
+      376
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 104,
+    "gameId": 309165664,
+    "name": "調査団α",
+    "rank": "high",
+    "pieceIds": [
+      377,
+      378,
+      379,
+      380,
+      381
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 105,
+    "gameId": 327345216,
+    "name": "エグゾルスβ",
+    "rank": "high",
+    "pieceIds": [
+      382,
+      383,
+      384,
+      385,
+      386
+    ],
+    "setBonus": {
+      "id": 149,
+      "name": "獄焔蛸の反逆",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「逆恨み」スキル発動中、追加で 少しダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「逆恨み」スキル発動中、追加で ダメージを与える"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 155,
+      "name": "ヌシの憤激",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "状態異常中、攻撃力が上昇する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 106,
+    "gameId": 417054528,
+    "name": "ネラチカ",
+    "rank": "low",
+    "pieceIds": [
+      387
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 107,
+    "gameId": 458233920,
+    "name": "ブランゴα",
+    "rank": "high",
+    "pieceIds": [
+      388,
+      389,
+      390,
+      391,
+      392
+    ],
+    "setBonus": {
+      "id": 107,
+      "name": "雪獅子の闘志",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "ジェスチャー「雄叫び」をした時、一定 時間、周囲の攻撃力が少し上昇。オトモ とサポートハンターには効果が大きい。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "ジェスチャー「雄叫び」をした時、一定 時間、周囲の攻撃力が上昇。オトモと サポートハンターには効果が大きい。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 108,
+    "gameId": 459951104,
+    "name": "クックβ",
+    "rank": "high",
+    "pieceIds": [
+      393,
+      394,
+      395,
+      396,
+      397
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 109,
+    "gameId": 472240160,
+    "name": "護闢獣α",
+    "rank": "high",
+    "pieceIds": [
+      398,
+      399,
+      400,
+      401,
+      402
+    ],
+    "setBonus": {
+      "id": 70,
+      "name": "闢獣の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋１０"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋２５"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 110,
+    "gameId": 598400000,
+    "name": "レダゼルトβ",
+    "rank": "high",
+    "pieceIds": [
+      403,
+      404,
+      405,
+      406,
+      407
+    ],
+    "setBonus": {
+      "id": 93,
+      "name": "煌雷竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「力の解放」のスキル発動時間を 少し延長する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「力の解放」のスキル発動時間を 延長する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 155,
+      "name": "ヌシの憤激",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "状態異常中、攻撃力が上昇する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 111,
+    "gameId": 608781568,
+    "name": "護兇爪竜",
+    "rank": "low",
+    "pieceIds": [
+      408,
+      409,
+      410,
+      411,
+      412
+    ],
+    "setBonus": {
+      "id": 115,
+      "name": "兇爪竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「連撃」スキルの効果発動時、 有効時間を延長し、基礎攻撃力＋８"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「連撃」スキルの効果発動時、 有効時間をさらに延長し、 基礎攻撃力＋１８"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 112,
+    "gameId": 638891520,
+    "name": "ハイメタα",
+    "rank": "high",
+    "pieceIds": [
+      413,
+      414,
+      415,
+      416,
+      417
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 113,
+    "gameId": 660577600,
+    "name": "ホープα",
+    "rank": "high",
+    "pieceIds": [
+      418,
+      419,
+      420,
+      421,
+      422
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 114,
+    "gameId": 672494016,
+    "name": "コンガ",
+    "rank": "low",
+    "pieceIds": [
+      423,
+      424,
+      425,
+      426,
+      427
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 115,
+    "gameId": 690915648,
+    "name": "スキュラ",
+    "rank": "low",
+    "pieceIds": [
+      428,
+      429,
+      430,
+      431,
+      432
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 116,
+    "gameId": 744512064,
+    "name": "ランゴスタβ",
+    "rank": "high",
+    "pieceIds": [
+      433,
+      434,
+      435,
+      436,
+      437
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 139,
+      "name": "甲虫の擬態",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "しゃがみ移動速度が上昇し、 大型モンスターに見つかりにくくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 117,
+    "gameId": 790327424,
+    "name": "ブラチカβ",
+    "rank": "high",
+    "pieceIds": [
+      438
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 139,
+      "name": "甲虫の擬態",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "しゃがみ移動速度が上昇し、 大型モンスターに見つかりにくくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 118,
+    "gameId": 808936256,
+    "name": "デスギアα",
+    "rank": "high",
+    "pieceIds": [
+      439,
+      440,
+      441,
+      442,
+      443
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 119,
+    "gameId": 884421248,
+    "name": "ドシャグマα",
+    "rank": "high",
+    "pieceIds": [
+      444,
+      445,
+      446,
+      447,
+      448
+    ],
+    "setBonus": {
+      "id": 70,
+      "name": "闢獣の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋１０"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋２５"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "gameId": 889233792,
+    "name": "バトルα",
+    "rank": "high",
+    "pieceIds": [
+      449,
+      450,
+      451,
+      452,
+      453
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 121,
+    "gameId": 939921856,
+    "name": "オウビートα",
+    "rank": "high",
+    "pieceIds": [
+      454,
+      455,
+      456,
+      457,
+      458
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 122,
+    "gameId": 951292800,
+    "name": "ヒラバミβ",
+    "rank": "high",
+    "pieceIds": [
+      459,
+      460,
+      461,
+      462,
+      463
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 123,
+    "gameId": 955926336,
+    "name": "護鎖刃竜β",
+    "rank": "high",
+    "pieceIds": [
+      464,
+      465,
+      466,
+      467,
+      468
+    ],
+    "setBonus": {
+      "id": 26,
+      "name": "護鎖刃竜の命脈",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "大型モンスターの傷口を破壊した時、 体力が少し回復する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "大型モンスターの傷口を破壊した時、 体力が回復する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 124,
+    "gameId": 1044071680,
+    "name": "エグゾルス",
+    "rank": "low",
+    "pieceIds": [
+      469,
+      470,
+      471,
+      472,
+      473
+    ],
+    "setBonus": {
+      "id": 149,
+      "name": "獄焔蛸の反逆",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「逆恨み」スキル発動中、追加で 少しダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「逆恨み」スキル発動中、追加で ダメージを与える"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 10,
+      "name": "ヌシの誇り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "旋律効果など、一定範囲内の仲間に 作用する効果を発動した際、一時攻撃力 上昇効果を追加で付与する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 125,
+    "gameId": 1064459456,
+    "name": "プポルβ",
+    "rank": "high",
+    "pieceIds": [
+      474,
+      475,
+      476,
+      477,
+      478
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 126,
+    "gameId": 1116493056,
+    "name": "スキュラα",
+    "rank": "high",
+    "pieceIds": [
+      479,
+      480,
+      481,
+      482,
+      483
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 127,
+    "gameId": 1122640768,
+    "name": "タリオスβ",
+    "rank": "high",
+    "pieceIds": [
+      484
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 128,
+    "gameId": 1178166400,
+    "name": "エグゾルスα",
+    "rank": "high",
+    "pieceIds": [
+      485,
+      486,
+      487,
+      488,
+      489
+    ],
+    "setBonus": {
+      "id": 149,
+      "name": "獄焔蛸の反逆",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「逆恨み」スキル発動中、追加で 少しダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「逆恨み」スキル発動中、追加で ダメージを与える"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 10,
+      "name": "ヌシの誇り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "旋律効果など、一定範囲内の仲間に 作用する効果を発動した際、一時攻撃力 上昇効果を追加で付与する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 129,
+    "gameId": 1204277120,
+    "name": "チャタ",
+    "rank": "low",
+    "pieceIds": [
+      490,
+      491,
+      492,
+      493,
+      494
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 130,
+    "gameId": 1254402048,
+    "name": "アジャラ",
+    "rank": "low",
+    "pieceIds": [
+      495,
+      496,
+      497,
+      498,
+      499
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 131,
+    "gameId": 1349287168,
+    "name": "クラノダスβ",
+    "rank": "high",
+    "pieceIds": [
+      500
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 132,
+    "gameId": 1354790272,
+    "name": "アジャラβ",
+    "rank": "high",
+    "pieceIds": [
+      501,
+      502,
+      503,
+      504,
+      505
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 97,
+      "name": "毛皮の誘惑",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "攻撃を当てた時、モンスターの注意を より強く引くようになる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 133,
+    "gameId": 1493203456,
+    "name": "護雷顎竜α",
+    "rank": "high",
+    "pieceIds": [
+      506,
+      507,
+      508,
+      509,
+      510
+    ],
+    "setBonus": {
+      "id": 11,
+      "name": "雷顎竜の闘志",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "追加のスタミナゲージを得る"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "長い追加のスタミナゲージを得る"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 134,
+    "gameId": 1552524288,
+    "name": "護兇爪竜α",
+    "rank": "high",
+    "pieceIds": [
+      511,
+      512,
+      513,
+      514,
+      515
+    ],
+    "setBonus": {
+      "id": 115,
+      "name": "兇爪竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「連撃」スキルの効果発動時、 有効時間を延長し、基礎攻撃力＋８"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「連撃」スキルの効果発動時、 有効時間をさらに延長し、 基礎攻撃力＋１８"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 27,
+      "name": "護竜の脈動",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜乳結晶の近くにいると、赤ゲージと スタミナの回復速度が上昇する。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 135,
+    "gameId": 1619457664,
+    "name": "アーティアα",
+    "rank": "high",
+    "pieceIds": [
+      516,
+      517,
+      518,
+      519,
+      520
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 136,
+    "gameId": 1693966848,
+    "name": "シュバルカβ",
+    "rank": "high",
+    "pieceIds": [
+      521,
+      522,
+      523,
+      524,
+      525
+    ],
+    "setBonus": {
+      "id": 33,
+      "name": "鎖刃竜の飢餓",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "継続してモンスターに攻撃を当てると、 体力が少し回復する （武器種により回復量は変動）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "継続してモンスターに攻撃を当てると、 体力が回復する （武器種により回復量は変動）"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 97,
+      "name": "毛皮の誘惑",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "攻撃を当てた時、モンスターの注意を より強く引くようになる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 137,
+    "gameId": 1699065088,
+    "name": "バーラ",
+    "rank": "low",
+    "pieceIds": [
+      526,
+      527,
+      528,
+      529,
+      530
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 138,
+    "gameId": 1719980800,
+    "name": "ブラチカα",
+    "rank": "high",
+    "pieceIds": [
+      531
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 139,
+    "gameId": 1725739136,
+    "name": "護雷顎竜β",
+    "rank": "high",
+    "pieceIds": [
+      532,
+      533,
+      534,
+      535,
+      536
+    ],
+    "setBonus": {
+      "id": 11,
+      "name": "雷顎竜の闘志",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "追加のスタミナゲージを得る"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "長い追加のスタミナゲージを得る"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 4,
+      "name": "護竜の守り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "竜都の跡形にいると、属性ダメージや 特殊ダメージが軽減される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 140,
+    "gameId": 1766304512,
+    "name": "ピラギル",
+    "rank": "low",
+    "pieceIds": [
+      537
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 141,
+    "gameId": 1769659776,
+    "name": "レウスα",
+    "rank": "high",
+    "pieceIds": [
+      538,
+      539,
+      540,
+      541,
+      542
+    ],
+    "setBonus": {
+      "id": 71,
+      "name": "火竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃を当てた時、確率で 追加の火属性ダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "追加で与える火属性ダメージが 上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 142,
+    "gameId": 1827374976,
+    "name": "シーウーβ",
+    "rank": "high",
+    "pieceIds": [
+      543,
+      544,
+      545,
+      546,
+      547
+    ],
+    "setBonus": {
+      "id": 25,
+      "name": "暗器蛸の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "こんがり肉などのアイテムを食べた時、 一定時間、基礎攻撃力＋１５"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "こんがり肉などのアイテムを食べた時、 一定時間、基礎攻撃力＋３０"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 143,
+    "gameId": 1845864960,
+    "name": "レザーα",
+    "rank": "high",
+    "pieceIds": [
+      548,
+      549,
+      550,
+      551,
+      552
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 144,
+    "gameId": 1869289088,
+    "name": "アズズα",
+    "rank": "high",
+    "pieceIds": [
+      553,
+      554,
+      555
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 20,
+      "name": "先達の導き",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "活性化している採取ポイントの 発生確率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 145,
+    "gameId": 1903087232,
+    "name": "ダマスクα",
+    "rank": "high",
+    "pieceIds": [
+      556,
+      557,
+      558,
+      559,
+      560
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 146,
+    "gameId": 1905422464,
+    "name": "アジャラα",
+    "rank": "high",
+    "pieceIds": [
+      561,
+      562,
+      563,
+      564,
+      565
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 147,
+    "gameId": 1956132992,
+    "name": "ゴアβ",
+    "rank": "high",
+    "pieceIds": [
+      566,
+      567,
+      568,
+      569,
+      570
+    ],
+    "setBonus": {
+      "id": 106,
+      "name": "黒蝕竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "大型モンスターと対峙した時、 狂竜症に感染する。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "大型モンスターと対峙した時、 狂竜症に感染し、攻撃力が上昇する。 克服時、さらに攻撃力が上昇する。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 148,
+    "gameId": 2013193984,
+    "name": "チェーンα",
+    "rank": "high",
+    "pieceIds": [
+      571,
+      572,
+      573,
+      574,
+      575
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 149,
+    "gameId": 2045212544,
+    "name": "プポル",
+    "rank": "low",
+    "pieceIds": [
+      576,
+      577,
+      578,
+      579,
+      580
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 150,
+    "gameId": 2048560000,
+    "name": "ネラチカα",
+    "rank": "high",
+    "pieceIds": [
+      581
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 148,
+      "name": "甲虫の知らせ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "フィールドでハチミツを採取した時の 取得数が増える"
+        }
+      ]
+    }
+  },
+  {
+    "id": 151,
+    "gameId": 2057674112,
+    "name": "竜王の隻眼α",
+    "rank": "high",
+    "pieceIds": [
+      582
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 152,
+    "gameId": 2113410944,
+    "name": "プポルα",
+    "rank": "high",
+    "pieceIds": [
+      583,
+      584,
+      585,
+      586,
+      587
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 153,
+    "gameId": 3633,
+    "name": "豪鬼α",
+    "rank": "high",
+    "pieceIds": [
+      588,
+      589,
+      590,
+      591,
+      592
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 157,
+      "name": "拳を極めし者",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "特殊アクションの威力が強化される。 ドライブインパクトで相殺が可能になり 成功すると一定時間さらに強化される。"
+        }
+      ]
+    }
+  },
+  {
+    "id": 154,
+    "gameId": 31658,
+    "name": "アイルーフェイクα",
+    "rank": "high",
+    "pieceIds": [
+      593
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 155,
+    "gameId": -1715492864,
+    "name": "レギオスβ",
+    "rank": "high",
+    "pieceIds": [
+      594,
+      595,
+      596,
+      597,
+      598
+    ],
+    "setBonus": {
+      "id": 167,
+      "name": "千刃竜の闘志",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「巧撃」スキルの効果時間を延長する。 また、発動中に再び条件を満たすと 効果時間が少し増える。（１回のみ）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰと同様の効果が発動する。 発動中に再び条件を満たしたとき、 攻撃力が上昇する。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 17,
+      "name": "鱗重ねの工夫",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "体力が４０％以下になった時、 一定時間スタミナの消費量が 減少する"
+        }
+      ]
+    }
+  },
+  {
+    "id": 156,
+    "gameId": 939,
+    "name": "アンダーリムグラスα",
+    "rank": "high",
+    "pieceIds": [
+      599
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 157,
+    "gameId": 7861,
+    "name": "ブレイクキャット",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 158,
+    "gameId": 8248,
+    "name": "アーフィα",
+    "rank": "high",
+    "pieceIds": [
+      600,
+      601,
+      602,
+      603,
+      604
+    ],
+    "setBonus": {
+      "id": 161,
+      "name": "踊火の祈り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "踊火の儀の期間中、クエストの報酬に 特別なアイテムが追加される （クエストの途中からは発動しない）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "踊火の儀の期間中、クエストの報酬に 特別なアイテムが追加され、 攻撃力と防御力が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 159,
+    "gameId": 8691,
+    "name": "旅立ちのホークハートα",
+    "rank": "high",
+    "pieceIds": [
+      605
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 160,
+    "gameId": 8912,
+    "name": "にくきゅうミトンα",
+    "rank": "high",
+    "pieceIds": [
+      606
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 161,
+    "gameId": 11052,
+    "name": "一枚羽根の首飾りα",
+    "rank": "high",
+    "pieceIds": [
+      607
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 162,
+    "gameId": 17173,
+    "name": "ドシャグマフェイクα",
+    "rank": "high",
+    "pieceIds": [
+      608
+    ],
+    "setBonus": {
+      "id": 70,
+      "name": "闢獣の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋１０"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "鍔迫り合い、または相殺が成功した時、 一定時間、基礎攻撃力＋２５"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 163,
+    "gameId": 20427,
+    "name": "ラギアβ",
+    "rank": "high",
+    "pieceIds": [
+      609,
+      610,
+      611,
+      612,
+      613
+    ],
+    "setBonus": {
+      "id": 162,
+      "name": "海竜の渦雷",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃でダメージを蓄積させると、追加で 雷属性ダメージが発生し、一定時間、 会心率ＵＰ（一部特定の攻撃は対象外）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰと同様の効果が発動する。 追加の雷属性ダメージが上昇し、 会心率ＵＰの効果時間が少し増える。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 164,
+    "gameId": 29445,
+    "name": "トゥナムルγ",
+    "rank": "high",
+    "pieceIds": [
+      614,
+      615,
+      616,
+      617,
+      618
+    ],
+    "setBonus": {
+      "id": 153,
+      "name": "波衣竜の守護",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "特殊装具を使用した時、一定時間 防御力が上昇する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "特殊装具を使用した時、一定時間 防御力と耐性値が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 131,
+      "name": "ヌシの魂",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "致命的な大ダメージを一度だけ軽減 発動前は攻撃力が上がり防御力が下がる 発動後は防御力と耐性値が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 165,
+    "gameId": 30090,
+    "name": "ハートグラスα",
+    "rank": "high",
+    "pieceIds": [
+      619
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 166,
+    "gameId": 30649,
+    "name": "ラギアα",
+    "rank": "high",
+    "pieceIds": [
+      620,
+      621,
+      622,
+      623,
+      624
+    ],
+    "setBonus": {
+      "id": 162,
+      "name": "海竜の渦雷",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃でダメージを蓄積させると、追加で 雷属性ダメージが発生し、一定時間、 会心率ＵＰ（一部特定の攻撃は対象外）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰと同様の効果が発動する。 追加の雷属性ダメージが上昇し、 会心率ＵＰの効果時間が少し増える。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 167,
+    "gameId": 31514,
+    "name": "ダイバーα",
+    "rank": "high",
+    "pieceIds": [
+      625,
+      626,
+      627,
+      628,
+      629
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 168,
+    "gameId": 1137760384,
+    "name": "レギオスα",
+    "rank": "high",
+    "pieceIds": [
+      630,
+      631,
+      632,
+      633,
+      634
+    ],
+    "setBonus": {
+      "id": 167,
+      "name": "千刃竜の闘志",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「巧撃」スキルの効果時間を延長する。 また、発動中に再び条件を満たすと 効果時間が少し増える。（１回のみ）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰと同様の効果が発動する。 発動中に再び条件を満たしたとき、 攻撃力が上昇する。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 132,
+      "name": "鱗張りの技法",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "モンスターに乗りやすくなり、 乗り状態で成功しやすくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 169,
+    "gameId": 273,
+    "name": "ハーベストα",
+    "rank": "high",
+    "pieceIds": [
+      635,
+      636,
+      637,
+      638,
+      639
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 170,
+    "gameId": 723,
+    "name": "オメガコスチュームα",
+    "rank": "high",
+    "pieceIds": [
+      640,
+      641,
+      642,
+      643,
+      644
+    ],
+    "setBonus": {
+      "id": 173,
+      "name": "オメガレゾナンス",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "クエスト開始後、レゾナンス：ファー もしくはニアーが交互に発動し、条件を 満たすと攻撃力、または会心率が上昇"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "レゾナンスⅠの効果と、武器スキル 「シールドオプション」または 「連携プログラム」の効果が上昇"
+        }
+      ]
+    },
+    "groupBonus": null
+  },
+  {
+    "id": 171,
+    "gameId": 768,
+    "name": "ふわふわケモノシッポ",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 172,
+    "gameId": 1266,
+    "name": "スカルフェイスα",
+    "rank": "high",
+    "pieceIds": [
+      645
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 173,
+    "gameId": 9442,
+    "name": "ゼレドロα",
+    "rank": "high",
+    "pieceIds": [
+      646,
+      647
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 19,
+      "name": "革細工の柔性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "採集行動の速度が速くなり、 採集・剥ぎ取り中に攻撃を 受けてものけぞらなくなる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 174,
+    "gameId": 18386,
+    "name": "エグゾルスγ",
+    "rank": "high",
+    "pieceIds": [
+      648,
+      649,
+      650,
+      651,
+      652
+    ],
+    "setBonus": {
+      "id": 149,
+      "name": "獄焔蛸の反逆",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "「逆恨み」スキル発動中、追加で 少しダメージを与える"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "「逆恨み」スキル発動中、追加で ダメージを与える"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 131,
+      "name": "ヌシの魂",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "致命的な大ダメージを一度だけ軽減 発動前は攻撃力が上がり防御力が下がる 発動後は防御力と耐性値が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 175,
+    "gameId": 20095,
+    "name": "ふわふわケモノミミ",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 176,
+    "gameId": 22921,
+    "name": "ベイルアーマーα",
+    "rank": "high",
+    "pieceIds": [
+      653,
+      654,
+      655,
+      656,
+      657
+    ],
+    "setBonus": {
+      "id": 172,
+      "name": "暗黒騎士の証",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "体力ゲージに赤い部分がある間、属性 攻撃力が上がる。大剣の一部の溜め斬り が、３段階まで溜めると強化される。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "特殊アクション「ブラックナイト」が 使用可能になる。"
+        }
+      ]
+    },
+    "groupBonus": null
+  },
+  {
+    "id": 177,
+    "gameId": 29198,
+    "name": "キトゥンアイα",
+    "rank": "high",
+    "pieceIds": [
+      658
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 178,
+    "gameId": 29371,
+    "name": "ゴストゥラα",
+    "rank": "high",
+    "pieceIds": [
+      659,
+      660,
+      661,
+      662,
+      663
+    ],
+    "setBonus": {
+      "id": 170,
+      "name": "夢灯の祈り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "夢灯の儀の期間中、クエストの報酬に 特別なアイテムが追加される （クエストの途中からは発動しない）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "夢灯の儀の期間中、クエストの報酬に 特別なアイテムが追加され、 攻撃力と防御力が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 179,
+    "gameId": 29778,
+    "name": "ティアドロップグラスα",
+    "rank": "high",
+    "pieceIds": [
+      664
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 180,
+    "gameId": 2461,
+    "name": "オリオンα",
+    "rank": "high",
+    "pieceIds": [
+      665,
+      666,
+      667,
+      668,
+      669
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 181,
+    "gameId": 2561,
+    "name": "ゴグα",
+    "rank": "high",
+    "pieceIds": [
+      670,
+      671,
+      672,
+      673,
+      674
+    ],
+    "setBonus": {
+      "id": 178,
+      "name": "巨戟龍の黙示録",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "戦闘中の大型モンスターが怒ると、 属性攻撃値が上昇する。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰの効果が上昇し、一定時間、ダメージ を防ぐ防壁を得る。（防壁を得る効果は 一定時間経過しないと再発動しません）"
+        }
+      ]
+    },
+    "groupBonus": null
+  },
+  {
+    "id": 182,
+    "gameId": 4066,
+    "name": "ゴグβ",
+    "rank": "high",
+    "pieceIds": [
+      675,
+      676,
+      677,
+      678,
+      679
+    ],
+    "setBonus": {
+      "id": 26,
+      "name": "護鎖刃竜の命脈",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "大型モンスターの傷口を破壊した時、 体力が少し回復する"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "大型モンスターの傷口を破壊した時、 体力が回復する"
+        }
+      ]
+    },
+    "groupBonus": null
+  },
+  {
+    "id": 183,
+    "gameId": 4744,
+    "name": "はりきりモリバーα",
+    "rank": "high",
+    "pieceIds": [
+      680
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 184,
+    "gameId": 12528,
+    "name": "祝福の腰飾りα",
+    "rank": "high",
+    "pieceIds": [
+      681
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 185,
+    "gameId": 15894,
+    "name": "ダハディラγ",
+    "rank": "high",
+    "pieceIds": [
+      682,
+      683,
+      684,
+      685,
+      686
+    ],
+    "setBonus": {
+      "id": 62,
+      "name": "凍峰竜の反逆",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "糸拘束状態、凍結状態の回復時、または 拘束攻撃から解放された時、鍔迫り合い の後、一定時間、攻撃力が上昇"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "糸拘束状態、凍結状態の回復時、または 拘束攻撃から解放された時、鍔迫り合い の後、一定時間、攻撃力が大きく上昇"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 131,
+      "name": "ヌシの魂",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "致命的な大ダメージを一度だけ軽減 発動前は攻撃力が上がり防御力が下がる 発動後は防御力と耐性値が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 186,
+    "gameId": 25244,
+    "name": "アナライズアイα",
+    "rank": "high",
+    "pieceIds": [
+      687
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 187,
+    "gameId": 27205,
+    "name": "コスモロイド",
+    "rank": "high",
+    "pieceIds": [],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 188,
+    "gameId": 30138,
+    "name": "ミラーバイザーα",
+    "rank": "high",
+    "pieceIds": [
+      688
+    ],
+    "setBonus": null,
+    "groupBonus": null
+  },
+  {
+    "id": 189,
+    "gameId": 31453,
+    "name": "セレモニアルα",
+    "rank": "high",
+    "pieceIds": [
+      689,
+      690,
+      691,
+      692,
+      693
+    ],
+    "setBonus": {
+      "id": 180,
+      "name": "祝謡の祈り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "祝謡の儀の期間中、クエストの報酬に 特別なアイテムが追加される （クエストの途中からは発動しない）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "祝謡の儀の期間中、クエストの報酬に 特別なアイテムが追加され、 攻撃力と防御力が大きく上昇する"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 190,
+    "gameId": 3531,
+    "name": "蒼世ノ侍α",
+    "rank": "high",
+    "pieceIds": [
+      694,
+      695,
+      696,
+      697,
+      698
+    ],
+    "setBonus": {
+      "id": 162,
+      "name": "海竜の渦雷",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "攻撃でダメージを蓄積させると、追加で 雷属性ダメージが発生し、一定時間、 会心率ＵＰ（一部特定の攻撃は対象外）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "Ⅰと同様の効果が発動する。 追加の雷属性ダメージが上昇し、 会心率ＵＰの効果時間が少し増える。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 150,
+      "name": "毛皮の昂揚",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、力尽きる度に攻撃力と 防御力が上がる（最大２回まで）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 191,
+    "gameId": 4456,
+    "name": "ププロフェイクα",
+    "rank": "high",
+    "pieceIds": [
+      699
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 89,
+      "name": "革細工の滑性",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "地形を利用したスライディングを 行うと、一定時間会心率が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 192,
+    "gameId": 14725,
+    "name": "クイーンα",
+    "rank": "high",
+    "pieceIds": [
+      700,
+      701,
+      702,
+      703,
+      704
+    ],
+    "setBonus": {
+      "id": 106,
+      "name": "黒蝕竜の力",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "大型モンスターと対峙した時、 狂竜症に感染する。"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "大型モンスターと対峙した時、 狂竜症に感染し、攻撃力が上昇する。 克服時、さらに攻撃力が上昇する。"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 73,
+      "name": "栄光の誉れ",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエストのターゲット報酬が増える （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  },
+  {
+    "id": 193,
+    "gameId": 23957,
+    "name": "シュバルカγ",
+    "rank": "high",
+    "pieceIds": [
+      705,
+      706,
+      707,
+      708,
+      709
+    ],
+    "setBonus": {
+      "id": 33,
+      "name": "鎖刃竜の飢餓",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 2,
+          "description": "継続してモンスターに攻撃を当てると、 体力が少し回復する （武器種により回復量は変動）"
+        },
+        {
+          "level": 2,
+          "setPiecesRequired": 4,
+          "description": "継続してモンスターに攻撃を当てると、 体力が回復する （武器種により回復量は変動）"
+        }
+      ]
+    },
+    "groupBonus": {
+      "id": 131,
+      "name": "ヌシの魂",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "致命的な大ダメージを一度だけ軽減 発動前は攻撃力が上がり防御力が下がる 発動後は防御力と耐性値が上がる"
+        }
+      ]
+    }
+  },
+  {
+    "id": 194,
+    "gameId": 25337,
+    "name": "フルドレスα",
+    "rank": "high",
+    "pieceIds": [
+      710,
+      711,
+      712,
+      713,
+      714
+    ],
+    "setBonus": null,
+    "groupBonus": {
+      "id": 74,
+      "name": "祝祭の巡り",
+      "ranks": [
+        {
+          "level": 1,
+          "setPiecesRequired": 3,
+          "description": "クエスト中、素材を剥ぎ取れる回数＋１ （クエストの途中からは発動しない）"
+        }
+      ]
+    }
+  }
+]

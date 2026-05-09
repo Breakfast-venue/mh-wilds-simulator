@@ -56,7 +56,7 @@ export default function ArmorsPage() {
               <TableCell>
                 {a.skills.map((s) => (
                   <Badge key={s.skillId} variant="secondary" className="mr-1 mb-1">
-                    {s.name} +{s.level}
+                    {s.skillName} +{s.level}
                   </Badge>
                 ))}
               </TableCell>

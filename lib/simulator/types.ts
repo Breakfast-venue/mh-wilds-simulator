@@ -1,10 +1,10 @@
-import type { Armor, Weapon, Decoration } from "@/lib/types";
+import type { Armor, Weapon, Decoration, Charm, WeaponKind } from "@/lib/types";
 
 // === 検索入力 ===
 export type SkillRequirement = {
-  skillId: string;  // 内部ID（Kiranico slug、例: "gong-ji"）
-  name: string;     // 表示名（例: "攻撃"）
-  level: number;    // 要求Lv
+  skillId: number;
+  skillName: string;
+  level: number;
 };
 
 export type ResistanceMin = {
@@ -17,23 +17,15 @@ export type ResistanceMin = {
 
 export type SearchInput = {
   desiredSkills: SkillRequirement[];
-  weaponType?: string;          // "大剣" | "片手剣" | ... | undefined（指定なし）
+  weaponType?: WeaponKind;      // "sword-shield" | "great-sword" | ...
   resistanceMin?: ResistanceMin;
-  useOwnedCharms?: boolean;     // MVP: false固定、Phase 3.5で有効化
-};
-
-// === 護石（Phase 3.5でlocalStorage実装、型だけ用意）===
-export type Charm = {
-  id: string;
-  name: string;
-  skills: { skillId: string; name: string; level: number }[];
-  slots: number[];
+  useOwnedCharms?: boolean;
 };
 
 // === 出力（検索結果の1セット）===
 export type TotalSkill = {
-  skillId: string;
-  name: string;
+  skillId: number;
+  skillName: string;
   level: number;
 };
 
