@@ -24,59 +24,6 @@ import { ResultCard } from "./ResultCard";
 import type { WeaponKind } from "@/lib/types";
 import { WEAPON_KIND_JP } from "@/lib/i18n";
 
-// === M-3.5-1 動作確認用（M-3.5-3 着手時に削除）===
-import {
-  buildSkillSlotMap,
-  logSkillSlotMapSample,
-} from "@/lib/simulator/decorationIndex";
-import { masters as _debugMasters } from "@/lib/data/loadMasters";
-
-if (typeof window !== "undefined") {
-  console.log("=== 全エンティティの skills[0] キー名チェック ===");
-  console.log(
-    "armors[0].skills[0]      =",
-    _debugMasters.armors[0]?.skills?.[0],
-  );
-  console.log(
-    "weapons[0].skills[0]     =",
-    _debugMasters.weapons.find((w) => w.skills?.length > 0)?.skills?.[0],
-  );
-  console.log(
-    "decorations[0].skills[0] =",
-    _debugMasters.decorations[0]?.skills?.[0],
-  );
-  console.log(
-    "charms[0].skills[0]      =",
-    _debugMasters.charms[0]?.skills?.[0],
-  );
-  console.log("=== keys ===");
-  console.log(
-    "armors      keys =",
-    Object.keys(_debugMasters.armors[0]?.skills?.[0] ?? {}),
-  );
-  console.log(
-    "decorations keys =",
-    Object.keys(_debugMasters.decorations[0]?.skills?.[0] ?? {}),
-  );
-  console.log(
-    "charms      keys =",
-    Object.keys(_debugMasters.charms[0]?.skills?.[0] ?? {}),
-  );
-  console.log("[debug] weapons[0] =", _debugMasters.weapons[0]);
-  console.log("[debug] defenseBonus =", _debugMasters.weapons[0]?.defenseBonus);
-  console.log("[debug] armors[0] full =", _debugMasters.armors[0]);
-  console.log("[debug] armors[0].defense =", _debugMasters.armors[0]?.defense);
-  console.log("[debug] weapons[0].damage =", _debugMasters.weapons[0]?.damage);
-  console.log(
-    "[debug] weapons[0].defenseBonus =",
-    _debugMasters.weapons[0]?.defenseBonus,
-  );
-
-  const _map = buildSkillSlotMap(_debugMasters.decorations);
-  logSkillSlotMapSample(_map);
-}
-// === /M-3.5-1 動作確認用 ===
-
 // "any" = 指定なしのセンチネル。それ以外は API の WeaponKind enum 値
 const WEAPON_KIND_OPTIONS: Array<"any" | WeaponKind> = [
   "any",

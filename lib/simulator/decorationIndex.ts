@@ -69,5 +69,4 @@ export function logSkillSlotMapSample(map: SkillSlotMap): void {
       console.log(`  (id=${id})  単独珠なし`);
     }
   }
-  console.log(`[skillSlotMap] total entries: ${map.size}`);
 }
