@@ -10,7 +10,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { SKILL_KIND_JP } from "@/lib/i18n";
 
-
 export default function SkillsPage() {
   const skills = masters.skills;
   return (

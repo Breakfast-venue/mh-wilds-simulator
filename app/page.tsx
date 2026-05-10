@@ -2,7 +2,11 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const PAGES = [
-  { href: "/simulator", title: "🔍 装備検索", desc: "スキル指定で装備セット提案" },
+  {
+    href: "/simulator",
+    title: "🔍 装備検索",
+    desc: "スキル指定で装備セット提案",
+  },
   { href: "/skills", title: "スキル", desc: "全スキル一覧" },
   { href: "/decorations", title: "装飾品", desc: "全装飾品一覧" },
   { href: "/armors", title: "防具", desc: "シリーズ・部位別" },

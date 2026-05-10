@@ -6,38 +6,110 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
-  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { masters } from "@/lib/data/loadMasters";
 import { searchEquipmentSets } from "@/lib/simulator/search";
 import type {
-  EquipmentSet, ResistanceMin, SkillRequirement,
+  EquipmentSet,
+  ResistanceMin,
+  SkillRequirement,
 } from "@/lib/simulator/types";
 import { ResultCard } from "./ResultCard";
 import type { WeaponKind } from "@/lib/types";
+import { WEAPON_KIND_JP } from "@/lib/i18n";
 
+// === M-3.5-1 動作確認用（M-3.5-3 着手時に削除）===
+import {
+  buildSkillSlotMap,
+  logSkillSlotMapSample,
+} from "@/lib/simulator/decorationIndex";
+import { masters as _debugMasters } from "@/lib/data/loadMasters";
 
-const WEAPON_TYPES = [
-  "指定なし", "大剣", "片手剣", "双剣", "太刀", "ハンマー", "狩猟笛",
-  "ランス", "ガンランス", "スラッシュアックス", "チャージアックス",
-  "操虫棍", "弓", "ライトボウガン", "ヘビィボウガン",
-] as const;
+if (typeof window !== "undefined") {
+  console.log("=== 全エンティティの skills[0] キー名チェック ===");
+  console.log(
+    "armors[0].skills[0]      =",
+    _debugMasters.armors[0]?.skills?.[0],
+  );
+  console.log(
+    "weapons[0].skills[0]     =",
+    _debugMasters.weapons.find((w) => w.skills?.length > 0)?.skills?.[0],
+  );
+  console.log(
+    "decorations[0].skills[0] =",
+    _debugMasters.decorations[0]?.skills?.[0],
+  );
+  console.log(
+    "charms[0].skills[0]      =",
+    _debugMasters.charms[0]?.skills?.[0],
+  );
+  console.log("=== keys ===");
+  console.log(
+    "armors      keys =",
+    Object.keys(_debugMasters.armors[0]?.skills?.[0] ?? {}),
+  );
+  console.log(
+    "decorations keys =",
+    Object.keys(_debugMasters.decorations[0]?.skills?.[0] ?? {}),
+  );
+  console.log(
+    "charms      keys =",
+    Object.keys(_debugMasters.charms[0]?.skills?.[0] ?? {}),
+  );
+  console.log("[debug] weapons[0] =", _debugMasters.weapons[0]);
+  console.log("[debug] defenseBonus =", _debugMasters.weapons[0]?.defenseBonus);
+  console.log("[debug] armors[0] full =", _debugMasters.armors[0]);
+  console.log("[debug] armors[0].defense =", _debugMasters.armors[0]?.defense);
+  console.log("[debug] weapons[0].damage =", _debugMasters.weapons[0]?.damage);
+  console.log(
+    "[debug] weapons[0].defenseBonus =",
+    _debugMasters.weapons[0]?.defenseBonus,
+  );
+
+  const _map = buildSkillSlotMap(_debugMasters.decorations);
+  logSkillSlotMapSample(_map);
+}
+// === /M-3.5-1 動作確認用 ===
+
+// "any" = 指定なしのセンチネル。それ以外は API の WeaponKind enum 値
+const WEAPON_KIND_OPTIONS: Array<"any" | WeaponKind> = [
+  "any",
+  "great-sword",
+  "long-sword",
+  "sword-shield",
+  "dual-blades",
+  "hammer",
+  "hunting-horn",
+  "lance",
+  "gunlance",
+  "switch-axe",
+  "charge-blade",
+  "insect-glaive",
+  "bow",
+  "light-bowgun",
+  "heavy-bowgun",
+];
 
 const RES_KEYS: { key: keyof ResistanceMin; label: string }[] = [
-  { key: "fire",    label: "火" },
-  { key: "water",   label: "水" },
+  { key: "fire", label: "火" },
+  { key: "water", label: "水" },
   { key: "thunder", label: "雷" },
-  { key: "ice",     label: "氷" },
-  { key: "dragon",  label: "龍" },
+  { key: "ice", label: "氷" },
+  { key: "dragon", label: "龍" },
 ];
 
 export default function SimulatorPage() {
   // === 検索条件の状態 ===
   const [skillReqs, setSkillReqs] = useState<SkillRequirement[]>([]);
-  const [pickedSkillId, setPickedSkillId] = useState<string>("");      // 空="未選択"
+  const [pickedSkillId, setPickedSkillId] = useState<string>(""); // 空="未選択"
   const [pickedLevel, setPickedLevel] = useState<number>(1);
-  const [weaponType, setWeaponType] = useState<string>("");            // 空="指定なし"
+  const [weaponType, setWeaponType] = useState<"any" | WeaponKind>("any");
   const [resMin, setResMin] = useState<ResistanceMin>({});
 
   // === 結果 ===
@@ -62,11 +134,11 @@ export default function SimulatorPage() {
     const skill = armorSkills.find((s) => s.id === id);
     if (!skill) return;
     setSkillReqs([
-    ...skillReqs,
-    { skillId: skill.id, skillName: skill.name, level: pickedLevel },
+      ...skillReqs,
+      { skillId: skill.id, skillName: skill.name, level: pickedLevel },
     ]);
     setPickedSkillId("");
-    };
+  };
 
   const handleRemoveSkill = (skillId: number) => {
     setSkillReqs(skillReqs.filter((r) => r.skillId !== skillId));
@@ -92,7 +164,7 @@ export default function SimulatorPage() {
       const hasResMin = Object.values(resMin).some((v) => v !== undefined);
       const out = searchEquipmentSets({
         desiredSkills: skillReqs,
-        weaponType: weaponType === "" ? undefined : (weaponType as WeaponKind),
+        weaponType: weaponType === "any" ? undefined : weaponType,
         resistanceMin: hasResMin ? resMin : undefined,
       });
       setResults(out);
@@ -131,7 +203,7 @@ export default function SimulatorPage() {
                   onClick={() => handleRemoveSkill(r.skillId)}
                   title="クリックで削除"
                 >
-                {r.skillName} +{r.level} ✕
+                  {r.skillName} +{r.level} ✕
                 </Badge>
               ))
             )}
@@ -147,7 +219,7 @@ export default function SimulatorPage() {
                 <SelectContent>
                   {armorSkills.map((s) => (
                     <SelectItem key={s.id} value={String(s.id)}>
-                    {s.name}
+                      {s.name}
                     </SelectItem>
                   ))}
                 </SelectContent>
@@ -178,14 +250,17 @@ export default function SimulatorPage() {
           <CardTitle>武器種</CardTitle>
         </CardHeader>
         <CardContent>
-          <Select value={weaponType} onValueChange={setWeaponType}>
+          <Select
+            value={weaponType}
+            onValueChange={(v) => setWeaponType(v as "any" | WeaponKind)}
+          >
             <SelectTrigger className="w-[220px]">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              {WEAPON_TYPES.map((t) => (
-                <SelectItem key={t} value={t}>
-                  {t}
+              {WEAPON_KIND_OPTIONS.map((k) => (
+                <SelectItem key={k} value={k}>
+                  {k === "any" ? "指定なし" : WEAPON_KIND_JP[k]}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -241,7 +316,8 @@ export default function SimulatorPage() {
           {results.length === 0 ? (
             <Card>
               <CardContent className="py-8 text-center text-muted-foreground">
-                条件を満たす装備セットが見つからなかったよ。スキルLvを下げる or 武器種指定を外してみて。
+                条件を満たす装備セットが見つからなかったよ。スキルLvを下げる or
+                武器種指定を外してみて。
               </CardContent>
             </Card>
           ) : (

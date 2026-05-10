@@ -2,19 +2,39 @@
 import { useState, useMemo } from "react";
 import { masters } from "@/lib/data/loadMasters";
 import {
-  Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import {
-  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select";
 import { WEAPON_KIND_JP } from "@/lib/i18n";
 
-
 const WEAPON_TYPES = [
-  "全武器種", "大剣", "片手剣", "双剣", "太刀", "ハンマー", "狩猟笛",
-  "ランス", "ガンランス", "スラッシュアックス", "チャージアックス",
-  "操虫棍", "弓", "ライトボウガン", "ヘビィボウガン",
+  "全武器種",
+  "大剣",
+  "片手剣",
+  "双剣",
+  "太刀",
+  "ハンマー",
+  "狩猟笛",
+  "ランス",
+  "ガンランス",
+  "スラッシュアックス",
+  "チャージアックス",
+  "操虫棍",
+  "弓",
+  "ライトボウガン",
+  "ヘビィボウガン",
 ] as const;
 
 export default function WeaponsPage() {
@@ -47,7 +67,9 @@ export default function WeaponsPage() {
           </SelectTrigger>
           <SelectContent>
             {WEAPON_TYPES.map((t) => (
-              <SelectItem key={t} value={t}>{t}</SelectItem>
+              <SelectItem key={t} value={t}>
+                {t}
+              </SelectItem>
             ))}
           </SelectContent>
         </Select>
@@ -67,15 +89,23 @@ export default function WeaponsPage() {
         <TableBody>
           {weapons.map((w) => (
             <TableRow key={`${w.kind}-${w.id}`}>
-              <TableCell><Badge variant="outline">{WEAPON_KIND_JP[w.kind]}</Badge></TableCell>
+              <TableCell>
+                <Badge variant="outline">{WEAPON_KIND_JP[w.kind]}</Badge>
+              </TableCell>
               <TableCell className="font-medium">{w.name}</TableCell>
               <TableCell>{w.damage}</TableCell>
-              <TableCell>{w.affinity >= 0 ? `+${w.affinity}%` : `${w.affinity}%`}</TableCell>
-              <TableCell className="text-xs font-mono">[{w.slots.join("][")}]</TableCell>
               <TableCell>
-               {w.skills.map((s, i) => (
-                <span key={`${w.id}-${s.skillId}-${i}`}>{s.skillName} +{s.level}</span>
-              ))}
+                {w.affinity >= 0 ? `+${w.affinity}%` : `${w.affinity}%`}
+              </TableCell>
+              <TableCell className="text-xs font-mono">
+                [{w.slots.join("][")}]
+              </TableCell>
+              <TableCell>
+                {w.skills.map((s, i) => (
+                  <span key={`${w.id}-${s.skillId}-${i}`}>
+                    {s.skillName} +{s.level}
+                  </span>
+                ))}
               </TableCell>
             </TableRow>
           ))}

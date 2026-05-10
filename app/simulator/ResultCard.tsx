@@ -6,21 +6,26 @@ import type { Decoration } from "@/lib/types";
 import type { EquipmentSet } from "@/lib/simulator/types";
 import { WEAPON_KIND_JP } from "@/lib/i18n";
 
-
-const PARTS: { key: "head" | "body" | "arms" | "waist" | "legs"; label: string }[] = [
-  { key: "head",  label: "頭" },
-  { key: "body",  label: "胴" },
-  { key: "arms",  label: "腕" },
+const PARTS: {
+  key: "head" | "body" | "arms" | "waist" | "legs";
+  label: string;
+}[] = [
+  { key: "head", label: "頭" },
+  { key: "body", label: "胴" },
+  { key: "arms", label: "腕" },
   { key: "waist", label: "腰" },
-  { key: "legs",  label: "脚" },
+  { key: "legs", label: "脚" },
 ];
 
-const RES_KEYS: { key: keyof EquipmentSet["totalResistances"]; label: string }[] = [
-  { key: "fire",    label: "火" },
-  { key: "water",   label: "水" },
+const RES_KEYS: {
+  key: keyof EquipmentSet["totalResistances"];
+  label: string;
+}[] = [
+  { key: "fire", label: "火" },
+  { key: "water", label: "水" },
   { key: "thunder", label: "雷" },
-  { key: "ice",     label: "氷" },
-  { key: "dragon",  label: "龍" },
+  { key: "ice", label: "氷" },
+  { key: "dragon", label: "龍" },
 ];
 
 function groupDecorations(
@@ -67,7 +72,9 @@ export function ResultCard({
             <div className="text-sm flex items-center gap-2">
               <Badge variant="outline">{WEAPON_KIND_JP[set.weapon.kind]}</Badge>
               <span className="font-medium">{set.weapon.name}</span>
-              <span className="text-muted-foreground">攻撃 {set.weapon.damage}</span>
+              <span className="text-muted-foreground">
+                攻撃 {set.weapon.damage}
+              </span>
               <span className="text-xs font-mono text-muted-foreground">
                 [{set.weapon.slots.join("][")}]
               </span>
@@ -106,7 +113,7 @@ export function ResultCard({
               {set.charm.name}{" "}
               {set.charm.skills.map((s) => (
                 <Badge key={s.skillId} variant="secondary" className="ml-1">
-                {s.skillName} +{s.level}
+                  {s.skillName} +{s.level}
                 </Badge>
               ))}
             </div>
@@ -138,7 +145,7 @@ export function ResultCard({
           <div className="flex flex-wrap gap-1">
             {set.totalSkills.map((s) => (
               <Badge key={s.skillId} variant="secondary">
-              {s.skillName} +{s.level}
+                {s.skillName} +{s.level}
               </Badge>
             ))}
           </div>

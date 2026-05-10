@@ -74,10 +74,20 @@ export type ArmorSet = {
 
 // ===== Weapon =====
 export type WeaponKind =
-  | "bow" | "charge-blade" | "dual-blades" | "great-sword"
-  | "gunlance" | "hammer" | "heavy-bowgun" | "hunting-horn"
-  | "insect-glaive" | "lance" | "light-bowgun" | "long-sword"
-  | "switch-axe" | "sword-shield";
+  | "bow"
+  | "charge-blade"
+  | "dual-blades"
+  | "great-sword"
+  | "gunlance"
+  | "hammer"
+  | "heavy-bowgun"
+  | "hunting-horn"
+  | "insect-glaive"
+  | "lance"
+  | "light-bowgun"
+  | "long-sword"
+  | "switch-axe"
+  | "sword-shield";
 
 export type Weapon = {
   id: number;
@@ -108,11 +118,11 @@ export type Decoration = {
 
 // ===== Charm =====
 export type Charm = {
-  id: number;       // フラット化後の rank ごとのユニーク ID
+  id: number; // フラット化後の rank ごとのユニーク ID
   gameId: number;
-  charmId: number;  // family の ID（Ⅰ/Ⅱ/Ⅲ で同じ値）
-  name: string;     // 例「防風の護石Ⅱ」
-  level: number;    // Ⅰ=1 / Ⅱ=2 / Ⅲ=3
+  charmId: number; // family の ID（Ⅰ/Ⅱ/Ⅲ で同じ値）
+  name: string; // 例「防風の護石Ⅱ」
+  level: number; // Ⅰ=1 / Ⅱ=2 / Ⅲ=3
   rarity: number;
   description: string;
   skills: SkillRank[];

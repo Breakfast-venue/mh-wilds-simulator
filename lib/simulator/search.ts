@@ -25,7 +25,13 @@ import {
 } from "./combine";
 import { masters as defaultMasters } from "@/lib/data/loadMasters";
 
-const PARTS = ["head", "chest", "arms", "waist", "legs"] as const satisfies readonly ArmorPart[];
+const PARTS = [
+  "head",
+  "chest",
+  "arms",
+  "waist",
+  "legs",
+] as const satisfies readonly ArmorPart[];
 type Part = (typeof PARTS)[number];
 
 const MAX_RESULTS = 10;
@@ -37,7 +43,7 @@ type ArmorPool = Record<Part, Armor[]>;
 // === 候補プール絞り込み ===
 function isCandidateArmor(armor: Armor, reqIds: Set<number>): boolean {
   const hasReqSkill = armor.skills.some((s) => reqIds.has(s.skillId));
-  const slotBudget = armor.slots.reduce((s, lv) => s + lv, 0);  // 合計スロットLv
+  const slotBudget = armor.slots.reduce((s, lv) => s + lv, 0); // 合計スロットLv
   const hasMeaningfulSlot = slotBudget >= 2;
   return hasReqSkill || hasMeaningfulSlot;
 }
@@ -48,7 +54,11 @@ function buildArmorPool(
 ): ArmorPool {
   const reqIds = new Set(requirements.map((r) => r.skillId));
   const pool: ArmorPool = {
-    head: [], chest: [], arms: [], waist: [], legs: [],
+    head: [],
+    chest: [],
+    arms: [],
+    waist: [],
+    legs: [],
   };
   for (const a of armors) {
     if (a.part in pool && isCandidateArmor(a, reqIds)) {
@@ -95,7 +105,9 @@ export function searchEquipmentSets(
   masters: Masters = defaultMasters,
 ): EquipmentSet[] {
   console.time("[search] total");
-  console.log(`[search] weapons=${masters.weapons.length} armors=${masters.armors.length}`);
+  console.log(
+    `[search] weapons=${masters.weapons.length} armors=${masters.armors.length}`,
+  );
 
   const { desiredSkills, weaponType, resistanceMin } = input;
   if (desiredSkills.length === 0) return [];
@@ -109,12 +121,14 @@ export function searchEquipmentSets(
     : [undefined];
   console.log(`[search] weapon candidates: ${weaponCandidates.length}`);
 
-  const pool = buildArmorPool(highArmors, desiredSkills);  // ← highArmors を渡す
+  const pool = buildArmorPool(highArmors, desiredSkills); // ← highArmors を渡す
   console.log("[search] armor pool sizes:", {
-    head: pool.head.length, chest: pool.chest.length,
-    arms: pool.arms.length, waist: pool.waist.length, legs: pool.legs.length,
+    head: pool.head.length,
+    chest: pool.chest.length,
+    arms: pool.arms.length,
+    waist: pool.waist.length,
+    legs: pool.legs.length,
   });
-
 
   const maxSkill = precomputeMaxSkillPerPart(pool);
   const maxSlot = precomputeMaxSlotCountPerPart(pool);

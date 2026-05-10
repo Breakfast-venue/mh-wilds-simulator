@@ -10,10 +10,7 @@ import type {
 // === スキル合算 ===
 type SkillMap = Map<number, TotalSkill>;
 
-export function addSkillsToMap(
-  map: SkillMap,
-  skills: SkillRank[],
-): void {
+export function addSkillsToMap(map: SkillMap, skills: SkillRank[]): void {
   for (const s of skills) {
     const cur = map.get(s.skillId);
     if (cur) {
