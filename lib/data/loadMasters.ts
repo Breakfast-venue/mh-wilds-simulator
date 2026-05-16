@@ -1,128 +1,101 @@
-// lib/data/loadMasters.ts
-import mhdbArmors from "@/data/mhdb/armors.json";
-import mhdbWeapons from "@/data/mhdb/weapons.json";
-import mhdbSkills from "@/data/mhdb/skills.json";
-import mhdbDecorations from "@/data/mhdb/decorations.json";
-import mhdbArmorSets from "@/data/mhdb/armorSets.json";
-import mhdbCharms from "@/data/mhdb/charms.json";
-import kiranicoArmors from "@/data/kiranico/armors.json";
-import kiranicoWeapons from "@/data/kiranico/weapons.json";
-import kiranicoSkills from "@/data/kiranico/skills.json";
-import kiranicoDecorations from "@/data/kiranico/decorations.json";
+import armorsData from "@/data/mhdb/armors.json";
+import armorSetsData from "@/data/mhdb/armorSets.json";
+import charmsData from "@/data/mhdb/charms.json";
+import decorationsData from "@/data/mhdb/decorations.json";
+import skillsData from "@/data/mhdb/skills.json";
+import weaponsData from "@/data/mhdb/weapons.json";
+import versionData from "@/data/mhdb/version.json";
+
+import { buildSetGroupIndex } from "@/lib/simulator/setGroupIndex";
 import type {
   Armor,
-  Weapon,
-  Skill,
-  Decoration,
   ArmorSet,
   Charm,
+  Decoration,
+  Skill,
   SkillRank,
+  Weapon,
 } from "@/lib/types";
-import {
-  buildSetGroupIndex,
-  type SetGroupIndex,
-} from "@/lib/simulator/setGroupIndex";
 
-const DATA_SOURCE = (process.env.NEXT_PUBLIC_DATA_SOURCE ?? "mhdb") as
-  | "mhdb"
-  | "kiranico";
+// === Normalizers ===
+// data-fetcher が出力する canonical JSON は SkillRank を
+// { id, name, level } 形で持っているので、simulator が期待する
+// { skillId, skillName, level } へここでマッピングする。
+// 同様に、Armor の defense フィールド・Charm の gameId なども簡易補完する。
+type RawSkillRank = { id: number; name: string; level: number };
 
-// === 生 JSON の skills 形式 ({ id, name, level }) → canonical SkillRank への変換 ===
-type RawSkillEntry = { id: number; name: string; level: number };
-
-function normalizeSkills(raw: unknown): SkillRank[] {
-  if (!Array.isArray(raw)) return [];
-  return (raw as RawSkillEntry[]).map((s) => ({
+function normalizeSkillRanks(raw: RawSkillRank[]): SkillRank[] {
+  return raw.map((s) => ({
     skillId: s.id,
     skillName: s.name,
     level: s.level,
   }));
 }
 
-function normalizeArmors(raw: unknown[]): Armor[] {
-  return (
-    raw as Array<
-      Record<string, unknown> & {
-        skills: unknown;
-        defenseMax?: number;
-        defenseBase?: number;
-      }
-    >
-  ).map((a) => ({
-    ...a,
-    skills: normalizeSkills(a.skills),
-    defense: (a.defenseMax ?? a.defenseBase ?? 0) as number,
-  })) as unknown as Armor[];
-}
+// === Load + normalize ===
+const skills = skillsData as unknown as Skill[];
 
-function normalizeWeapons(raw: unknown[]): Weapon[] {
-  return (raw as Array<Record<string, unknown> & { skills: unknown }>).map(
-    (w) => ({ ...w, skills: normalizeSkills(w.skills) }),
-  ) as unknown as Weapon[];
-}
+const armors = (
+  armorsData as unknown as Array<{
+    id: number;
+    gameId?: number;
+    defense?: number;
+    defenseBase?: number;
+    defenseMax?: number;
+    skills: RawSkillRank[];
+    [key: string]: unknown;
+  }>
+).map((a) => ({
+  ...a,
+  gameId: a.gameId ?? a.id,
+  defense: a.defense ?? a.defenseMax ?? a.defenseBase ?? 0,
+  skills: normalizeSkillRanks(a.skills ?? []),
+})) as unknown as Armor[];
 
-function normalizeDecorations(raw: unknown[]): Decoration[] {
-  return (raw as Array<Record<string, unknown> & { skills: unknown }>).map(
-    (d) => ({ ...d, skills: normalizeSkills(d.skills) }),
-  ) as unknown as Decoration[];
-}
+const armorSets = armorSetsData as unknown as ArmorSet[];
 
-function normalizeCharms(raw: unknown[]): Charm[] {
-  return (raw as Array<Record<string, unknown> & { skills: unknown }>).map(
-    (c) => ({ ...c, skills: normalizeSkills(c.skills) }),
-  ) as unknown as Charm[];
-}
+const weapons = (
+  weaponsData as unknown as Array<{
+    skills: RawSkillRank[];
+    [key: string]: unknown;
+  }>
+).map((w) => ({
+  ...w,
+  skills: normalizeSkillRanks(w.skills ?? []),
+})) as unknown as Weapon[];
 
-function buildMhdb() {
-  return {
-    armors: normalizeArmors(mhdbArmors as unknown[]),
-    weapons: normalizeWeapons(mhdbWeapons as unknown[]),
-    skills: mhdbSkills as unknown as Skill[],
-    decorations: normalizeDecorations(mhdbDecorations as unknown[]),
-    armorSets: mhdbArmorSets as unknown as ArmorSet[],
-    charms: normalizeCharms(mhdbCharms as unknown[]),
-  };
-}
+const decorations = (
+  decorationsData as unknown as Array<{
+    skills: RawSkillRank[];
+    [key: string]: unknown;
+  }>
+).map((d) => ({
+  ...d,
+  skills: normalizeSkillRanks(d.skills ?? []),
+})) as unknown as Decoration[];
 
-function buildKiranico() {
-  const partMap = {
-    頭: "head",
-    胴: "chest",
-    腕: "arms",
-    腰: "waist",
-    脚: "legs",
-  } as const;
-  return {
-    armors: (kiranicoArmors as any[]).map<Armor>((a, i) => ({
-      id: i,
-      gameId: 0,
-      name: a.name,
-      part: (partMap as any)[a.part] ?? "head",
-      rank: "high",
-      rarity: 0,
-      defense: a.defense,
-      resistances: a.resistances,
-      slots: a.slots,
-      skills: a.skills.map((s: any) => ({
-        skillId: 0,
-        skillName: s.name,
-        level: s.level,
-      })),
-      seriesId: null,
-      seriesName: a.seriesName ?? "",
-    })),
-    weapons: [],
-    skills: [],
-    decorations: [],
-    armorSets: [] as ArmorSet[],
-    charms: [],
-  };
-}
+const charms = (
+  charmsData as unknown as Array<{
+    id: number;
+    gameId?: number;
+    charmId?: number;
+    skills: RawSkillRank[];
+    [key: string]: unknown;
+  }>
+).map((c) => ({
+  ...c,
+  gameId: c.gameId ?? c.charmId ?? c.id,
+  skills: normalizeSkillRanks(c.skills ?? []),
+})) as unknown as Charm[];
 
-export const masters = DATA_SOURCE === "mhdb" ? buildMhdb() : buildKiranico();
+export const masters = {
+  skills,
+  armors,
+  armorSets,
+  weapons,
+  decorations,
+  charms,
+  version: versionData as { version: string },
+};
 
-// M-4: グループ/シリーズスキル対応のための前処理インデックス
-// kiranico モードでは armorSets が空なので、空インデックスが返るだけで安全
-export const setGroupIndex: SetGroupIndex = buildSetGroupIndex(
-  masters.armorSets,
-);
+export const setGroupIndex = buildSetGroupIndex(armorSets);
