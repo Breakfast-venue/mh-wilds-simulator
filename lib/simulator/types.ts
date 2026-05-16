@@ -1,10 +1,18 @@
-import type { Armor, Weapon, Decoration, Charm, WeaponKind } from "@/lib/types";
+import type {
+  Armor,
+  Weapon,
+  Decoration,
+  Charm,
+  WeaponKind,
+  SkillKind,
+} from "@/lib/types";
 
 // === 検索入力 ===
 export type SkillRequirement = {
   skillId: number;
   skillName: string;
   level: number;
+  kind: SkillKind; // "armor" | "weapon" | "group" | "set"
 };
 
 export type ResistanceMin = {
@@ -26,7 +34,7 @@ export type DecorationPolicy = "unlimited" | "none";
 
 export type SearchInput = {
   desiredSkills: SkillRequirement[];
-  weaponType?: WeaponKind; // "sword-shield" | "great-sword" | ...
+  weaponType?: WeaponKind;
   resistanceMin?: ResistanceMin;
   useOwnedCharms?: boolean;
   decorationPolicy?: DecorationPolicy; // 既定 "unlimited"（M-3.5）
@@ -47,6 +55,22 @@ export type TotalResistances = {
   dragon: number;
 };
 
+export type ActivatedSetBonus = {
+  skillId: number; // ★ 修正
+  skillName: string; // ★ 修正
+  level: number;
+  pieces: number;
+  setId: number;
+  setName: string;
+};
+
+export type ActivatedGroupBonus = {
+  groupSkillId: number;
+  groupSkillName: string;
+  level: number;
+  pieces: number;
+};
+
 export type EquipmentSet = {
   weapon?: Weapon;
   head: Armor;
@@ -59,4 +83,6 @@ export type EquipmentSet = {
   totalSkills: TotalSkill[];
   totalResistances: TotalResistances;
   totalDefense: number;
+  activatedSetBonus: ActivatedSetBonus[];
+  activatedGroupBonus: ActivatedGroupBonus[];
 };

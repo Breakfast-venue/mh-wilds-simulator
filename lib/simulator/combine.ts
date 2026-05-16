@@ -1,17 +1,32 @@
-import type { Armor, Weapon, Decoration, Charm, SkillRank } from "@/lib/types";
+import type {
+  Armor,
+  Weapon,
+  Decoration,
+  Charm,
+  SkillRank,
+  ArmorSet,
+} from "@/lib/types";
+import type { SetGroupIndex } from "@/lib/simulator/setGroupIndex";
 import type {
   EquipmentSet,
   ResistanceMin,
   SkillRequirement,
   TotalResistances,
   TotalSkill,
+  ActivatedSetBonus,
+  ActivatedGroupBonus,
 } from "./types";
 
 // === スキル合算 ===
 type SkillMap = Map<number, TotalSkill>;
 
-export function addSkillsToMap(map: SkillMap, skills: SkillRank[]): void {
+export function addSkillsToMap(
+  map: SkillMap,
+  skills: SkillRank[],
+  excludeIds?: Set<number>,
+): void {
   for (const s of skills) {
+    if (excludeIds?.has(s.skillId)) continue;
     const cur = map.get(s.skillId);
     if (cur) {
       cur.level += s.level;
@@ -154,6 +169,75 @@ export function fitDecorations(args: {
 
   return { fitted, finalSkills: mapToSkills(skillMap) };
 }
+// === 発動 bonus 計算 ===
+export function computeActivatedBonuses(args: {
+  setCount: Map<number, number>;
+  groupCount: Map<number, number>;
+  setGroupIndex: SetGroupIndex;
+  armorSets: ArmorSet[];
+}): {
+  activatedSetBonus: ActivatedSetBonus[];
+  activatedGroupBonus: ActivatedGroupBonus[];
+} {
+  const { setCount, groupCount, setGroupIndex, armorSets } = args;
+  const armorSetById = new Map(armorSets.map((s) => [s.id, s]));
+
+  const activatedSetBonus: ActivatedSetBonus[] = [];
+  for (const [skillId, req] of setGroupIndex.setSkillToReq) {
+    // candidate の中で最大 pieces を稼いだ set を選ぶ
+    let bestSetId = -1;
+    let bestPieces = 0;
+    for (const sid of req.candidateSetIds) {
+      const c = setCount.get(sid) ?? 0;
+      if (c > bestPieces) {
+        bestPieces = c;
+        bestSetId = sid;
+      }
+    }
+    if (bestPieces < (req.piecesByLevel[0] ?? Infinity)) continue;
+
+    // 達成 Lv を逆順検索
+    let level = 0;
+    for (let i = req.piecesByLevel.length - 1; i >= 0; i--) {
+      if (bestPieces >= req.piecesByLevel[i]) {
+        level = i + 1;
+        break;
+      }
+    }
+
+    activatedSetBonus.push({
+      skillId,
+      skillName: req.skillName,
+      level,
+      pieces: bestPieces,
+      setId: bestSetId,
+      setName: armorSetById.get(bestSetId)?.name ?? "?",
+    });
+  }
+
+  const activatedGroupBonus: ActivatedGroupBonus[] = [];
+  for (const [groupSkillId, req] of setGroupIndex.groupSkillToReq) {
+    const pieces = groupCount.get(groupSkillId) ?? 0;
+    if (pieces < (req.piecesByLevel[0] ?? Infinity)) continue;
+
+    let level = 0;
+    for (let i = req.piecesByLevel.length - 1; i >= 0; i--) {
+      if (pieces >= req.piecesByLevel[i]) {
+        level = i + 1;
+        break;
+      }
+    }
+
+    activatedGroupBonus.push({
+      groupSkillId,
+      groupSkillName: req.groupSkillName,
+      level,
+      pieces,
+    });
+  }
+
+  return { activatedSetBonus, activatedGroupBonus };
+}
 
 // === EquipmentSet 組み立て ===
 export function buildEquipmentSet(args: {
@@ -166,24 +250,24 @@ export function buildEquipmentSet(args: {
   charm?: Charm;
   decorations: Decoration[];
   requirements: SkillRequirement[];
+  activatedSetBonus: ActivatedSetBonus[];
+  activatedGroupBonus: ActivatedGroupBonus[];
+  excludeSetGroupSkillIds?: Set<number>;
 }): EquipmentSet {
   const armors = [args.head, args.body, args.arms, args.waist, args.legs];
 
-  // スキル合算（武器 + 5部位 + 護石 + 装飾品）
   const skillMap: SkillMap = new Map();
   if (args.weapon) addSkillsToMap(skillMap, args.weapon.skills);
-  for (const a of armors) addSkillsToMap(skillMap, a.skills);
+  for (const a of armors)
+    addSkillsToMap(skillMap, a.skills, args.excludeSetGroupSkillIds);
   if (args.charm) addSkillsToMap(skillMap, args.charm.skills);
-  // 複合珠は 1 個で全スキルが乗る → そのまま全 d.skills を加算
   for (const d of args.decorations) {
     addSkillsToMap(skillMap, d.skills);
   }
 
-  // 耐性合算（防具のみ）
   const totalRes = emptyResistances();
   for (const a of armors) addResistances(totalRes, a.resistances);
 
-  // 防御合算（防具 + 武器のdefenseBonus）
   let totalDef = armors.reduce((sum, a) => sum + a.defense, 0);
   if (args.weapon?.defenseBonus) totalDef += args.weapon.defenseBonus;
 
@@ -199,5 +283,7 @@ export function buildEquipmentSet(args: {
     totalSkills: mapToSkills(skillMap),
     totalResistances: totalRes,
     totalDefense: totalDef,
+    activatedSetBonus: args.activatedSetBonus,
+    activatedGroupBonus: args.activatedGroupBonus,
   };
 }

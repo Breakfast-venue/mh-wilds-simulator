@@ -119,6 +119,49 @@ export function ResultCard({
             </div>
           </div>
         )}
+        {/* 発動シリーズスキル */}
+        {set.activatedSetBonus.length > 0 && (
+          <div>
+            <div className="text-xs font-semibold text-muted-foreground mb-1">
+              🔥 発動シリーズスキル
+            </div>
+            <div className="flex flex-wrap gap-1">
+              {set.activatedSetBonus.map((b) => (
+                <Badge
+                  key={b.skillId}
+                  className="bg-orange-100 text-orange-900 hover:bg-orange-200"
+                >
+                  {b.skillName} Lv{b.level}
+                  <span className="ml-1 text-xs opacity-70">
+                    ({b.setName} {b.pieces}部位)
+                  </span>
+                </Badge>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 発動グループスキル */}
+        {set.activatedGroupBonus.length > 0 && (
+          <div>
+            <div className="text-xs font-semibold text-muted-foreground mb-1">
+              ⚙️ 発動グループスキル
+            </div>
+            <div className="flex flex-wrap gap-1">
+              {set.activatedGroupBonus.map((b) => (
+                <Badge
+                  key={b.groupSkillId}
+                  className="bg-blue-100 text-blue-900 hover:bg-blue-200"
+                >
+                  {b.groupSkillName} Lv{b.level}
+                  <span className="ml-1 text-xs opacity-70">
+                    ({b.pieces}部位)
+                  </span>
+                </Badge>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* 装飾品 */}
         {decoGroups.length > 0 && (

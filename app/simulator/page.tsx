@@ -26,15 +26,15 @@ import { WEAPON_KIND_JP } from "@/lib/i18n";
 import { setGroupIndex } from "@/lib/data/loadMasters";
 
 console.log("[setGroupIndex]", {
-	setSkillCount: setGroupIndex.setSkillToReq.size,
-	groupSkillCount: setGroupIndex.groupSkillToReq.size,
-	setGroupSkillIdsSize: setGroupIndex.setGroupSkillIds.size,
-	armorMappedCount: setGroupIndex.armorToSetId.size,
-	// 期待: candidateSetIds に [3, 147, 192] (ゴアα/ゴアβ/クイーンα) が並ぶ
-	sampleSet_106_黒蝕竜の力: setGroupIndex.setSkillToReq.get(106),
-	// 期待: candidateSetIds に [9, 14, 29, 53, 141] (レウスβ/護火竜β/護火竜α/護火竜/レウスα) が並ぶ
-	sampleSet_71_火竜の力: setGroupIndex.setSkillToReq.get(71),
-	sampleGroup_132_鱗張りの技法: setGroupIndex.groupSkillToReq.get(132),
+  setSkillCount: setGroupIndex.setSkillToReq.size,
+  groupSkillCount: setGroupIndex.groupSkillToReq.size,
+  setGroupSkillIdsSize: setGroupIndex.setGroupSkillIds.size,
+  armorMappedCount: setGroupIndex.armorToSetId.size,
+  // 期待: candidateSetIds に [3, 147, 192] (ゴアα/ゴアβ/クイーンα) が並ぶ
+  sampleSet_106_黒蝕竜の力: setGroupIndex.setSkillToReq.get(106),
+  // 期待: candidateSetIds に [9, 14, 29, 53, 141] (レウスβ/護火竜β/護火竜α/護火竜/レウスα) が並ぶ
+  sampleSet_71_火竜の力: setGroupIndex.setSkillToReq.get(71),
+  sampleGroup_132_鱗張りの技法: setGroupIndex.groupSkillToReq.get(132),
 });
 
 // "any" = 指定なしのセンチネル。それ以外は API の WeaponKind enum 値
@@ -79,10 +79,12 @@ export default function SimulatorPage() {
   const [elapsedMs, setElapsedMs] = useState<number>(0);
 
   // === 選択肢: 防具スキルだけ（武器スキル/シリーズスキルはMVP対象外）===
-  const armorSkills = useMemo(
+  const selectableSkills = useMemo(
     () =>
       masters.skills
-        .filter((s) => s.kind === "armor")
+        .filter(
+          (s) => s.kind === "armor" || s.kind === "group" || s.kind === "set",
+        )
         .sort((a, b) => a.name.localeCompare(b.name, "ja")),
     [],
   );
@@ -91,11 +93,16 @@ export default function SimulatorPage() {
     const id = Number(pickedSkillId);
     if (!id) return;
     if (skillReqs.some((r) => r.skillId === id)) return; // 重複ガード
-    const skill = armorSkills.find((s) => s.id === id);
+    const skill = selectableSkills.find((s) => s.id === id);
     if (!skill) return;
     setSkillReqs([
       ...skillReqs,
-      { skillId: skill.id, skillName: skill.name, level: pickedLevel },
+      {
+        skillId: skill.id,
+        skillName: skill.name,
+        level: pickedLevel,
+        kind: skill.kind,
+      },
     ]);
     setPickedSkillId("");
   };
@@ -177,7 +184,7 @@ export default function SimulatorPage() {
                   <SelectValue placeholder="スキルを選択..." />
                 </SelectTrigger>
                 <SelectContent>
-                  {armorSkills.map((s) => (
+                  {selectableSkills.map((s) => (
                     <SelectItem key={s.id} value={String(s.id)}>
                       {s.name}
                     </SelectItem>
