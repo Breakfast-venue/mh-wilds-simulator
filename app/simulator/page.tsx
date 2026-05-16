@@ -23,6 +23,19 @@ import type {
 import { ResultCard } from "./ResultCard";
 import type { WeaponKind } from "@/lib/types";
 import { WEAPON_KIND_JP } from "@/lib/i18n";
+import { setGroupIndex } from "@/lib/data/loadMasters";
+
+console.log("[setGroupIndex]", {
+	setSkillCount: setGroupIndex.setSkillToReq.size,
+	groupSkillCount: setGroupIndex.groupSkillToReq.size,
+	setGroupSkillIdsSize: setGroupIndex.setGroupSkillIds.size,
+	armorMappedCount: setGroupIndex.armorToSetId.size,
+	// 期待: candidateSetIds に [3, 147, 192] (ゴアα/ゴアβ/クイーンα) が並ぶ
+	sampleSet_106_黒蝕竜の力: setGroupIndex.setSkillToReq.get(106),
+	// 期待: candidateSetIds に [9, 14, 29, 53, 141] (レウスβ/護火竜β/護火竜α/護火竜/レウスα) が並ぶ
+	sampleSet_71_火竜の力: setGroupIndex.setSkillToReq.get(71),
+	sampleGroup_132_鱗張りの技法: setGroupIndex.groupSkillToReq.get(132),
+});
 
 // "any" = 指定なしのセンチネル。それ以外は API の WeaponKind enum 値
 const WEAPON_KIND_OPTIONS: Array<"any" | WeaponKind> = [

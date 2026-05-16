@@ -5,12 +5,10 @@ import mhdbSkills from "@/data/mhdb/skills.json";
 import mhdbDecorations from "@/data/mhdb/decorations.json";
 import mhdbArmorSets from "@/data/mhdb/armorSets.json";
 import mhdbCharms from "@/data/mhdb/charms.json";
-
 import kiranicoArmors from "@/data/kiranico/armors.json";
 import kiranicoWeapons from "@/data/kiranico/weapons.json";
 import kiranicoSkills from "@/data/kiranico/skills.json";
 import kiranicoDecorations from "@/data/kiranico/decorations.json";
-
 import type {
   Armor,
   Weapon,
@@ -20,6 +18,10 @@ import type {
   Charm,
   SkillRank,
 } from "@/lib/types";
+import {
+  buildSetGroupIndex,
+  type SetGroupIndex,
+} from "@/lib/simulator/setGroupIndex";
 
 const DATA_SOURCE = (process.env.NEXT_PUBLIC_DATA_SOURCE ?? "mhdb") as
   | "mhdb"
@@ -49,21 +51,22 @@ function normalizeArmors(raw: unknown[]): Armor[] {
   ).map((a) => ({
     ...a,
     skills: normalizeSkills(a.skills),
-    // mhdb 生 JSON は { defenseBase, defenseMax } の2値持ち
-    // → Armor 型の defense (number) には最大強化値を採用（GameWith 準拠）
     defense: (a.defenseMax ?? a.defenseBase ?? 0) as number,
   })) as unknown as Armor[];
 }
+
 function normalizeWeapons(raw: unknown[]): Weapon[] {
   return (raw as Array<Record<string, unknown> & { skills: unknown }>).map(
     (w) => ({ ...w, skills: normalizeSkills(w.skills) }),
   ) as unknown as Weapon[];
 }
+
 function normalizeDecorations(raw: unknown[]): Decoration[] {
   return (raw as Array<Record<string, unknown> & { skills: unknown }>).map(
     (d) => ({ ...d, skills: normalizeSkills(d.skills) }),
   ) as unknown as Decoration[];
 }
+
 function normalizeCharms(raw: unknown[]): Charm[] {
   return (raw as Array<Record<string, unknown> & { skills: unknown }>).map(
     (c) => ({ ...c, skills: normalizeSkills(c.skills) }),
@@ -74,15 +77,14 @@ function buildMhdb() {
   return {
     armors: normalizeArmors(mhdbArmors as unknown[]),
     weapons: normalizeWeapons(mhdbWeapons as unknown[]),
-    skills: mhdbSkills as unknown as Skill[], // SkillRankInfo なので変換不要
+    skills: mhdbSkills as unknown as Skill[],
     decorations: normalizeDecorations(mhdbDecorations as unknown[]),
-    armorSets: mhdbArmorSets as unknown as ArmorSet[], // SkillRank を持たないので変換不要
+    armorSets: mhdbArmorSets as unknown as ArmorSet[],
     charms: normalizeCharms(mhdbCharms as unknown[]),
   };
 }
 
 function buildKiranico() {
-  // 旧 JSON を canonical 型に橋渡し（最低限）
   const partMap = {
     頭: "head",
     胴: "chest",
@@ -112,9 +114,15 @@ function buildKiranico() {
     weapons: [],
     skills: [],
     decorations: [],
-    armorSets: [],
+    armorSets: [] as ArmorSet[],
     charms: [],
   };
 }
 
 export const masters = DATA_SOURCE === "mhdb" ? buildMhdb() : buildKiranico();
+
+// M-4: グループ/シリーズスキル対応のための前処理インデックス
+// kiranico モードでは armorSets が空なので、空インデックスが返るだけで安全
+export const setGroupIndex: SetGroupIndex = buildSetGroupIndex(
+  masters.armorSets,
+);
