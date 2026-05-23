@@ -8,6 +8,7 @@ import type {
 } from "@/lib/types";
 
 // === 検索入力 ===
+export type SkillCategory = "armor" | "weapon" | "group" | "set";
 export type SkillRequirement = {
   skillId: number;
   skillName: string;

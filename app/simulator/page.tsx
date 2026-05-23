@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -12,27 +12,25 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
-import { masters } from "@/lib/data/loadMasters";
+import { SkillPicker } from "@/components/SkillPicker";
+import { setGroupIndex } from "@/lib/data/loadMasters";
+import { WEAPON_KIND_JP } from "@/lib/i18n";
 import { searchEquipmentSets } from "@/lib/simulator/search";
 import type {
   EquipmentSet,
   ResistanceMin,
   SkillRequirement,
 } from "@/lib/simulator/types";
-import { ResultCard } from "./ResultCard";
 import type { WeaponKind } from "@/lib/types";
-import { WEAPON_KIND_JP } from "@/lib/i18n";
-import { setGroupIndex } from "@/lib/data/loadMasters";
+import { ResultCard } from "./ResultCard";
 
+// === 開発用デバッグログ（production 化のとき消す）===
 console.log("[setGroupIndex]", {
   setSkillCount: setGroupIndex.setSkillToReq.size,
   groupSkillCount: setGroupIndex.groupSkillToReq.size,
   setGroupSkillIdsSize: setGroupIndex.setGroupSkillIds.size,
   armorMappedCount: setGroupIndex.armorToSetId.size,
-  // 期待: candidateSetIds に [3, 147, 192] (ゴアα/ゴアβ/クイーンα) が並ぶ
   sampleSet_106_黒蝕竜の力: setGroupIndex.setSkillToReq.get(106),
-  // 期待: candidateSetIds に [9, 14, 29, 53, 141] (レウスβ/護火竜β/護火竜α/護火竜/レウスα) が並ぶ
   sampleSet_71_火竜の力: setGroupIndex.setSkillToReq.get(71),
   sampleGroup_132_鱗張りの技法: setGroupIndex.groupSkillToReq.get(132),
 });
@@ -66,9 +64,7 @@ const RES_KEYS: { key: keyof ResistanceMin; label: string }[] = [
 
 export default function SimulatorPage() {
   // === 検索条件の状態 ===
-  const [skillReqs, setSkillReqs] = useState<SkillRequirement[]>([]);
-  const [pickedSkillId, setPickedSkillId] = useState<string>(""); // 空="未選択"
-  const [pickedLevel, setPickedLevel] = useState<number>(1);
+  const [selected, setSelected] = useState<SkillRequirement[]>([]);
   const [weaponType, setWeaponType] = useState<"any" | WeaponKind>("any");
   const [resMin, setResMin] = useState<ResistanceMin>({});
 
@@ -77,39 +73,6 @@ export default function SimulatorPage() {
   const [searched, setSearched] = useState(false);
   const [searching, setSearching] = useState(false);
   const [elapsedMs, setElapsedMs] = useState<number>(0);
-
-  // === 選択肢: 防具スキルだけ（武器スキル/シリーズスキルはMVP対象外）===
-  const selectableSkills = useMemo(
-    () =>
-      masters.skills
-        .filter(
-          (s) => s.kind === "armor" || s.kind === "group" || s.kind === "set",
-        )
-        .sort((a, b) => a.name.localeCompare(b.name, "ja")),
-    [],
-  );
-
-  const handleAddSkill = () => {
-    const id = Number(pickedSkillId);
-    if (!id) return;
-    if (skillReqs.some((r) => r.skillId === id)) return; // 重複ガード
-    const skill = selectableSkills.find((s) => s.id === id);
-    if (!skill) return;
-    setSkillReqs([
-      ...skillReqs,
-      {
-        skillId: skill.id,
-        skillName: skill.name,
-        level: pickedLevel,
-        kind: skill.kind,
-      },
-    ]);
-    setPickedSkillId("");
-  };
-
-  const handleRemoveSkill = (skillId: number) => {
-    setSkillReqs(skillReqs.filter((r) => r.skillId !== skillId));
-  };
 
   const handleResMinChange = (key: keyof ResistanceMin, value: string) => {
     if (value === "") {
@@ -125,12 +88,12 @@ export default function SimulatorPage() {
 
   const handleSearch = () => {
     setSearching(true);
-    // setTimeoutで一旦UI更新を挟む（重い検索中も「検索中…」表示が出る）
+    // setTimeout で一旦 UI 更新を挟む（重い検索中も「検索中…」表示が出る）
     setTimeout(() => {
       const t0 = performance.now();
       const hasResMin = Object.values(resMin).some((v) => v !== undefined);
       const out = searchEquipmentSets({
-        desiredSkills: skillReqs,
+        desiredSkills: selected,
         weaponType: weaponType === "any" ? undefined : weaponType,
         resistanceMin: hasResMin ? resMin : undefined,
       });
@@ -150,64 +113,13 @@ export default function SimulatorPage() {
         </p>
       </div>
 
-      {/* === スキル要求 === */}
+      {/* === スキル要求（M-6: SkillPicker に統合） === */}
       <Card>
         <CardHeader>
           <CardTitle>スキル要求</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="flex flex-wrap gap-2 min-h-[2rem]">
-            {skillReqs.length === 0 ? (
-              <p className="text-sm text-muted-foreground">
-                まだスキルが選択されてないよ
-              </p>
-            ) : (
-              skillReqs.map((r) => (
-                <Badge
-                  key={r.skillId}
-                  variant="secondary"
-                  className="cursor-pointer"
-                  onClick={() => handleRemoveSkill(r.skillId)}
-                  title="クリックで削除"
-                >
-                  {r.skillName} +{r.level} ✕
-                </Badge>
-              ))
-            )}
-          </div>
-
-          <div className="flex flex-wrap items-end gap-3">
-            <div className="flex-1 min-w-[200px]">
-              <Label className="text-xs">スキル</Label>
-              <Select value={pickedSkillId} onValueChange={setPickedSkillId}>
-                <SelectTrigger>
-                  <SelectValue placeholder="スキルを選択..." />
-                </SelectTrigger>
-                <SelectContent>
-                  {selectableSkills.map((s) => (
-                    <SelectItem key={s.id} value={String(s.id)}>
-                      {s.name}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-            <div className="w-[100px]">
-              <Label className="text-xs">Lv</Label>
-              <Input
-                type="number"
-                min={1}
-                max={7}
-                value={pickedLevel}
-                onChange={(e) =>
-                  setPickedLevel(Math.max(1, Number(e.target.value) || 1))
-                }
-              />
-            </div>
-            <Button onClick={handleAddSkill} disabled={!pickedSkillId}>
-              追加
-            </Button>
-          </div>
+        <CardContent>
+          <SkillPicker selected={selected} onChange={setSelected} />
         </CardContent>
       </Card>
 
@@ -260,11 +172,11 @@ export default function SimulatorPage() {
         <Button
           size="lg"
           onClick={handleSearch}
-          disabled={searching || skillReqs.length === 0}
+          disabled={searching || selected.length === 0}
         >
           {searching ? "検索中…" : "🔍 検索"}
         </Button>
-        {skillReqs.length === 0 && (
+        {selected.length === 0 && (
           <span className="text-sm text-muted-foreground">
             スキルを1つ以上追加してね
           </span>
