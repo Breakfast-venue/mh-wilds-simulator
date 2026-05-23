@@ -32,6 +32,45 @@ export type ResistanceMin = {
  * 既定値は "unlimited"。将来 "owned"（手持ちのみ）を Phase 4 で追加予定。
  */
 export type DecorationPolicy = "unlimited" | "none";
+/**
+ * 鑑定護石のレアリティ（RARE5〜8）
+ */
+export type CharmRarity = 5 | 6 | 7 | 8;
+
+/**
+ * 鑑定護石のスロット 1 個分
+ * - kind: "armor" = 防具スロ / "weapon" = 武器スロ
+ * - size: 0 = 未使用 / 1-3 = スロットサイズ
+ */
+export type CustomCharmSlot = {
+  kind: "armor" | "weapon";
+  size: 0 | 1 | 2 | 3;
+};
+
+/**
+ * 鑑定護石（ユーザーが自由にスキル + スロットを組んだカスタム護石）
+ * - skills: 最大 3 個
+ * - slots: 必ず 3 個（未使用は size: 0）
+ * - 名前は rarity + skills から自動生成（保存しない、参照時に都度生成）
+ */
+export type CustomCharm = {
+  id: string; // "custom-<uuid>"
+  rarity: CharmRarity;
+  skills: {
+    skillId: number;
+    skillName: string;
+    level: number;
+  }[];
+  slots: [CustomCharmSlot, CustomCharmSlot, CustomCharmSlot];
+};
+
+/**
+ * localStorage に永続化する護石の状態
+ */
+export type OwnedCharmsState = {
+  owned: number[];
+  custom: CustomCharm[];
+};
 
 export type SearchInput = {
   desiredSkills: SkillRequirement[];
@@ -57,8 +96,8 @@ export type TotalResistances = {
 };
 
 export type ActivatedSetBonus = {
-  skillId: number; // ★ 修正
-  skillName: string; // ★ 修正
+  skillId: number;
+  skillName: string;
   level: number;
   pieces: number;
   setId: number;

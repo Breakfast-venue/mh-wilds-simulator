@@ -1,12 +1,13 @@
 /**
  * 装備セット検索エンジン
  *
- * - 武器候補 × 5部位防具 の全探索（DFS）
+ * - 武器候補 × 護石候補 × 5部位防具 の全探索（DFS）
  * - 候補プール絞り込み + 枝刈り + 装飾品貪欲詰め込み（combine.ts）
  * - M-4: set/group skill 対応（armorSet.id カウント / groupBonus.id カウントで判定）
+ * - B-2: 護石ループ統合 + 8 秒タイムアウト
  * - 結果は防御力降順で最大10件
  */
-import type { Armor, ArmorPart, Weapon } from "@/lib/types";
+import type { Armor, ArmorPart, Charm, Weapon } from "@/lib/types";
 import type {
   EquipmentSet,
   SearchInput,
@@ -29,6 +30,11 @@ import {
   masters as defaultMasters,
   setGroupIndex,
 } from "@/lib/data/loadMasters";
+import {
+  loadOwnedCharmsState,
+  getActiveCharms,
+  type ActiveCharm,
+} from "@/lib/data/ownedCharms";
 
 const PARTS = [
   "head",
@@ -40,6 +46,7 @@ const PARTS = [
 type Part = (typeof PARTS)[number];
 
 const MAX_RESULTS = 10;
+const SEARCH_TIMEOUT_MS = 8_000; // 8 秒で打ち切り
 
 type Masters = typeof defaultMasters;
 type SkillMap = Map<number, TotalSkill>;
@@ -52,16 +59,13 @@ function isCandidateArmor(
   reqSetIds: Set<number>,
   reqGroupSkillIds: Set<number>,
 ): boolean {
-  // armor/weapon kind の要求スキルを持つ
   const hasReqSkill = armor.skills.some((s) =>
     reqArmorWeaponIds.has(s.skillId),
   );
   const slotBudget = armor.slots.reduce((s, lv) => s + lv, 0);
   const hasMeaningfulSlot = slotBudget >= 2;
-  // 要求 set の candidate 部位
   const setId = setGroupIndex.armorToSetId.get(armor.id);
   const matchesSet = setId !== undefined && reqSetIds.has(setId);
-  // 要求 group の部位
   const groupId = setGroupIndex.armorToGroupSkillId.get(armor.id);
   const matchesGroup = groupId != null && reqGroupSkillIds.has(groupId);
   return hasReqSkill || hasMeaningfulSlot || matchesSet || matchesGroup;
@@ -76,14 +80,12 @@ function buildArmorPool(
       .filter((r) => r.kind === "armor" || r.kind === "weapon")
       .map((r) => r.skillId),
   );
-  // この要求 set skill を発動できる candidateSetIds の和集合
   const reqSetIds = new Set<number>();
   for (const r of requirements) {
     if (r.kind !== "set") continue;
     const sr = setGroupIndex.setSkillToReq.get(r.skillId);
     if (sr) for (const sid of sr.candidateSetIds) reqSetIds.add(sid);
   }
-  // 要求 group skill の id
   const reqGroupSkillIds = new Set(
     requirements.filter((r) => r.kind === "group").map((r) => r.skillId),
   );
@@ -101,12 +103,28 @@ function buildArmorPool(
       isCandidateArmor(a, reqArmorWeaponIds, reqSetIds, reqGroupSkillIds)
     ) {
       pool[a.part].push(a);
+      for (const part of PARTS) {
+        pool[part].sort((a, b) => {
+          const aSkillScore = a.skills.reduce(
+            (s, sk) => s + (reqArmorWeaponIds.has(sk.skillId) ? sk.level : 0),
+            0,
+          );
+          const bSkillScore = b.skills.reduce(
+            (s, sk) => s + (reqArmorWeaponIds.has(sk.skillId) ? sk.level : 0),
+            0,
+          );
+          if (aSkillScore !== bSkillScore) return bSkillScore - aSkillScore;
+          const aSlot = a.slots.reduce((s, l) => s + l, 0);
+          const bSlot = b.slots.reduce((s, l) => s + l, 0);
+          return bSlot - aSlot;
+        });
+      }
+      return pool;
     }
   }
   return pool;
 }
 
-// === 部位ごとの最大スキルLv（枝刈り用 O(1) 参照テーブル）===
 function precomputeMaxSkillPerPart(
   pool: ArmorPool,
 ): Record<Part, Map<number, number>> {
@@ -115,7 +133,6 @@ function precomputeMaxSkillPerPart(
     const m = new Map<number, number>();
     for (const a of pool[part]) {
       for (const s of a.skills) {
-        // setBonus/groupBonus 由来は Lv 合算判定から除外
         if (setGroupIndex.setGroupSkillIds.has(s.skillId)) continue;
         m.set(s.skillId, Math.max(m.get(s.skillId) ?? 0, s.level));
       }
@@ -151,6 +168,38 @@ export function searchEquipmentSets(
   const { desiredSkills, weaponType, resistanceMin } = input;
   if (desiredSkills.length === 0) return [];
 
+  const startTime = performance.now();
+  const isTimedOut = () => performance.now() - startTime > SEARCH_TIMEOUT_MS;
+
+  // 護石候補プール（useOwnedCharms === true のとき護石を回す）
+  const charmCandidates: (ActiveCharm | undefined)[] = (() => {
+    if (!input.useOwnedCharms) return [undefined];
+    const state = loadOwnedCharmsState();
+    const actives = getActiveCharms(state, masters.charms);
+    console.log(`[search] active charms: ${actives.length}`);
+
+    // 要求 skill にマッチする護石を先に試す
+    const reqIds = new Set(
+      desiredSkills
+        .filter((r) => r.kind === "armor" || r.kind === "weapon")
+        .map((r) => r.skillId),
+    );
+    actives.sort((a, b) => {
+      const aScore = a.charm.skills.reduce(
+        (s, sk) => s + (reqIds.has(sk.skillId) ? sk.level : 0),
+        0,
+      );
+      const bScore = b.charm.skills.reduce(
+        (s, sk) => s + (reqIds.has(sk.skillId) ? sk.level : 0),
+        0,
+      );
+      return bScore - aScore;
+    });
+
+    // 護石ありを先、護石なしを最後（ON にしたユーザーの意図優先）
+    return [...actives, undefined];
+  })();
+  console.log(`[search] charm candidates: ${charmCandidates.length}`);
   // === 要求スキルを kind 別に分割 ===
   const armorWeaponReqs = desiredSkills.filter(
     (r) => r.kind === "armor" || r.kind === "weapon",
@@ -161,7 +210,6 @@ export function searchEquipmentSets(
     `[search] reqs: armor/weapon=${armorWeaponReqs.length} set=${setReqs.length} group=${groupReqs.length}`,
   );
 
-  // 高ランクのみ
   const highArmors = masters.armors.filter((a) => a.rank === "high");
   console.log(`[search] high-rank armors: ${highArmors.length}`);
 
@@ -184,180 +232,193 @@ export function searchEquipmentSets(
 
   const results: EquipmentSet[] = [];
   const chosen: Partial<Record<Part, Armor>> = {};
+  let currentCharm: Charm | undefined;
 
   for (const weapon of weaponCandidates) {
-    if (results.length >= MAX_RESULTS) break;
+    if (results.length >= MAX_RESULTS || isTimedOut()) break;
 
-    const baseSkills: SkillMap = new Map();
-    if (weapon) addSkillsToMap(baseSkills, weapon.skills); // weapon.skills は set/group を含まない前提
+    for (const active of charmCandidates) {
+      if (results.length >= MAX_RESULTS || isTimedOut()) break;
 
-    const baseSlots = emptySlotPool();
-    if (weapon) addSlots(baseSlots, weapon.slots);
+      const baseSkills: SkillMap = new Map();
+      if (weapon) addSkillsToMap(baseSkills, weapon.skills);
+      if (active) addSkillsToMap(baseSkills, active.charm.skills);
 
-    const dfs = (
-      idx: number,
-      accSkills: SkillMap,
-      accSlots: SlotPool,
-      accRes: ReturnType<typeof emptyResistances>,
-      setCount: Map<number, number>,
-      groupCount: Map<number, number>,
-    ): void => {
-      if (results.length >= MAX_RESULTS) return;
+      const baseSlots = emptySlotPool();
+      if (weapon) addSlots(baseSlots, weapon.slots);
+      if (active) {
+        addSlots(baseSlots, active.armorSlots);
+        addSlots(baseSlots, active.weaponSlots);
+      }
 
-      const remainingParts = PARTS.slice(idx) as Part[];
-      const remainingSlotBudget = remainingParts.reduce(
-        (sum, p) => sum + maxSlot[p],
-        0,
-      );
-      const remainingPartCount = remainingParts.length;
+      currentCharm = active?.charm;
 
-      // --- 枝刈り 1: armor/weapon kind の Lv 達成見込み ---
-      for (const req of armorWeaponReqs) {
-        const cur = accSkills.get(req.skillId)?.level ?? 0;
-        const fromArmors = remainingParts.reduce(
-          (sum, p) => sum + (maxSkill[p].get(req.skillId) ?? 0),
+      const dfs = (
+        idx: number,
+        accSkills: SkillMap,
+        accSlots: SlotPool,
+        accRes: ReturnType<typeof emptyResistances>,
+        setCount: Map<number, number>,
+        groupCount: Map<number, number>,
+      ): void => {
+        if (results.length >= MAX_RESULTS || isTimedOut()) return;
+
+        const remainingParts = PARTS.slice(idx) as Part[];
+        const remainingSlotBudget = remainingParts.reduce(
+          (sum, p) => sum + maxSlot[p],
           0,
         );
-        if (cur + fromArmors + remainingSlotBudget < req.level) return;
-      }
+        const remainingPartCount = remainingParts.length;
 
-      // --- 枝刈り 2: set kind の部位数達成見込み ---
-      for (const req of setReqs) {
-        const sr = setGroupIndex.setSkillToReq.get(req.skillId);
-        if (!sr) return;
-        const needed = sr.piecesByLevel[req.level - 1] ?? Infinity;
-        // candidate の中で最も部位数稼げてる set + 残り部位を全部この set に振れる楽観仮定
-        const maxPossible = Math.max(
-          ...sr.candidateSetIds.map(
-            (sid) => (setCount.get(sid) ?? 0) + remainingPartCount,
-          ),
-        );
-        if (maxPossible < needed) return;
-      }
+        // 枝刈り 1: armor/weapon kind の Lv 達成見込み
+        for (const req of armorWeaponReqs) {
+          const cur = accSkills.get(req.skillId)?.level ?? 0;
+          const fromArmors = remainingParts.reduce(
+            (sum, p) => sum + (maxSkill[p].get(req.skillId) ?? 0),
+            0,
+          );
+          if (cur + fromArmors + remainingSlotBudget < req.level) return;
+        }
 
-      // --- 枝刈り 3: group kind の部位数達成見込み ---
-      for (const req of groupReqs) {
-        const gr = setGroupIndex.groupSkillToReq.get(req.skillId);
-        if (!gr) return;
-        const needed = gr.piecesByLevel[req.level - 1] ?? Infinity;
-        if ((groupCount.get(req.skillId) ?? 0) + remainingPartCount < needed)
-          return;
-      }
-
-      // --- 葉ノード ---
-      if (idx === PARTS.length) {
-        if (!meetsResistanceMin(accRes, resistanceMin)) return;
-
-        // set kind 充足チェック
+        // 枝刈り 2: set kind
         for (const req of setReqs) {
           const sr = setGroupIndex.setSkillToReq.get(req.skillId);
           if (!sr) return;
           const needed = sr.piecesByLevel[req.level - 1] ?? Infinity;
-          const ok = sr.candidateSetIds.some(
-            (sid) => (setCount.get(sid) ?? 0) >= needed,
+          const maxPossible = Math.max(
+            ...sr.candidateSetIds.map(
+              (sid) => (setCount.get(sid) ?? 0) + remainingPartCount,
+            ),
           );
-          if (!ok) return;
+          if (maxPossible < needed) return;
         }
-        // group kind 充足チェック
+
+        // 枝刈り 3: group kind
         for (const req of groupReqs) {
           const gr = setGroupIndex.groupSkillToReq.get(req.skillId);
           if (!gr) return;
           const needed = gr.piecesByLevel[req.level - 1] ?? Infinity;
-          if ((groupCount.get(req.skillId) ?? 0) < needed) return;
+          if ((groupCount.get(req.skillId) ?? 0) + remainingPartCount < needed)
+            return;
         }
 
-        // armor/weapon kind は装飾品で補完
-        const baseArr = Array.from(accSkills.values()).map((s) => ({ ...s }));
-        const fit = fitDecorations({
-          requirements: armorWeaponReqs,
-          baseSkills: baseArr,
-          slots: { ...accSlots },
-          decorations: masters.decorations,
-        });
-        if (!fit) return;
+        // 葉ノード
+        if (idx === PARTS.length) {
+          if (!meetsResistanceMin(accRes, resistanceMin)) return;
 
-        const final = new Map(fit.finalSkills.map((s) => [s.skillId, s.level]));
-        for (const req of armorWeaponReqs) {
-          if ((final.get(req.skillId) ?? 0) < req.level) return;
-        }
+          for (const req of setReqs) {
+            const sr = setGroupIndex.setSkillToReq.get(req.skillId);
+            if (!sr) return;
+            const needed = sr.piecesByLevel[req.level - 1] ?? Infinity;
+            const ok = sr.candidateSetIds.some(
+              (sid) => (setCount.get(sid) ?? 0) >= needed,
+            );
+            if (!ok) return;
+          }
+          for (const req of groupReqs) {
+            const gr = setGroupIndex.groupSkillToReq.get(req.skillId);
+            if (!gr) return;
+            const needed = gr.piecesByLevel[req.level - 1] ?? Infinity;
+            if ((groupCount.get(req.skillId) ?? 0) < needed) return;
+          }
 
-        // ★ 発動 bonus を計算（要求されてない set/group も全部表示する）
-        const { activatedSetBonus, activatedGroupBonus } =
-          computeActivatedBonuses({
-            setCount,
-            groupCount,
-            setGroupIndex,
-            armorSets: masters.armorSets,
-          });
-
-        results.push(
-          buildEquipmentSet({
-            weapon,
-            head: chosen.head!,
-            body: chosen.chest!,
-            arms: chosen.arms!,
-            waist: chosen.waist!,
-            legs: chosen.legs!,
-            decorations: fit.fitted,
+          const baseArr = Array.from(accSkills.values()).map((s) => ({
+            ...s,
+          }));
+          const fit = fitDecorations({
             requirements: armorWeaponReqs,
-            activatedSetBonus,
-            activatedGroupBonus,
-            excludeSetGroupSkillIds: setGroupIndex.setGroupSkillIds,
-          }),
-        );
-        return;
-      }
+            baseSkills: baseArr,
+            slots: { ...accSlots },
+            decorations: masters.decorations,
+          });
+          if (!fit) return;
 
-      // --- 再帰: 次の部位 ---
-      const part = PARTS[idx];
-      for (const armor of pool[part]) {
-        if (results.length >= MAX_RESULTS) break;
+          const final = new Map(
+            fit.finalSkills.map((s) => [s.skillId, s.level]),
+          );
+          for (const req of armorWeaponReqs) {
+            if ((final.get(req.skillId) ?? 0) < req.level) return;
+          }
 
-        const nextSkills: SkillMap = new Map();
-        for (const [k, v] of accSkills) nextSkills.set(k, { ...v });
-        // armor.skills のうち setBonus/groupBonus 由来は Lv 合算から除外
-        addSkillsToMap(
-          nextSkills,
-          armor.skills,
-          setGroupIndex.setGroupSkillIds,
-        );
+          const { activatedSetBonus, activatedGroupBonus } =
+            computeActivatedBonuses({
+              setCount,
+              groupCount,
+              setGroupIndex,
+              armorSets: masters.armorSets,
+            });
 
-        const nextSlots: SlotPool = { ...accSlots };
-        addSlots(nextSlots, armor.slots);
-
-        const nextRes = { ...accRes };
-        addResistances(nextRes, armor.resistances);
-
-        // setCount / groupCount を increment（コピー渡し）
-        const nextSetCount = new Map(setCount);
-        const setId = setGroupIndex.armorToSetId.get(armor.id);
-        if (setId !== undefined) {
-          nextSetCount.set(setId, (nextSetCount.get(setId) ?? 0) + 1);
+          results.push(
+            buildEquipmentSet({
+              weapon,
+              charm: currentCharm,
+              head: chosen.head!,
+              body: chosen.chest!,
+              arms: chosen.arms!,
+              waist: chosen.waist!,
+              legs: chosen.legs!,
+              decorations: fit.fitted,
+              requirements: armorWeaponReqs,
+              activatedSetBonus,
+              activatedGroupBonus,
+              excludeSetGroupSkillIds: setGroupIndex.setGroupSkillIds,
+            }),
+          );
+          return;
         }
-        const nextGroupCount = new Map(groupCount);
-        const groupId = setGroupIndex.armorToGroupSkillId.get(armor.id);
-        if (groupId != null) {
-          nextGroupCount.set(groupId, (nextGroupCount.get(groupId) ?? 0) + 1);
+
+        // 再帰: 次の部位
+        const part = PARTS[idx];
+        for (const armor of pool[part]) {
+          if (results.length >= MAX_RESULTS || isTimedOut()) break;
+
+          const nextSkills: SkillMap = new Map();
+          for (const [k, v] of accSkills) nextSkills.set(k, { ...v });
+          addSkillsToMap(
+            nextSkills,
+            armor.skills,
+            setGroupIndex.setGroupSkillIds,
+          );
+
+          const nextSlots: SlotPool = { ...accSlots };
+          addSlots(nextSlots, armor.slots);
+
+          const nextRes = { ...accRes };
+          addResistances(nextRes, armor.resistances);
+
+          const nextSetCount = new Map(setCount);
+          const setId = setGroupIndex.armorToSetId.get(armor.id);
+          if (setId !== undefined) {
+            nextSetCount.set(setId, (nextSetCount.get(setId) ?? 0) + 1);
+          }
+          const nextGroupCount = new Map(groupCount);
+          const groupId = setGroupIndex.armorToGroupSkillId.get(armor.id);
+          if (groupId != null) {
+            nextGroupCount.set(groupId, (nextGroupCount.get(groupId) ?? 0) + 1);
+          }
+
+          chosen[part] = armor;
+          dfs(
+            idx + 1,
+            nextSkills,
+            nextSlots,
+            nextRes,
+            nextSetCount,
+            nextGroupCount,
+          );
         }
+        delete chosen[part];
+      };
 
-        chosen[part] = armor;
-        dfs(
-          idx + 1,
-          nextSkills,
-          nextSlots,
-          nextRes,
-          nextSetCount,
-          nextGroupCount,
-        );
-      }
-      delete chosen[part];
-    };
-
-    dfs(0, baseSkills, baseSlots, emptyResistances(), new Map(), new Map());
+      dfs(0, baseSkills, baseSlots, emptyResistances(), new Map(), new Map());
+    }
   }
 
   results.sort((a, b) => b.totalDefense - a.totalDefense);
   console.timeEnd("[search] total");
+  if (isTimedOut()) {
+    console.warn(`[search] ⏱ TIMED OUT after ${SEARCH_TIMEOUT_MS}ms`);
+  }
   console.log(`[search] results: ${results.length}`);
   return results.slice(0, MAX_RESULTS);
 }

@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -67,6 +69,7 @@ export default function SimulatorPage() {
   const [selected, setSelected] = useState<SkillRequirement[]>([]);
   const [weaponType, setWeaponType] = useState<"any" | WeaponKind>("any");
   const [resMin, setResMin] = useState<ResistanceMin>({});
+  const [useOwnedCharms, setUseOwnedCharms] = useState(false);
 
   // === 結果 ===
   const [results, setResults] = useState<EquipmentSet[]>([]);
@@ -96,6 +99,7 @@ export default function SimulatorPage() {
         desiredSkills: selected,
         weaponType: weaponType === "any" ? undefined : weaponType,
         resistanceMin: hasResMin ? resMin : undefined,
+        useOwnedCharms,
       });
       setResults(out);
       setSearched(true);
@@ -167,6 +171,50 @@ export default function SimulatorPage() {
         </CardContent>
       </Card>
 
+      {/* === 護石 === */}
+      <Card>
+        <CardHeader>
+          <CardTitle>護石</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex-1">
+              <Label htmlFor="use-charms" className="text-base">
+                所持・鑑定護石を使う
+              </Label>
+              <p className="text-xs text-muted-foreground mt-1">
+                護石管理ページで登録した護石を検索に組み込む。
+              </p>
+            </div>
+            {useOwnedCharms && (
+              <div className="rounded-md border border-yellow-500/50 bg-yellow-50 dark:bg-yellow-950/30 p-3 text-xs space-y-1">
+                <div className="font-medium">
+                  ⚠️ 重い検索になることがあります
+                </div>
+                <ul className="list-disc list-inside text-muted-foreground">
+                  <li>護石数 × 武器候補数だけ計算量が増える</li>
+                  <li>8 秒で自動打ち切り（見つかった分だけ返す）</li>
+                  <li>武器種を絞る / 鑑定護石を減らすと速くなる</li>
+                </ul>
+              </div>
+            )}
+            <Switch
+              id="use-charms"
+              checked={useOwnedCharms}
+              onCheckedChange={setUseOwnedCharms}
+            />
+          </div>
+          <div className="text-xs">
+            <Link
+              href="/charms"
+              className="text-blue-600 underline hover:no-underline"
+            >
+              🔮 護石を編集する →
+            </Link>
+          </div>
+        </CardContent>
+      </Card>
+
       {/* === 検索ボタン === */}
       <div className="flex items-center gap-3">
         <Button
@@ -192,6 +240,11 @@ export default function SimulatorPage() {
               ({elapsedMs.toFixed(0)}ms)
             </span>
           </h2>
+          {searched && elapsedMs > 7500 && (
+            <div className="text-xs text-yellow-700 dark:text-yellow-400">
+              ⏱ 重い検索のため打ち切られた可能性あり。結果は不完全かもしれない。
+            </div>
+          )}
           {results.length === 0 ? (
             <Card>
               <CardContent className="py-8 text-center text-muted-foreground">
