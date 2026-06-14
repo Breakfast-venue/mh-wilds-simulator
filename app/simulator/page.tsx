@@ -15,7 +15,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { SkillPicker } from "@/components/SkillPicker";
-import { setGroupIndex } from "@/lib/data/loadMasters";
 import { WEAPON_KIND_JP } from "@/lib/i18n";
 import { searchEquipmentSets } from "@/lib/simulator/search";
 import type {
@@ -25,17 +24,6 @@ import type {
 } from "@/lib/simulator/types";
 import type { WeaponKind } from "@/lib/types";
 import { ResultCard } from "./ResultCard";
-
-// === 開発用デバッグログ（production 化のとき消す）===
-console.log("[setGroupIndex]", {
-  setSkillCount: setGroupIndex.setSkillToReq.size,
-  groupSkillCount: setGroupIndex.groupSkillToReq.size,
-  setGroupSkillIdsSize: setGroupIndex.setGroupSkillIds.size,
-  armorMappedCount: setGroupIndex.armorToSetId.size,
-  sampleSet_106_黒蝕竜の力: setGroupIndex.setSkillToReq.get(106),
-  sampleSet_71_火竜の力: setGroupIndex.setSkillToReq.get(71),
-  sampleGroup_132_鱗張りの技法: setGroupIndex.groupSkillToReq.get(132),
-});
 
 // "any" = 指定なしのセンチネル。それ以外は API の WeaponKind enum 値
 const WEAPON_KIND_OPTIONS: Array<"any" | WeaponKind> = [
@@ -137,7 +125,7 @@ export default function SimulatorPage() {
             value={weaponType}
             onValueChange={(v) => setWeaponType(v as "any" | WeaponKind)}
           >
-            <SelectTrigger className="w-[220px]">
+            <SelectTrigger className="w-55">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>

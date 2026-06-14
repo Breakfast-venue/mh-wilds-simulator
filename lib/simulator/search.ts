@@ -33,6 +33,12 @@ import {
   type ActiveCharm,
 } from "@/lib/data/ownedCharms";
 
+// === デバッグ（本番 false、調査時だけ true）===
+const DEBUG = false;
+const dlog = (...args: unknown[]) => {
+  if (DEBUG) console.log(...args);
+};
+
 const PARTS = [
   "head",
   "chest",
@@ -59,7 +65,7 @@ function isCandidateArmor(
     reqArmorWeaponIds.has(s.skillId),
   );
   const slotBudget = armor.slots.reduce((s, lv) => s + lv, 0);
-  const hasMeaningfulSlot = slotBudget >= 1; // ← 1 以上に緩和（前 2）
+  const hasMeaningfulSlot = slotBudget >= 1; // 1 以上に緩和
   const setId = setGroupIndex.armorToSetId.get(armor.id);
   const matchesSet = setId !== undefined && reqSetIds.has(setId);
   const groupId = setGroupIndex.armorToGroupSkillId.get(armor.id);
@@ -86,14 +92,6 @@ function buildArmorPool(
     requirements.filter((r) => r.kind === "group").map((r) => r.skillId),
   );
 
-  // 🔬 デバッグログ
-  console.log("[buildArmorPool] req sets:", {
-    armorWeaponIds: Array.from(reqArmorWeaponIds),
-    setIds: Array.from(reqSetIds),
-    groupSkillIds: Array.from(reqGroupSkillIds),
-    totalArmors: armors.length,
-  });
-
   const pool: ArmorPool = {
     head: [],
     chest: [],
@@ -102,42 +100,17 @@ function buildArmorPool(
     legs: [],
   };
 
-  // 🔬 カウンタ（なぜ防具が落ちたかの理由別）
-  let unknownPart = 0;
-  let rejected = 0;
-  const passReasons = { skill: 0, slot: 0, set: 0, group: 0 };
-
+  // 1) 候補を全部 push
   for (const a of armors) {
-    if (!(a.part in pool)) {
-      unknownPart++;
-      continue;
-    }
-    const hasReqSkill = a.skills.some((s) => reqArmorWeaponIds.has(s.skillId));
-    const slotBudget = a.slots.reduce((s, lv) => s + lv, 0);
-    const hasMeaningfulSlot = slotBudget >= 1;
-    const setId = setGroupIndex.armorToSetId.get(a.id);
-    const matchesSet = setId !== undefined && reqSetIds.has(setId);
-    const groupId = setGroupIndex.armorToGroupSkillId.get(a.id);
-    const matchesGroup = groupId != null && reqGroupSkillIds.has(groupId);
-
-    if (hasReqSkill || hasMeaningfulSlot || matchesSet || matchesGroup) {
+    if (
+      a.part in pool &&
+      isCandidateArmor(a, reqArmorWeaponIds, reqSetIds, reqGroupSkillIds)
+    ) {
       pool[a.part].push(a);
-      if (hasReqSkill) passReasons.skill++;
-      else if (hasMeaningfulSlot) passReasons.slot++;
-      else if (matchesSet) passReasons.set++;
-      else if (matchesGroup) passReasons.group++;
-    } else {
-      rejected++;
     }
   }
 
-  console.log("[buildArmorPool] result:", {
-    passReasons,
-    rejected,
-    unknownPart,
-  });
-
-  // 要求マッチ度降順 → スロ降順でソート
+  // 2) 各部位を「要求マッチ度降順 → スロ降順」でソート
   for (const part of PARTS) {
     pool[part].sort((a, b) => {
       const aSkillScore = a.skills.reduce(
@@ -154,6 +127,14 @@ function buildArmorPool(
       return bSlot - aSlot;
     });
   }
+
+  dlog("[buildArmorPool] sizes:", {
+    head: pool.head.length,
+    chest: pool.chest.length,
+    arms: pool.arms.length,
+    waist: pool.waist.length,
+    legs: pool.legs.length,
+  });
 
   return pool;
 }
@@ -192,16 +173,12 @@ export function searchEquipmentSets(
   input: SearchInput,
   masters: Masters = defaultMasters,
 ): EquipmentSet[] {
-  console.time("[search] total");
-  console.log(
-    `[search] weapons=${masters.weapons.length} armors=${masters.armors.length}`,
-  );
+  if (DEBUG) console.time("[search] total");
 
   const { desiredSkills, weaponType, resistanceMin } = input;
   if (desiredSkills.length === 0) return [];
 
-  // 🔬 要求の中身を直接確認
-  console.log("[search] desiredSkills:", desiredSkills);
+  dlog("[search] desiredSkills:", desiredSkills);
 
   const startTime = performance.now();
   const isTimedOut = () => performance.now() - startTime > SEARCH_TIMEOUT_MS;
@@ -210,7 +187,8 @@ export function searchEquipmentSets(
     if (!input.useOwnedCharms) return [undefined];
     const state = loadOwnedCharmsState();
     const actives = getActiveCharms(state, masters.charms);
-    console.log(`[search] active charms: ${actives.length}`);
+    dlog(`[search] active charms: ${actives.length}`);
+
     const reqIds = new Set(
       desiredSkills
         .filter((r) => r.kind === "armor" || r.kind === "weapon")
@@ -229,19 +207,19 @@ export function searchEquipmentSets(
     });
     return [...actives, undefined];
   })();
-  console.log(`[search] charm candidates: ${charmCandidates.length}`);
+  dlog(`[search] charm candidates: ${charmCandidates.length}`);
 
   const armorWeaponReqs = desiredSkills.filter(
     (r) => r.kind === "armor" || r.kind === "weapon",
   );
   const setReqs = desiredSkills.filter((r) => r.kind === "set");
   const groupReqs = desiredSkills.filter((r) => r.kind === "group");
-  console.log(
+  dlog(
     `[search] reqs: armor/weapon=${armorWeaponReqs.length} set=${setReqs.length} group=${groupReqs.length}`,
   );
 
   const highArmors = masters.armors.filter((a) => a.rank === "high");
-  console.log(`[search] high-rank armors: ${highArmors.length}`);
+  dlog(`[search] high-rank armors: ${highArmors.length}`);
 
   const weaponCandidates: (Weapon | undefined)[] = (() => {
     if (!weaponType) return [undefined];
@@ -263,22 +241,15 @@ export function searchEquipmentSets(
     });
     return filtered;
   })();
-  console.log(`[search] weapon candidates: ${weaponCandidates.length}`);
+  dlog(`[search] weapon candidates: ${weaponCandidates.length}`);
 
   const pool = buildArmorPool(highArmors, desiredSkills);
-  console.log("[search] armor pool sizes:", {
-    head: pool.head.length,
-    chest: pool.chest.length,
-    arms: pool.arms.length,
-    waist: pool.waist.length,
-    legs: pool.legs.length,
-  });
 
   // DFS 部位順 = pool が小さい順（早期枝刈りのため）
   const partOrder = [...PARTS].sort(
     (a, b) => pool[a].length - pool[b].length,
   ) as Part[];
-  console.log("[search] DFS part order:", partOrder);
+  dlog("[search] DFS part order:", partOrder);
 
   const maxSkill = precomputeMaxSkillPerPart(pool);
   const maxSlot = precomputeMaxSlotCountPerPart(pool);
@@ -354,6 +325,7 @@ export function searchEquipmentSets(
 
         if (idx === partOrder.length) {
           if (!meetsResistanceMin(accRes, resistanceMin)) return;
+
           for (const req of setReqs) {
             const sr = setGroupIndex.setSkillToReq.get(req.skillId);
             if (!sr) return;
@@ -369,6 +341,7 @@ export function searchEquipmentSets(
             const needed = gr.piecesByLevel[req.level - 1] ?? Infinity;
             if ((groupCount.get(req.skillId) ?? 0) < needed) return;
           }
+
           const baseArr = Array.from(accSkills.values()).map((s) => ({
             ...s,
           }));
@@ -379,12 +352,14 @@ export function searchEquipmentSets(
             decorations: masters.decorations,
           });
           if (!fit) return;
+
           const final = new Map(
             fit.finalSkills.map((s) => [s.skillId, s.level]),
           );
           for (const req of armorWeaponReqs) {
             if ((final.get(req.skillId) ?? 0) < req.level) return;
           }
+
           const { activatedSetBonus, activatedGroupBonus } =
             computeActivatedBonuses({
               setCount,
@@ -392,6 +367,7 @@ export function searchEquipmentSets(
               setGroupIndex,
               armorSets: masters.armorSets,
             });
+
           results.push(
             buildEquipmentSet({
               weapon,
@@ -414,6 +390,7 @@ export function searchEquipmentSets(
         const part = partOrder[idx];
         for (const armor of pool[part]) {
           if (results.length >= MAX_RESULTS || isTimedOut()) break;
+
           const nextSkills: SkillMap = new Map();
           for (const [k, v] of accSkills) nextSkills.set(k, { ...v });
           addSkillsToMap(
@@ -421,10 +398,13 @@ export function searchEquipmentSets(
             armor.skills,
             setGroupIndex.setGroupSkillIds,
           );
+
           const nextSlots: SlotPool = { ...accSlots };
           addSlots(nextSlots, armor.slots);
+
           const nextRes = { ...accRes };
           addResistances(nextRes, armor.resistances);
+
           const nextSetCount = new Map(setCount);
           const setId = setGroupIndex.armorToSetId.get(armor.id);
           if (setId !== undefined) {
@@ -435,6 +415,7 @@ export function searchEquipmentSets(
           if (groupId != null) {
             nextGroupCount.set(groupId, (nextGroupCount.get(groupId) ?? 0) + 1);
           }
+
           chosen[part] = armor;
           dfs(
             idx + 1,
@@ -453,10 +434,10 @@ export function searchEquipmentSets(
   }
 
   results.sort((a, b) => b.totalDefense - a.totalDefense);
-  console.timeEnd("[search] total");
+  if (DEBUG) console.timeEnd("[search] total");
   if (isTimedOut()) {
     console.warn(`[search] ⏱ TIMED OUT after ${SEARCH_TIMEOUT_MS}ms`);
   }
-  console.log(`[search] results: ${results.length}`);
+  dlog(`[search] results: ${results.length}`);
   return results.slice(0, MAX_RESULTS);
 }
